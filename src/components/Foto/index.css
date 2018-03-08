@@ -1,0 +1,20 @@
+
+.avatar{
+    height: 13rem;
+    width: 10em;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.f1{
+    background-image: url('../../assets/imgs/1.png');
+}
+
+.it{
+    padding: 0.5rem;
+    display: flex;
+    flex:1;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,28 @@
+.root{
+    height:20rem;
+    width: 40rem;
+    position: relative;
+}
+.foto{
+    height:20rem;
+    width: 40rem;    
+    background-size: cover;
+    background-position: center;
+}
+
+.foto1{
+    background-image: url(../../assets/imgs/foto1.png)
+}
+
+.foto2{
+    background-image: url(../../assets/imgs/foto2.png)
+}
+
+.foto3{
+    background-image: url(../../assets/imgs/foto3.png)
+}
+
+.foto4{
+    background-image: url(../../assets/imgs/foto4.png)
+}
+

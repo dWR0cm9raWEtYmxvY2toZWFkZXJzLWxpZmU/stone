@@ -1,0 +1,18 @@
+import React from 'react'
+import Grid from 'material-ui/Grid'
+import Card from 'material-ui/Card'
+
+const CardModel = () => {
+
+}
+
+const Cards = () => (
+    <Grid container>
+        <Grid item><Card>
+            <div className="f1"/>
+            <p>hello</p>
+        </Card></Grid>
+    </Grid>
+)
+
+export default Cards

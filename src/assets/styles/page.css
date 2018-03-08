@@ -1,0 +1,123 @@
+.ctn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 3rem 6rem;
+}
+
+.banner{
+    height: 18rem;
+    background-image: url('../../assets/imgs/banner.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.bg1{
+    background-color: rgba(242,242,242,1)
+}
+
+.para{
+    font-size: 0.8rem;
+}
+
+.ml{
+    margin:0.2rem;
+    text-align: left;
+}
+.m2{
+    margin:0;
+}
+
+.left{
+    display: flex;
+    flex:1;
+    width: 35rem;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.blockgeek{
+    height: 4rem;
+    width: 11rem;
+    background-image: url('../../assets/imgs/bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 2rem;
+}
+
+.gdex{
+    height: 5rem;
+    width: 4rem;
+    background-image: url('../../assets/imgs/gdex.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 2rem;
+}
+
+.bcc{
+    height: 7rem;
+    width: 6.8em;
+    background-image: url('../../assets/imgs/bcc.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 2rem;
+}
+
+.gridm{
+    padding: 0rem 0rem 3rem;
+}
+.cctn{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bs{
+    height: 7rem;
+    width: 6.8em;
+    background-image: url('../../assets/imgs/bs.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 2rem;
+}
+
+.bbt{
+    height: 2rem;
+    width: 8em;
+    background-image: url('../../assets/imgs/bbt.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 2rem;
+}
+
+.ff{
+    height: 2rem;
+    width: 8em;
+    background-image: url('../../assets/imgs/ff.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 2rem;
+}
+
+.bf{
+    height: 4rem;
+    width: 8em;
+    background-image: url('../../assets/imgs/bf.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 2rem;
+}
+
+.foto{
+
+}
+

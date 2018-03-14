@@ -1,11 +1,12 @@
 .root{
-    height:20rem;
-    width: 40rem;
+    margin-top: 2rem;
+    height:40vw;
+    width: 80vw;
     position: relative;
 }
 .foto{
-    height:20rem;
-    width: 40rem;    
+    height:40vw;
+    width: 80vw;    
     background-size: cover;
     background-position: center;
 }

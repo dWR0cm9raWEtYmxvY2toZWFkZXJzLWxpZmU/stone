@@ -6,15 +6,17 @@
   "dependencies": {
     "gatsby": "^1.9.223",
     "gatsby-link": "^1.6.38",
-    "gatsby-plugin-react-helmet": "^2.0.6",
-    "lazy-load": "^0.0.2",
+    "gatsby-plugin-react-helmet": "^2.0.7",
+    "gatsby-plugin-typography": "^1.7.18",
     "material-ui": "^1.0.0-beta.36",
     "rc-queue-anim": "^1.4.1",
     "rc-scroll-anim": "^2.3.0",
     "rc-tween-one": "^1.7.3",
     "react-helmet": "^5.2.0",
+    "react-lazyload": "^2.3.0",
     "react-swipeable-views": "^0.12.13",
-    "react-swipeable-views-utils": "^0.12.13"
+    "react-swipeable-views-utils": "^0.12.13",
+    "typography-theme-grand-view": "^0.15.10"
   },
   "keywords": [
     "gatsby"

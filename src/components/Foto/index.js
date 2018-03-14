@@ -1,35 +1,34 @@
 import React from 'react'
 import Grid from 'material-ui/Grid'
-import Card from 'material-ui/Card'
+import Card,{CardContent} from 'material-ui/Card'
+import Typography from 'material-ui/Typography'
 import './index.css'
-
-const CardModel = ({seq, name}) => (
-    <Card>
+import thelist from './list.js'
+console.log(thelist.v1.name)
+var lists = []
+for (var i=1; i<21; i++){
+  lists.push(i)
+}
+//     
+const fotoList = lists.map((seq)=>{
+  const v = "v" + seq
+  return(
+    <Grid item key={seq} >
+      <Card style={{textAlign:'center'}} id='cardd'>
         <div className="avatar"
-             style={{ backgroundImage: 'url(' + require('../../assets/imgs/1.png')+')' }}
-        />
-        <text className="it">hello</text>
-    </Card>
-)
-
-const Line = []
-    
-const Cards = () => (
-    <Grid container justify="center" alignItems="center" >
-        <Grid item>
-            <Card>
-            <div className="avatar f1"/>
-            <text className="it">hello</text>
-            </Card>
-        </Grid>
-        <Grid item>
-            <CardModel seq="f1" name="hi"/>
-        </Grid>
-        <Grid item>
-            <CardModel seq="f2" name="hi"/>
-        </Grid>        
-    
+             style={{ backgroundImage: 'url(' + require('../../assets/imgs/' + seq + '.png')+')' }} />
+        <text style={{margin:0,padding:0}} className="name">{thelist[v]["name"]}</text><br style={{margin:0,padding:0}}/>
+        <text style={{margin:0,padding:0}} className="info">{thelist[v]["position"]}</text><br style={{margin:0,padding:0}}/>
+        <text style={{margin:0,padding:0}} className="info">{thelist[v]["company"]}</text>
+      </Card>
     </Grid>
+  )
+})
+
+const Cards = () => (
+  <Grid container justify="center" alignItems="center" >
+    {fotoList}
+  </Grid>
 )
 
 export default Cards

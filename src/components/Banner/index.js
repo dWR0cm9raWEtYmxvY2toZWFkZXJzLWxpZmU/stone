@@ -8,36 +8,38 @@ const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
 
 class DemoAutoPlay extends Component {
-    state = {
-        index: 0,
-    };
+  state = {
+    index: 0,
+  };
 
-    handleChangeIndex = index => {
-        this.setState({
-            index,
-        });
-    };
-    render() {
-        const { index } = this.state;
-        return (
-            <SupportTouch>
-                <div className="root">
-                    <AutoPlaySwipeableViews
-                        index={index}
-                        onChangeIndex={this.handleChangeIndex}
-                    >
-                        <div className="foto foto1"></div>
-                        <div className="foto foto2"></div>
-                        <div className="foto foto3"></div>
-                        <div className="foto foto4"></div>
+  handleChangeIndex = index => {
+    this.setState({
+      index,
+    });
+  };
+  render() {
+    const { index } = this.state;
+    return (
+      <SupportTouch>
+        <div className="root">
+          <AutoPlaySwipeableViews
+            index={index}
+            onChangeIndex={this.handleChangeIndex}
+          >
+            <div className="foto foto1"></div>
+            <div className="foto foto2"></div>
+            <div className="foto foto3"></div>
+            <div className="foto foto4"></div>
           </AutoPlaySwipeableViews>
-          <Pagination dots={4}
-                      index={index}
-                      onChangeIndex={this.handleChangeIndex} />
-                </div>
-            </SupportTouch>
-        );
-    }
+          <Pagination
+            dots={4}
+            index={index}
+            onChangeIndex={this.handleChangeIndex}
+          />
+        </div>
+      </SupportTouch>
+    );
+  }
 }
 
 export default DemoAutoPlay;

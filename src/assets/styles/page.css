@@ -1,14 +1,76 @@
+@media screen and (min-width: 960px) {
+    h2{ font-size: 1.5rem; }
+    p{ font-size: 1rem }
+    .para{ max-width: 80vw;}
+    .subpara{ max-width: 60vw }
+} /*兼容平板*/
+@media screen and (max-width: 960px){
+    h2{ font-size: 1.5rem; }
+    p{ font-size: 1rem }
+    .para{ max-width: 80vw }
+    .subpara{ max-width: 60vw }
+} /*兼容平板*/
+@media screen and (max-width: 640px){
+    h2{ font-size: 1rem ;}
+    p{ font-size: 0.8rem; }
+    .para{ max-width: 80vw }
+    .subpara{ max-width: 60vw; }
+
+} /*兼容手机*/
+@media screen and (max-width: 480px){
+    h2{ font-size: 0.8rem }
+    p{ font-size: 0.5rem; }
+    .para{ max-width: 80vw }
+    .subpara{ max-width: 80vw }
+}
+
+body{
+    word-break:break-all!important
+}
+
+p{
+    margin: 0
+}
+
+.bnwrap{
+    padding-top:0.5rem;
+    display:flex;
+    align-items:flex-start;
+    justify-content: flex-end;
+}
+
+.trans{
+    color:white;
+}
+
+.listwrap{
+    
+}
+
+.indent{
+    text-indent: 2rem;
+}
+.ttable{
+    height: 115vw;
+    width: 80vw;
+    background-image: url('../../assets/imgs/table.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;    
+}
+
 .ctn{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 3rem 6rem;
+    padding: 3rem 0rem;
 }
 
 .banner{
-    height: 18rem;
-    background-image: url('../../assets/imgs/banner.png');
+    height: 50vw;
+    width: 100vw;
+    background-image: url('../../assets/imgs/banner-en.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -18,27 +80,16 @@
     background-color: rgba(242,242,242,1)
 }
 
-.para{
-    font-size: 0.8rem;
-}
-
 .ml{
     margin:0.2rem;
     text-align: left;
 }
 .m2{
-    margin:0;
-}
-
-.left{
-    display: flex;
-    flex:1;
-    width: 35rem;
-    flex-direction: column;
-    align-items: flex-start;
+    marginTop:0;
 }
 
 .blockgeek{
+    margin-top:3rem;
     height: 4rem;
     width: 11rem;
     background-image: url('../../assets/imgs/bg.png');
@@ -49,6 +100,7 @@
 }
 
 .gdex{
+    margin:3rem;
     height: 5rem;
     width: 4rem;
     background-image: url('../../assets/imgs/gdex.png');
@@ -78,8 +130,8 @@
 }
 
 .bs{
-    height: 7rem;
-    width: 6.8em;
+    height: 4rem;
+    width: 4em;
     background-image: url('../../assets/imgs/bs.png');
     background-size: cover;
     background-position: center;
@@ -88,8 +140,8 @@
 }
 
 .bbt{
-    height: 2rem;
-    width: 8em;
+    height: 1.6rem;
+    width: 7em;
     background-image: url('../../assets/imgs/bbt.png');
     background-size: cover;
     background-position: center;
@@ -99,7 +151,7 @@
 
 .ff{
     height: 2rem;
-    width: 8em;
+    width: 7em;
     background-image: url('../../assets/imgs/ff.png');
     background-size: cover;
     background-position: center;
@@ -108,16 +160,11 @@
 }
 
 .bf{
-    height: 4rem;
-    width: 8em;
+    height: 1.6rem;
+    width: 6em;
     background-image: url('../../assets/imgs/bf.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     margin-bottom: 2rem;
 }
-
-.foto{
-
-}
-

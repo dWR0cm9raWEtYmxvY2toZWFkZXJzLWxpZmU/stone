@@ -32,7 +32,7 @@ const star = {
   head1: "Private Session:",
   head2: "Unique Roundtable:",
   head3: "Simultaneous Interpretation:",
-  p1: "Face-to-face communication with world’s top graphene technology developers",
+  p1: "Face-to-face communication with world’s top graphene developers",
   p2: "Debate on the future trend of Bitshares",
   p3: "Barrier-free communication between developers"
 }
@@ -40,7 +40,7 @@ const vip = {
   title: "SPEAKERS"
 }
 const sponsor = {
-  title: "SPONSOR REPAY"
+  title: "Sponsorship Package"
 }
 const host = {
   title: "ORGANIZERS",

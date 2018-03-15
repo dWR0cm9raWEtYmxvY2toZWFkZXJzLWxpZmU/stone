@@ -43,17 +43,12 @@ p{
     color:white;
 }
 
-.listwrap{
-    
-}
-
 .indent{
     text-indent: 2rem;
 }
 .ttable{
     height: 115vw;
     width: 80vw;
-    background-image: url('../../assets/imgs/table.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;    
@@ -70,7 +65,6 @@ p{
 .banner{
     height: 50vw;
     width: 100vw;
-    background-image: url('../../assets/imgs/banner-en.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

@@ -13,14 +13,30 @@ import LazyLoad from 'react-lazyload'
 import Table, { TableBody, TableCell, TableHead, TableRow } from 'material-ui/Table';
 import Card from 'material-ui/Card'
 import Button from 'material-ui/Button'
+import TweenOne from 'rc-tween-one'
+
+const cnbg = {
+  backgroundImage: 'url(' + require('../assets/imgs/banner.png') + ')'
+}
+const enbg= {
+  backgroundImage: 'url(' + require('../assets/imgs/banner-en.jpg') + ')'
+}
+const ent = {
+  backgroundImage: 'url(' + require('../assets/imgs/table.jpg') + ')'
+}
+const cnt = {
+  backgroundImage: 'url(' + require('../assets/imgs/aaa.jpg') + ')'  
+}
 
 class IndexPage extends React.Component{
   state = {
     lang: en,
-    toLang: "CN"
+    toLang: "CN",
+    ttable: {  backgroundImage: 'url(' + require('../assets/imgs/table.jpg') + ')'},
+    bg: { backgroundImage: 'url(' + require('../assets/imgs/banner-en.jpg') + ')'}
   }
   componentWillMount(){
-
+    
   }
   render(){
     let arr = []
@@ -52,14 +68,21 @@ class IndexPage extends React.Component{
       )
     })
     const trans = () =>{
-      this.state.lang === en
-      ?this.setState({lang:cn,toLang:"EN"})
-      :this.setState({lang:en,toLang:"CN"})
+      if(this.state.lang === en){
+        this.setState({
+          lang:cn,toLang:"EN",ttable:cnt, bg:cnbg
+        })
+      }else{
+        this.setState({
+          lang:en,toLang:"CN", ttable:ent, bg:enbg
+        })
+      }
+
     }
     return(
       <div>
         <QueueAnim key="queue" delay={300} leaveReverse={true}>
-          <section key="a" className="bnwrap banner">
+          <section key="a" className="bnwrap banner" style={this.state.bg}>
             <Button onClick={trans} className="trans">
               <p style={{color:'white'}}>{this.state.toLang}</p>
             </Button>
@@ -93,10 +116,10 @@ class IndexPage extends React.Component{
           </section>
           <section key="i" className="ctn">
               <h2>{this.state.lang.sponsor.title}</h2>
-              <div className="bar"/>                          
-            <Card>
-              <div className="ttable" />
-            </Card>
+              <div className="bar"/>
+              <Card>
+                <div className="ttable" style={this.state.ttable}/>
+              </Card>
           </section>          
           <section key="h" className="ctn bg1" >
             <h2>{this.state.lang.host.title}</h2>
@@ -116,7 +139,6 @@ class IndexPage extends React.Component{
               <p className="para indent">{this.state.lang.host.gdex}</p></Grid>
             </Grid>
           </section>
-
           <section key="j" className="ctn">
             <h2>{this.state.lang.assist.title}</h2>
             <div className="bar"/>

@@ -67,7 +67,7 @@ const list = {
   },
   "v12": {
     "name": "Neo Ma",
-    "position": "Founder,Technical geek",
+    "position": "Founder",
     "company":" μMatrix",
     "intro": "Neo worked in F500 such as GE, Delta, etc. 15yr+ industrial MP experience and 20yr+ applied crypto experience. 2nd prize award in Smart Terminal Category of Wanxiang Smart City Global Blockchain Challenge. Rich experience in leading smart hardware solutions building for start-ups."
   },
@@ -91,8 +91,8 @@ const list = {
   },
   "v16": {
     "name": "Yanfeng Chen",
-    "position": "Core team member, CEO",
-    "company":"Cybex, NBLTrust Technology",
+    "position": "CEO",
+    "company":"NBLTrust Technology",
     "intro": "He graduated from the Department of Electronic Engineering of Shanghai Jiaotong University, and once worked as a regional manager of the National Instruments and a founding shareholder of VI Service Network. NBLTrust is an crypto-asset custody service provider."
   },
   "v17": {

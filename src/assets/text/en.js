@@ -1,12 +1,12 @@
 const intro = {
   title: "PREFACE",
-  para1: "Graphene is a toolkit or technology for real-time blockchains created by Daniel Larimer, who developed influential projects based on this framework including Bitshares, Steem, EOS. Many other famous blockchain projects such as  Gxshares, YOYOW, Peerplays, Cybex, Decent, MUSE, Ark, Scorum, Crypviser, Karma, Payger, ECHO, SEER, are also based on this framework.",
+  para1: "Graphene is a toolkit or technology for real-time blockchains created by Daniel Larimer, who developed influential projects based on this framework including Bitshares, Steem, EOS. Many other famous blockchain projects such as  GXS, YOYOW, Peerplays, Cybex, Decent, MUSE, Ark, Scorum, Crypviser, Karma, Payger, ECHO, SEER, are also based on this framework.",
   para2: "Graphene DEVCON is the world's leading conference for blockchain developer and developer marketing practitioner. "
 }
 
 const lookback = {
   title: "2018 China Graphene DevCon Recap",
-  para: "On January 21st, more than 12 speakers from fabulous blockchain projects including Bitshares, Gxshares, Cybex, DECENT  ,  giving speeches in conference, 400+ attendees, discussed the future of graphene technology."
+  para: "On January 21st, more than 12 speakers from fabulous blockchain projects including Bitshares, GXS, Cybex, DECENT  ,  gave speeches in conference, 400+ attendees, discussed the future of graphene technology."
 }
 
 const overview ={
@@ -58,12 +58,14 @@ const partner = {
 }
 
 export const footer = {
-  title: "contact us",
-  cp: "媒体/商务合作: Linda",
-  tel: "tel: +86 15851461946",
+  title: "Contact us",
+  cp: "Medium/Cooperation;: Linda",
+  tel: "Tel: +86 15851461946",
   email: "graphene.devcon@foxmail.com"
 }
 
-const cn = { intro, lookback, overview, star, vip, host, assist, partner, sponsor }
+const en = {
+  intro, lookback, overview, star, vip, host,
+  assist, partner, sponsor,footer }
 
-export default cn
+export default en

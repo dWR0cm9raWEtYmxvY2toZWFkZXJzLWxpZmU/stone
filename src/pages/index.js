@@ -12,11 +12,16 @@ import Fotos from '../components/Foto'
 import LazyLoad from 'react-lazyload'
 import Table, { TableBody, TableCell, TableHead, TableRow } from 'material-ui/Table';
 import Card from 'material-ui/Card'
+import Toolbar from 'material-ui/Toolbar';
 import Button from 'material-ui/Button'
 import TweenOne from 'rc-tween-one'
-
+import AppBar from 'material-ui/AppBar';
 import enlist from '../components/foto/enlist.js'
 import cnlist from '../components/foto/cnlist.js'
+import Drawer from 'material-ui/Drawer';
+import IconButton from 'material-ui/IconButton';
+import MenuIcon from 'material-ui-icons/Menu';
+import List from 'material-ui/List'
 
 const cnbg = {
   backgroundImage: 'url(' + require('../assets/imgs/banner.png') + ')'
@@ -37,8 +42,14 @@ class IndexPage extends React.Component{
     toLang: "CN",
     ttable: {  backgroundImage: 'url(' + require('../assets/imgs/table.jpg') + ')'},
     bg: { backgroundImage: 'url(' + require('../assets/imgs/banner-en.jpg') + ')'},
-    list: enlist
+    list: enlist,
+    right: false,
   }
+  toggleDrawer = (side, open) => () => {
+    this.setState({
+      [side]: open,
+    });
+  };
   render(){
     let arr = []
     for (var i =1; i<8; i++){
@@ -79,15 +90,26 @@ class IndexPage extends React.Component{
       }
 
     }
+    let sideList = () => (
+      <div style={{width:'10rem'}}>
+        <List>hello</List>
+        <List>world</List>
+      </div>
+    )
     return(
       <div>
-        <QueueAnim key="queue" delay={300} leaveReverse={true}>
-          <section key="a" className="bnwrap banner" style={this.state.bg}>
-            <Button disableRipple={true} 
+        <AppBar style={{backgroundColor:'rgba(9,12,36,0)'}} className="nav" position="absolute">
+          <Toolbar className="nav">
+            <Button disableRipple={true}  size="small"
                     disableFocusRipple={true}
                     onClick={trans} className="trans">
               <p style={{color:'white'}}>{this.state.toLang}</p>
-            </Button>
+            </Button>            
+          </Toolbar>
+        </AppBar>
+        <QueueAnim key="queue" delay={300} leaveReverse={true}>
+          <section key="a" className="bnwrap banner" style={this.state.bg}>
+
           </section>
           <section key="b" className="ctn bg1">
             <h2>{this.state.lang.intro.title}</h2>
@@ -162,7 +184,13 @@ class IndexPage extends React.Component{
               <Grid item ><div className="cctn bf" /></Grid>
             </Grid>
           </section>
-          <Footer key="l" />
+          <section key="l" className="footer ctn" style={{color:'white'}}>
+            <h5>{this.state.lang.footer.title}</h5>
+            <div className="bar"></div>
+            <p>{this.state.lang.footer.cp}</p>
+            <p>{this.state.lang.footer.tel}</p>
+            <p>{this.state.lang.footer.email}</p>
+          </section>
         </QueueAnim>
       </div>
     )

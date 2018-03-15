@@ -11,9 +11,8 @@ const Intro = ({seq,v,list}) => (
     <div className="cardctn">
       <text style={{margin:0,padding:0}} className="name">{list[v]["name"]}</text><br/>
       <text style={{margin:0,padding:0}} className="info">{list[v]["position"]}</text><br/>
-      <text style={{margin:0,padding:0}} className="info">{list[v]["company"]}</text>
     </div>
-  </Card>        
+  </Card>
 )
 
 const Detail = ({seq,v,list}) => (

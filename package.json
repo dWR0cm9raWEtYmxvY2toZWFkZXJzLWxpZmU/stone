@@ -9,6 +9,7 @@
     "gatsby-plugin-react-helmet": "^2.0.7",
     "gatsby-plugin-typography": "^1.7.18",
     "material-ui": "^1.0.0-beta.36",
+    "material-ui-icons": "^1.0.0-beta.36",
     "rc-queue-anim": "^1.4.1",
     "rc-scroll-anim": "^2.3.0",
     "rc-tween-one": "^1.7.3",

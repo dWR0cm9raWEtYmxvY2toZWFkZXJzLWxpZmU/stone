@@ -66,6 +66,9 @@ export const footer = {
   email: "graphene.devcon@foxmail.com"
 }
 
-const cn = { intro, lookback, overview, star, vip, host, assist, partner, sponsor }
+const cn = {
+  intro, lookback, overview, star, vip, host, assist,
+  partner, sponsor, footer
+}
 
 export default cn

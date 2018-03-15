@@ -1,11 +1,13 @@
 import React from 'react'
 import './index.css'
-import { footer } from '../../assets/text/cn'
-
+import { footer } from '../../assets/text/en'
 const Footer = () => (
-    <section id="footer" className="bg ctn" style={{ height:"5rem", color:"white" }}>
+    <section className="footer ctn" style={{color:'white'}}>
         <h5>{footer.title}</h5>
-        <p>{footer.cp}</p>
+        <div className="bar"></div>
+        <p>linda</p>
+        <p>{footer.tel}</p>
+        <p>{footer.email}</p>        
     </section>
 )
 

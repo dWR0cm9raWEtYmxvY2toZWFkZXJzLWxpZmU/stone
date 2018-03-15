@@ -20,14 +20,15 @@
 @media screen and (max-width: 480px) {
     #cardd{width: 8rem; line-height:0.8rem; height:11rem;}    
     .avatar{ height: 8rem; width: 8rem; }
-    .name{ font-size: 0.3rem;}
-    .info{ font-size: 0.3rem; line-height:0.3rem}    
+    .name{ font-size: 0.6rem;}
+    .info{ font-size: 0.6rem; line-height:0.5rem}    
 }
 
 
 body{
     font-family: "Roboto", "Helvetica", "Arial", sans-serif!important;
 }
+
 .detail{
     height: 100%;
     display:flex;
@@ -35,6 +36,7 @@ body{
     padding:0.8rem;
     text-indent: 1rem;    
     background-color: rgba(25,72,128,1);
+    overflow:'auto';
 }
 
 .name{

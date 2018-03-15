@@ -15,6 +15,9 @@ import Card from 'material-ui/Card'
 import Button from 'material-ui/Button'
 import TweenOne from 'rc-tween-one'
 
+import enlist from '../components/foto/enlist.js'
+import cnlist from '../components/foto/cnlist.js'
+
 const cnbg = {
   backgroundImage: 'url(' + require('../assets/imgs/banner.png') + ')'
 }
@@ -33,10 +36,8 @@ class IndexPage extends React.Component{
     lang: en,
     toLang: "CN",
     ttable: {  backgroundImage: 'url(' + require('../assets/imgs/table.jpg') + ')'},
-    bg: { backgroundImage: 'url(' + require('../assets/imgs/banner-en.jpg') + ')'}
-  }
-  componentWillMount(){
-    
+    bg: { backgroundImage: 'url(' + require('../assets/imgs/banner-en.jpg') + ')'},
+    list: enlist
   }
   render(){
     let arr = []
@@ -54,7 +55,6 @@ class IndexPage extends React.Component{
             <p>{this.state.lang.overview[`head`+i]}</p></TableCell>
           <TableCell><p>{this.state.lang.overview[`p`+i]}</p></TableCell>
         </TableRow>
-
       )
     })
     let list2 = arr2.map((i)=>{
@@ -70,11 +70,11 @@ class IndexPage extends React.Component{
     const trans = () =>{
       if(this.state.lang === en){
         this.setState({
-          lang:cn,toLang:"EN",ttable:cnt, bg:cnbg
+          lang:cn,toLang:"EN",ttable:cnt, bg:cnbg, list:cnlist
         })
       }else{
         this.setState({
-          lang:en,toLang:"CN", ttable:ent, bg:enbg
+          lang:en,toLang:"CN", ttable:ent, bg:enbg, list:enlist
         })
       }
 
@@ -83,7 +83,9 @@ class IndexPage extends React.Component{
       <div>
         <QueueAnim key="queue" delay={300} leaveReverse={true}>
           <section key="a" className="bnwrap banner" style={this.state.bg}>
-            <Button onClick={trans} className="trans">
+            <Button disableRipple={true} 
+                    disableFocusRipple={true}
+                    onClick={trans} className="trans">
               <p style={{color:'white'}}>{this.state.toLang}</p>
             </Button>
           </section>
@@ -112,7 +114,7 @@ class IndexPage extends React.Component{
           <section key="g" className="ctn bg1">
             <h2>{this.state.lang.vip.title}</h2>
             <div className="bar"/>            
-            <Fotos style={{maxWidth:`80vw`}} />
+            <Fotos list={this.state.list} style={{maxWidth:`80vw`}} />
           </section>
           <section key="i" className="ctn">
               <h2>{this.state.lang.sponsor.title}</h2>

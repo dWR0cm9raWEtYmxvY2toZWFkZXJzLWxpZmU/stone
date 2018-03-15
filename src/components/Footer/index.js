@@ -3,9 +3,9 @@ import './index.css'
 import { footer } from '../../assets/text/en'
 const Footer = () => (
     <section className="footer ctn" style={{color:'white'}}>
-        <h5>{footer.title}</h5>
+        <h5>Contact us</h5>
         <div className="bar"></div>
-        <p>linda</p>
+        <p>Linda</p>
         <p>{footer.tel}</p>
         <p>{footer.email}</p>        
     </section>

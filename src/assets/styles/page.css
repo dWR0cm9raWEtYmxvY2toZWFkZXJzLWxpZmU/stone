@@ -4,20 +4,23 @@
     .para{ max-width: 80vw;}
     .subpara{ max-width: 60vw }
     .nav{ height: 2rem}
+    .banner{ height: 50vw; width: 100vw;}    
 } /*兼容平板*/
 @media screen and (max-width: 960px){
     h2{ font-size: 1.5rem; }
     p{ font-size: 1rem }
     .para{ max-width: 80vw }
     .subpara{ max-width: 60vw }
-    .nav{ height: 1.8rem}    
+    .nav{ height: 1.8rem}
+    .banner{ height: 50vw; width: 100vw;}    
 } /*兼容平板*/
 @media screen and (max-width: 640px){
     h2{ font-size: 1rem ;}
     p{ font-size: 0.8rem; }
     .para{ max-width: 80vw }
     .subpara{ max-width: 60vw; }
-    .nav{ height: 1.5rem}    
+    .nav{ height: 1.5rem}
+    .banner{ height: 50vw; width: 100vw;}
 
 } /*兼容手机*/
 @media screen and (max-width: 480px){
@@ -25,7 +28,8 @@
     p{ font-size: 0.5rem; }
     .para{ max-width: 80vw }
     .subpara{ max-width: 80vw }
-    .nav{ height: 0.8rem}    
+    .nav{ height: 0.8rem}
+    .banner{ height: 75vw; width: 100vw;}
 }
 
 body{
@@ -67,8 +71,7 @@ p{
 }
 
 .banner{
-    height: 50vw;
-    width: 100vw;
+
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

@@ -186,7 +186,7 @@ class IndexPage extends React.Component{
           </section>
           <section key="l" className="footer ctn" style={{color:'white'}}>
             <h5>{this.state.lang.footer.title}</h5>
-            <div className="bar"></div>
+            <div className="bar" style={{marginBottom:'1rem'}}></div>
             <p>{this.state.lang.footer.cp}</p>
             <p>{this.state.lang.footer.tel}</p>
             <p>{this.state.lang.footer.email}</p>

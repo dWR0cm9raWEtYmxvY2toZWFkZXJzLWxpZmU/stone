@@ -63,9 +63,11 @@ export const footer = {
   tel: "Tel: +86 15851461946",
   email: "graphene.devcon@foxmail.com"
 }
+export const menu = ["Introductin", "Speakers","Sponsorship","Contact","Claim-Tickets"]
 
 const en = {
   intro, lookback, overview, star, vip, host,
-  assist, partner, sponsor,footer }
+  assist, partner, sponsor,footer, menu
+}
 
 export default en

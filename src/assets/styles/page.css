@@ -19,17 +19,18 @@
     p{ font-size: 0.8rem; }
     .para{ max-width: 80vw }
     .subpara{ max-width: 60vw; }
-    .nav{ height: 1.5rem}
+    .nav{ height: 1.8rem}
     .banner{ height: 50vw; width: 100vw;}
-
+    .menuicon{width: 2rem}
 } /*兼容手机*/
 @media screen and (max-width: 480px){
     h2{ font-size: 0.8rem }
     p{ font-size: 0.5rem; }
     .para{ max-width: 80vw }
     .subpara{ max-width: 80vw }
-    .nav{ height: 0.8rem}
+    .nav{ height: 1.8rem}
     .banner{ height: 75vw; width: 100vw;}
+    .menuicon{width: 1rem}
 }
 
 body{

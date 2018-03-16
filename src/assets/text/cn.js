@@ -66,9 +66,11 @@ export const footer = {
   email: "graphene.devcon@foxmail.com"
 }
 
+const menu = ["大会介绍", "演讲嘉宾", "合作伙伴", "赞助权益", "联系我们", "马上领票"]
+
 const cn = {
   intro, lookback, overview, star, vip, host, assist,
-  partner, sponsor, footer
+  partner, sponsor, footer, menu
 }
 
 export default cn

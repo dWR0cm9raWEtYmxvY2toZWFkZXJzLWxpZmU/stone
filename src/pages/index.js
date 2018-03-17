@@ -99,7 +99,7 @@ class IndexPage extends React.Component{
     )
     return(
       <div>
-        <LazyLoad height={200}>
+        <LazyLoad height={0}>
         <AppBar style={{backgroundColor:`rgba(9,12,36,0.3)`}} className="nav" position="fixed">
           <Toolbar className="nav">
             <Button disableRipple={true}  size="small"
@@ -115,8 +115,7 @@ class IndexPage extends React.Component{
           </Toolbar>
         </AppBar>
         </LazyLoad>
-        <LazyLoad height={200}>
-        <Drawer anchor="right" open={this.state.right} onClose={this.toggleDrawer('right', false)}>
+        <LazyLoad><Drawer anchor="right" open={this.state.right} onClose={this.toggleDrawer('right', false)}>
           <div
             tabIndex={0}
             role="button"
@@ -145,11 +144,10 @@ class IndexPage extends React.Component{
             </List>            
           </div>
         </Drawer></LazyLoad>
-        <LazyLoad height={200}>
         <section className="bnwrap banner" style={this.state.bg}>
-        </section></LazyLoad>
+        </section>
         <LazyLoad height={200}><section className="bg1" id="introductin">
-          <TweenOne className="ctn" animation={{ x: -100, type: 'from',duration:480,opacity:0 }}>
+          <TweenOne className="ctn" animation={{ x: -100, type: 'from',duration:720,opacity:0 }}>
             <h2>{this.state.lang.intro.title}</h2>
             <div className="bar"/>
             <p className="para indent">{this.state.lang.intro.para1}</p>
@@ -158,7 +156,7 @@ class IndexPage extends React.Component{
         </section></LazyLoad>
         <section >
           <LazyLoad height={100}>
-            <TweenOne className="ctn" animation={{ x: -100, type: 'from',duration:1280,opacity:0 }}>
+            <TweenOne className="ctn" animation={{ x: -100, type: 'from',duration:720,opacity:0 }}>
               <h2>{this.state.lang.lookback.title}</h2>
               <div className="bar"/>
               <p className="para indent">{this.state.lang.lookback.para}</p>
@@ -167,7 +165,7 @@ class IndexPage extends React.Component{
         </section>
         <section  className="ctn bg1">
           <LazyLoad height={200}>
-            <TweenOne className="ctn" animation={{ x: -100, type: 'from',duration:1280,opacity:0 }}>          
+            <TweenOne className="ctn" animation={{ x: -100, type: 'from',duration:720,opacity:0 }}>          
               <h2>{this.state.lang.overview.title}</h2>
               <div className="bar"/>
               <Table className="para" style={{marginTop:`1rem`}}><TableBody>{list}</TableBody></Table>

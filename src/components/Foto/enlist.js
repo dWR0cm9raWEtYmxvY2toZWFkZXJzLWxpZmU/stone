@@ -97,7 +97,7 @@ const list = {
   "v20": {
     "name": "Annemieke Dirkes",
     "position":"CEO of Blockchain Projects BV",
-    "intro":"Global Voted spopkesperson for the Bitshares Blockchain."
+    "intro":"Global Voted spokesperson for the Bitshares Blockchain."
   }
 }
 

@@ -3,8 +3,10 @@ import Grid from 'material-ui/Grid'
 import Card,{CardContent} from 'material-ui/Card'
 import './index.css'
 import TweenOne from 'rc-tween-one'
+import LazyLoad from 'react-lazyload'
 
 const Intro = ({seq,v,list}) => (
+  <LazyLoad height={20}>
   <Card style={{textAlign:'center'}} id='cardd'>
     <div className="avatar"
          style={{ backgroundImage: 'url(' + require('../../assets/imgs/' + seq + '.png')+')' }} />
@@ -13,6 +15,7 @@ const Intro = ({seq,v,list}) => (
       <text style={{margin:0,padding:0}} className="info">{list[v]["position"]}</text><br/>
     </div>
   </Card>
+  </LazyLoad>
 )
 
 const Detail = ({seq,v,list}) => (

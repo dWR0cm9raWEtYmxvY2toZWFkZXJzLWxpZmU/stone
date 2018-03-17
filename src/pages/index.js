@@ -180,9 +180,12 @@ class IndexPage extends React.Component{
             </TweenOne></LazyLoad>
         </section>
         <section key="g" className="ctn bg1" id="speakers">
+          <LazyLoad height={1}>
+          <TweenOne className="ctn" animation={{ x: -100, type: 'from',duration:720,opacity:0 }}>
           <h2>{this.state.lang.vip.title}</h2>
           <div className="bar"/>            
           <Fotos list={this.state.list} style={{maxWidth:`80vw`}} />
+            </TweenOne></LazyLoad>
         </section>
         <section key="i" className="ctn" id="sponsorship">
           <LazyLoad height={200}>

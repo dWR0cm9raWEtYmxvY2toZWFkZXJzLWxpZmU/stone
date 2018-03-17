@@ -25,8 +25,6 @@ import MenuIcon from 'material-ui-icons/Menu';
 import Divider from 'material-ui/Divider'
 import createHistory from "history/createBrowserHistory"
 
-const history = createHistory()
-
 const cnbg = {
   backgroundImage: 'url(' + require('../assets/imgs/banner.png') + ')'
 }
@@ -58,13 +56,9 @@ class IndexPage extends React.Component{
   };
   render(){
     let arr = []
-    for (var i =1; i<8; i++){
-      arr.push(i)
-    }
+    for (var i =1; i<8; i++){ arr.push(i) }
     let arr2 = []
-    for (var i =1; i<4; i++){
-      arr2.push(i)
-    }
+    for (var i =1; i<4; i++){ arr2.push(i) }
     let list = arr.map((i)=>{
       return(
         <TableRow key={i} >
@@ -105,7 +99,8 @@ class IndexPage extends React.Component{
     )
     return(
       <div>
-        <AppBar style={{backgroundColor:'rgba(9,12,36,0)'}} className="nav" position="absolute">
+        <LazyLoad height={200}>
+        <AppBar style={{backgroundColor:`rgba(9,12,36,0.3)`}} className="nav" position="fixed">
           <Toolbar className="nav">
             <Button disableRipple={true}  size="small"
                     disableFocusRipple={true}
@@ -119,6 +114,8 @@ class IndexPage extends React.Component{
             </IconButton>            
           </Toolbar>
         </AppBar>
+        </LazyLoad>
+        <LazyLoad height={200}>
         <Drawer anchor="right" open={this.state.right} onClose={this.toggleDrawer('right', false)}>
           <div
             tabIndex={0}
@@ -127,35 +124,39 @@ class IndexPage extends React.Component{
             onKeyDown={this.toggleDrawer('right', false)}
           >
             <List style={{width:'9rem',backgroundColor:'rgba(4,21,38,1)',height:'100vh'}}>
-              <Link to="#introductin" style={{borderWidth:0}}>
+              <Link to="#introductin" style={{textDecoration:'none'}}>
                 <ListItem button style={{color:'white'}}>{this.state.lang.menu[0]}</ListItem>
               </Link>
-              <Link to="#speakers">
+              <Link to="#speakers" style={{textDecoration:'none'}}>
                 <ListItem button style={{color:'white'}}>{this.state.lang.menu[1]}</ListItem>
               </Link>
-              <Link to="#sponsorship">
+              <Link to="#host" style={{textDecoration:'none'}}>
                 <ListItem button style={{color:'white'}}>{this.state.lang.menu[2]}</ListItem>
               </Link>
-              <Link to="#contact">
+              <Link to="#sponsorship" style={{textDecoration:'none'}}>
                 <ListItem button style={{color:'white'}}>{this.state.lang.menu[3]}</ListItem>
               </Link>
-              <a href="https://www.bagevent.com/event/1297890" >
+              <Link to="#contact" style={{textDecoration:'none'}}>
                 <ListItem button style={{color:'white'}}>{this.state.lang.menu[4]}</ListItem>
+              </Link>              
+              <a href={this.state.lang.ticket} style={{textDecoration:'none'}}>
+                <ListItem button style={{color:'white'}}>{this.state.lang.menu[5]}</ListItem>
               </a>
             </List>            
           </div>
-        </Drawer>
+        </Drawer></LazyLoad>
+        <LazyLoad height={200}>
         <section className="bnwrap banner" style={this.state.bg}>
-        </section>
-        <section className="bg1">
+        </section></LazyLoad>
+        <LazyLoad height={200}><section className="bg1" id="introductin">
           <TweenOne className="ctn" animation={{ x: -100, type: 'from',duration:480,opacity:0 }}>
             <h2>{this.state.lang.intro.title}</h2>
             <div className="bar"/>
             <p className="para indent">{this.state.lang.intro.para1}</p>
             <p className="para indent">{this.state.lang.intro.para2}</p>
           </TweenOne>          
-        </section>
-        <section id="introductin">
+        </section></LazyLoad>
+        <section >
           <LazyLoad height={100}>
             <TweenOne className="ctn" animation={{ x: -100, type: 'from',duration:1280,opacity:0 }}>
               <h2>{this.state.lang.lookback.title}</h2>
@@ -164,7 +165,7 @@ class IndexPage extends React.Component{
               <Banner />
             </TweenOne></LazyLoad>
         </section>
-        <section key="d" className="ctn bg1">
+        <section  className="ctn bg1">
           <LazyLoad height={200}>
             <TweenOne className="ctn" animation={{ x: -100, type: 'from',duration:1280,opacity:0 }}>          
               <h2>{this.state.lang.overview.title}</h2>
@@ -195,7 +196,7 @@ class IndexPage extends React.Component{
               </Card>
             </TweenOne></LazyLoad>
         </section>
-        <section key="h" className="ctn bg1" >
+        <section id="host" className="ctn bg1" >
           <LazyLoad height={100} offset={100}>
             <TweenOne className="ctn" animation={{ x: -100, type: 'from',duration:720,opacity:0 }}>
               <h2>{this.state.lang.host.title}</h2>

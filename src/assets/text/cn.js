@@ -1,6 +1,6 @@
 const intro = {
   title: "前言",
-  para1: "Graphene，石墨烯，是EOS创始人Daniel Larimer创建的一个区块链底层技术架构，Daniel基于此架构开发了Bitshares, Steem, EOS等具有深远影响的项目，基于此架构开发的著名区块链项目还有YOYOW，公信宝，DECENT等。",
+  para1: "Graphene，石墨烯，是EOS创始人Daniel Larimer创建的一个区块链底层技术架构，Daniel基于此架构开发了Bitshares, Steem, EOS等具有深远影响的项目，基于此架构开发的著名区块链项目还有Peerplays，Karma，Payger，Cybex，MUSE，Scorum，YOYOW，公信宝，DECENT等。",
   para2: "石墨烯技术的高性能和可扩展性让区块链技术转向商业应用成为可能，但相关技术人才紧缺成为制约行业发展的重要因素，本次会议旨在加强石墨烯社区的交流合作，建立石墨烯开发者社区，为石墨烯生态注入更强的力量。"
 }
 
@@ -66,11 +66,12 @@ export const footer = {
   email: "graphene.devcon@foxmail.com"
 }
 
-const menu = ["大会介绍", "演讲嘉宾", "合作伙伴", "赞助权益", "联系我们", "马上领票"]
+const menu = ["大会介绍", "演讲嘉宾", "主办方", "赞助权益", "联系我们", "马上领票"]
 
+const ticket = "https://www.bagevent.com/event/1274864"
 const cn = {
   intro, lookback, overview, star, vip, host, assist,
-  partner, sponsor, footer, menu
+  partner, sponsor, footer, menu, ticket
 }
 
 export default cn

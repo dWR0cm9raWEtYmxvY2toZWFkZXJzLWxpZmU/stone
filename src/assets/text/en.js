@@ -59,15 +59,17 @@ const partner = {
 
 export const footer = {
   title: "Contact us",
-  cp: "Medium/Cooperation;: Linda",
+  cp: "media/business cooperation: Linda",
   tel: "Tel: +86 15851461946",
   email: "graphene.devcon@foxmail.com"
 }
-export const menu = ["Introductin", "Speakers","Sponsorship","Contact","Claim-Tickets"]
+export const menu = ["Introduction", "Speakers","Organizer","Sponsorship","Contact","Claim-Tickets"]
+
+const ticket = "https://www.bagevent.com/event/1297890"
 
 const en = {
   intro, lookback, overview, star, vip, host,
-  assist, partner, sponsor,footer, menu
+  assist, partner, sponsor,footer, menu, ticket
 }
 
 export default en

@@ -34,7 +34,9 @@
 }
 
 body{
-    word-break:break-all!important
+    word-break:break-all!important;
+    overflow-y: hidden!important;
+    text-decoration:none!important;
 }
 
 p{
@@ -190,5 +192,6 @@ p{
 .nav{
     align-items: flex-end;
     display:flex;
+    backgroundColor:rgba(9,12,36,0);
     justify-content:center;
 }

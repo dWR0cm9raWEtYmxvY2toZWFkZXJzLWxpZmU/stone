@@ -1,7 +1,7 @@
 const list = {
   "v1": {
     "name": "Jerry Liu",
-    "position": "CEO of Gdex.io Committee Member of Bitshares",
+    "position": "Founder of GDEX.IO  Committee Member of BitShares",
     "intro": "Early evangelist of blockchain technology, co-founder of Bitsclub, co-founder of waterdrip capital. Famous investor in China."
   },
   "v2": {
@@ -16,7 +16,7 @@ const list = {
   },
   "v4": {
     "name": "Ronny Boesing",
-    "position": "CEO and Co-founder of OpenLedger ApS. Committee member of Bitshares",
+    "position": "CEO and Co-founder of OpenLedger ApS. Committee member of BitShares",
     "intro": "OpenLedger is a platform which supports an ecosystem , including the OpenLedger DEX and OpenLedger's Crowdfunding Services."
   },
   "v5": {
@@ -31,62 +31,63 @@ const list = {
   },
   "v7": {
     "name": "Ryan R. Fox",
-    "position": "Bitshares developer, witness",
+    "position": "Coordinator of BitShares Core Team",
     "intro": "Fox has actively contributed to BitShares development from its inception.  He has an extensive professional background in project management with software development teams as a professional scrum master with multi-national experience in financial services, mortgage banking and manufacturing."
   },
   "v8": {
+    "name": "Vadim Andryan",
+    "position": "CEO of Crypviser GmbH",
+    "intro":"Entrepreneur, Investor, Adviser, cyber-security & civil engineering expert.Having broad experience and knowledge in computer security and data encryption fields. Worked in government and military projects focusing on cyber-security and social(civil) engineering areas. ",
+  },  
+  "v9": {
     "name": "Christopher Hering",
     "position": "Founder and CEO of Payger",
     "intro": "Payger is a Graphene based easy, fast & free payment platform that supports all of the new digital currencies plus Loyalty Points and eReceipts."
   },
-  "v9": {
+  "v10": {
     "name": "Jonathan Bahai",
     "position": "Founder of Peerplays",
     "intro": "Peerplays is the World's first Decentralized Blockchain based eSports tournament and wagering platform.",
   },
-  "v10": {
+  "v11": {
     "name": "George Goognin",
     "position": "Founder of Karma",
     "intro": "Karma is a global decentralized blockchain-platform where people and companies can interchange directly to each other. George is a Ph.D in Economy Math Models; Vice chairman of the Russian Parliament Blockchain Experts Chamber; IT-career since 2002, first IT-startup made in 2008."
   },
-  "v11": {
+  "v12": {
     "name": "Alex Shkor",
     "position": "CTO of Scorum",
     "intro": "Alex has rich software development experience He used to be CTO and blockchain architecture in Paralect.Now he also is blockchain architecture advisor of PlayHall.Inc  and Hero.org."
   },
-  "v12": {
+  "v13": {
     "name": "Neo Ma",
     "position": "Founder of μMatrix",
     "intro": "Neo worked in F500 such as GE, Delta, etc. 15yr+ industrial MP experience and 20yr+ applied crypto experience. 2nd prize award in Smart Terminal Category of Wanxiang Smart City Global Blockchain Challenge. Rich experience in leading smart hardware solutions building for start-ups."
   },
-  "v13": {
+  "v14": {
     "name": "Luo Yi",
     "position": "Researcher of blockchain technology",
     "intro": "Team leader of StoneLdeger, which is member of Enterprise Ethereum Alliance."
   },
-  "v14": {
+  "v15": {
     "name": "Zengbo Zhang",
     "position": "CTO of Magicwallet",
     "intro": "Master of Engineering in BeiHang University 15+ years software development experience."
   },
-  "v15": {
+  "v16": {
     "name": "Xiangnian",
     "position": "CTO of YOYOW",
     "intro": "Responsible for architecture design. Familiar with graphene based the front end and IPFS system. Develop BitShares mobile wallet featured in trading independently."
   },
-  "v16": {
+  "v17": {
     "name": "Yanfeng Chen",
     "position": "core team member of Cybex, CEO of NBLTrust Technology",
     "intro": "He graduated from the Department of Electronic Engineering of Shanghai Jiaotong University, and once worked as a regional manager of the National Instruments and a founding shareholder of VI Service Network. NBLTrust is an crypto-asset custody service provider."
   },
-  "v17": {
-    "name": "Vadim Andryan",
-    "position": "CEO of Crypviser GmbH",
-    "intro":"Entrepreneur, Investor, Adviser, cyber-security & civil engineering expert.Having broad experience and knowledge in computer security and data encryption fields. Worked in government and military projects focusing on cyber-security and social(civil) engineering areas. ",
-  },
+
   "v18": {
     "name": "Haifeng Xi",
-    "position": "CTO of WanXiang Cloud",
+    "position": "Co-founder of Bianjie",
     "intro": "Haifeng is a senior technologist and entrepreneur. Since 2009, he had worked in the capacity of CTO for three companies, one of which is NASDAQ listed. He also co-founded two start-ups in Shanghai, where he plays an active role of technical leader and engineering champion."
   },
   "v19": {
@@ -96,8 +97,8 @@ const list = {
   },
   "v20": {
     "name": "Annemieke Dirkes",
-    "position":"CEO of Blockchain Projects BV",
-    "intro":"Global Voted spokesperson for the Bitshares Blockchain."
+    "position":"Official Public Face and sole Spokesperson of the BitShares Blockchain",
+    "intro":"Entrepreneur, been in IT related businesses since 1987, investor. Fluent in several languages. International business consultancy. Blockchain initiatives and projects. Represents the BitShares Blockchain Foundation as global voted Spokesperson towards regulators, market parties and legal council."
   }
 }
 

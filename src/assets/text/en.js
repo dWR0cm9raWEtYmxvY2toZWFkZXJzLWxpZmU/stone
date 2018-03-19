@@ -59,9 +59,14 @@ const partner = {
 
 export const footer = {
   title: "Contact us",
-  cp: "media/business cooperation: Linda",
-  tel: "Tel: +86 15851461946",
-  email: "graphene.devcon@foxmail.com"
+  cp: "media/business cooperation",
+  tel: "+86 15851461946",
+  emailbox:"E-mail",
+  email: "graphene.devcon@foxmail.com",
+  consult: "Conference Inquiry",
+  info: "graphene_assistant@foxmail.com",
+  weibo:"Weibo",
+  twitter: "twitter"
 }
 export const menu = ["Introduction", "Speakers","Organizer","Sponsorship","Contact","Claim-Tickets"]
 

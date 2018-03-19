@@ -61,9 +61,14 @@ const partner = {
 
 export const footer = {
   title: "联系我们",
-  cp: "媒体/商务合作: Linda",
-  tel: "电话: +86 15851461946",
-  email: "graphene.devcon@foxmail.com"
+  cp: "媒体/商务合作",
+  tel: "+86 15851461946",
+  emailbox: "邮箱",
+  email: "graphene.devcon@foxmail.com",
+  consult: "会务咨询",
+  info: "graphene_assistant@foxmail.com",
+  weibo: "微博",
+  twitter: "推特"
 }
 
 const menu = ["大会介绍", "演讲嘉宾", "主办方", "赞助权益", "联系我们", "马上领票"]

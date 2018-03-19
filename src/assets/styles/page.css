@@ -5,7 +5,7 @@
     .subpara{ max-width: 60vw }
     .nav{ height: 2rem}
     .banner{ height: 50vw; width: 100vw;}    
-} /*兼容平板*/
+}
 @media screen and (max-width: 960px){
     h2{ font-size: 1.5rem; }
     p{ font-size: 1rem }
@@ -13,7 +13,7 @@
     .subpara{ max-width: 60vw }
     .nav{ height: 1.8rem}
     .banner{ height: 50vw; width: 100vw;}    
-} /*兼容平板*/
+}
 @media screen and (max-width: 640px){
     h2{ font-size: 1rem ;}
     p{ font-size: 0.8rem; }
@@ -22,7 +22,7 @@
     .nav{ height: 1.8rem}
     .banner{ height: 50vw; width: 100vw;}
     .menuicon{width: 2rem}
-} /*兼容手机*/
+}
 @media screen and (max-width: 480px){
     h2{ font-size: 0.8rem }
     p{ font-size: 0.5rem; }
@@ -172,12 +172,6 @@ p{
     background-repeat: no-repeat;
     margin-bottom: 2rem;
 }
-.footer{
-    font-weight: 200!important;
-    padding: 2rem 2rem 4rem 2rem;
-    height: 10rem;
-    background-color: black;
-}
 
 .bar{
     margin-top: -0.5rem;
@@ -194,4 +188,69 @@ p{
     display:flex;
     backgroundColor:rgba(9,12,36,0);
     justify-content:center;
+}
+
+.footer{
+    font-weight: 200!important;
+    padding: 2rem 2rem 4rem 2rem;
+    background-color: black;
+}
+
+.ftgrid > p {
+    font-size:0.65rem;
+    line-height:1rem;
+}
+
+.sr{
+    margin-top:2rem;
+    display:flex;
+    flex:1;
+    flex-direction: row;
+}
+
+.fticon{
+    height:1rem;
+    width:1rem;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-right:0.5rem;
+}
+
+.ftcp{
+    background-image: url('../../assets/imgs/hand.png');
+}
+
+.ftchat{
+    background-image: url('../../assets/imgs/chat.png');
+}
+
+.twitter{
+    background-image: url('../../assets/imgs/twitter.png');
+}
+
+.weibo{
+    background-image: url('../../assets/imgs/weibo.png');
+}
+
+.qr{
+    height:6rem;
+    width:6rem;
+    margin-top:1rem;
+    background-image: url('../../assets/imgs/hand.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-right:0.5rem;
+}
+
+.qrt{
+
+    background-image: url('../../assets/imgs/qrt.png');
+}
+
+.qrw{
+    width:5.7rem;
+    height:5.7rem;    
+    background-image: url('../../assets/imgs/qrw.png');    
 }

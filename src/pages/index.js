@@ -100,20 +100,20 @@ class IndexPage extends React.Component{
     return(
       <div>
         <LazyLoad height={0}>
-        <AppBar style={{backgroundColor:`rgba(9,12,36,0.3)`}} className="nav" position="fixed">
-          <Toolbar className="nav">
-            <Button disableRipple={true}  size="small"
-                    disableFocusRipple={true}
-                    onClick={trans} className="trans"
-                    style={{color:'white',display:'flex'}}              
-            >
-              {this.state.toLang}
-            </Button>
-            <IconButton onClick={this.toggleDrawer('right', true)}>
-              <MenuIcon style={{color:'white'}} />
-            </IconButton>            
-          </Toolbar>
-        </AppBar>
+          <AppBar style={{backgroundColor:`rgba(9,12,36,0.3)`}} className="nav" position="fixed">
+            <Toolbar className="nav">
+              <Button disableRipple={true}  size="small"
+                      disableFocusRipple={true}
+                      onClick={trans} className="trans"
+                      style={{color:'white',display:'flex'}}              
+              >
+                {this.state.toLang}
+              </Button>
+              <IconButton onClick={this.toggleDrawer('right', true)}>
+                <MenuIcon style={{color:'white'}} />
+              </IconButton>            
+            </Toolbar>
+          </AppBar>
         </LazyLoad>
         <LazyLoad><Drawer anchor="right" open={this.state.right} onClose={this.toggleDrawer('right', false)}>
           <div
@@ -181,10 +181,10 @@ class IndexPage extends React.Component{
         </section>
         <section key="g" className="ctn bg1" id="speakers">
           <LazyLoad height={1}>
-          <TweenOne className="ctn" animation={{ x: -100, type: 'from',duration:720,opacity:0 }}>
-          <h2>{this.state.lang.vip.title}</h2>
-          <div className="bar"/>            
-          <Fotos list={this.state.list} style={{maxWidth:`80vw`}} />
+            <TweenOne className="ctn" animation={{ x: -100, type: 'from',duration:720,opacity:0 }}>
+              <h2>{this.state.lang.vip.title}</h2>
+              <div className="bar"/>            
+              <Fotos list={this.state.list} style={{maxWidth:`80vw`}} />
             </TweenOne></LazyLoad>
         </section>
         <section key="i" className="ctn" id="sponsorship">
@@ -246,14 +246,50 @@ class IndexPage extends React.Component{
               </Grid>
             </TweenOne></LazyLoad>
         </section>
-        <section key="l" className="footer ctn" style={{color:'white'}} >
+        <section key="l" className="footer ctn" style={{color:'white', height:'auto'}} >
           <h5>{this.state.lang.footer.title}</h5>
           <div className="bar" style={{marginBottom:'1rem'}}></div>
-          <p>{this.state.lang.footer.cp}</p>
-          <p>{this.state.lang.footer.tel}</p>
-          <p id="contact">{this.state.lang.footer.email}</p>
+          <Grid container >
+            <Grid item sm={6} md={4} className="ftgrid">
+              <div className=" sr">
+                <div className="fticon ftcp"/>
+                <div className="ftgrid">
+                  <p>{this.state.lang.footer.cp}</p>
+                  <p style={{fontSize:'1rem',marginTop:'0.7rem',marginBottom:'0.5rem'}}>Linda</p>
+                  <p>{this.state.lang.footer.tel}</p>
+                  <p>{this.state.lang.footer.email}</p>                                                
+                </div>
+              </div>
+            </Grid>
+            <Grid item sm={6} md={4} className="ftgrid">
+              <div className="sr">
+                <div className="fticon ftchat"/>                     
+                <div className="ftgrid">
+                  <p>{this.state.lang.footer.consult}</p>
+                  <p>{this.state.lang.footer.info}</p>
+                </div>
+              </div>
+            </Grid>
+            <Grid item sm={6} md={2} className="ftgrid">
+              <div className="sr">
+                <div className="fticon weibo"/>                     
+                <div className="ftgrid">
+                  <p>{this.state.lang.footer.weibo}</p>
+                  <div className="qr qrw" />                  
+                </div>
+              </div>
+            </Grid>
+            <Grid item sm={6} md={2} className="ftgrid">
+              <div className="sr">
+                <div className="fticon twitter"/>                     
+                <div className="ftgrid">
+                  <p>{this.state.lang.footer.twitter}</p>
+                  <div className="qr qrt" />
+                </div>
+              </div>
+            </Grid>            
+          </Grid>
         </section>
-
       </div>
     )
   }

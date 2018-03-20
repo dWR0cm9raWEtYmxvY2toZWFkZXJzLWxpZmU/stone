@@ -44,7 +44,7 @@ const cnlist = {
     "name": "Annemieke Dirkes",
     "position":"比特股区块链全球发言人",
     "intro":"企业家，投资人，从1987年开始进入IT行业。熟悉多国语言，给跨国公司做过咨询。现作为社区选举的比特股区块链基金会的发言人，致力于处理监管，市场以及法务相关的事务。"
-  },
+  }  
   "v10": {
     "name": "Christopher Hering",
     "position": "Payger创始人",

@@ -66,7 +66,7 @@ const list = {
   },
   "v14": {
     "name": "Neo Ma",
-    "position": "Founder of μMatrix",
+    "position": "Project leader of μMatrix, Shanlin blockchain",
     "intro": "Neo worked in F500 such as GE, Delta, etc. 15yr+ industrial MP experience and 20yr+ applied crypto experience. 2nd prize award in Smart Terminal Category of Wanxiang Smart City Global Blockchain Challenge. Rich experience in leading smart hardware solutions building for start-ups."
   },
   "v15": {

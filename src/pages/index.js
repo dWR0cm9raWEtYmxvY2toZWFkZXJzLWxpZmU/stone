@@ -241,8 +241,7 @@ class IndexPage extends React.Component{
               <Grid container justify="space-around" alignItems="center" className="para" >
                 <Grid item ><div className="cctn bs"/></Grid>
                 <Grid item ><div className="cctn bbt" /></Grid>
-                <Grid item ><div className="cctn ff" /></Grid>
-                <Grid item ><div className="cctn bf" /></Grid>
+                <Grid item ><div className="cctn bf" /></Grid>                
               </Grid>
             </TweenOne></LazyLoad>
         </section>

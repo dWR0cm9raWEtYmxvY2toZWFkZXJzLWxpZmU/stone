@@ -24,6 +24,8 @@ import IconButton from 'material-ui/IconButton';
 import MenuIcon from 'material-ui-icons/Menu';
 import Divider from 'material-ui/Divider'
 import createHistory from "history/createBrowserHistory"
+import Modal from '../components/Modal'
+
 
 const cnbg = {
   backgroundImage: 'url(' + require('../assets/imgs/banner.png') + ')'
@@ -99,6 +101,7 @@ class IndexPage extends React.Component{
     )
     return(
       <div>
+        <Modal/>
         <LazyLoad height={0}>
           <AppBar style={{backgroundColor:`rgba(9,12,36,0.3)`}} className="nav" position="fixed">
             <Toolbar className="nav">
@@ -115,7 +118,7 @@ class IndexPage extends React.Component{
             </Toolbar>
           </AppBar>
         </LazyLoad>
-        <LazyLoad><Drawer anchor="right" open={this.state.right} onClose={this.toggleDrawer('right', false)}>
+        <LazyLoad height={0}><Drawer anchor="right" open={this.state.right} onClose={this.toggleDrawer('right', false)}>
           <div
             tabIndex={0}
             role="button"
@@ -150,8 +153,8 @@ class IndexPage extends React.Component{
           <TweenOne className="ctn" animation={{ x: -100, type: 'from',duration:720,opacity:0 }}>
             <h2>{this.state.lang.intro.title}</h2>
             <div className="bar"/>
-            <p className="para indent">{this.state.lang.intro.para1}</p>
-            <p className="para indent">{this.state.lang.intro.para2}</p>
+            <p className="para indent ">{this.state.lang.intro.para1}</p>
+            <p className="para indent ">{this.state.lang.intro.para2}</p>
           </TweenOne>          
         </section></LazyLoad>
         <section >
@@ -160,7 +163,7 @@ class IndexPage extends React.Component{
               <h2>{this.state.lang.lookback.title}</h2>
               <div className="bar"/>
               <p className="para indent">{this.state.lang.lookback.para}</p>
-              <Banner />
+              <Banner className="picintro" />
             </TweenOne></LazyLoad>
         </section>
         <section  className="ctn bg1">
@@ -181,45 +184,44 @@ class IndexPage extends React.Component{
         </section>
         <section key="g" className="ctn bg1" id="speakers">
           <LazyLoad height={1}>
-            <TweenOne className="ctn" animation={{ x: -100, type: 'from',duration:720,opacity:0 }}>
+            <TweenOne className="ctn" animation={{ x: -100, type: 'from', duration:720, opacity:0 }}>
               <h2>{this.state.lang.vip.title}</h2>
               <div className="bar"/>            
-              <Fotos list={this.state.list} style={{maxWidth:`80vw`}} />
+              <Fotos list={this.state.list} style={{maxWidth:'960px'}} />
             </TweenOne></LazyLoad>
         </section>
-        <section key="i" className="ctn" id="sponsorship">
+        <section key="i" id="sponsorship">
           <LazyLoad height={200}>
-            <TweenOne className="ctn" animation={{ x: -100, type: 'from',duration:720,opacity:0 }}>
+            <TweenOne className="ctn" animation={{ x: -100, type: 'from', duration:720, opacity:0 }}>
               <h2>{this.state.lang.sponsor.title}</h2>
-              <div className="bar"/>
-              <Card>
+              <div className="bar "/>
+              <Card >
                 <div className="ttable" style={this.state.ttable}/>
               </Card>
             </TweenOne></LazyLoad>
         </section>
         <section id="host" className="ctn bg1" >
           <LazyLoad height={100} offset={100}>
-            <TweenOne className="ctn" animation={{ x: -100, type: 'from',duration:720,opacity:0 }}>
+            <TweenOne className="ctn" animation={{ x: -100, type: 'from', duration:720, opacity:0 }}>
               <h2>{this.state.lang.host.title}</h2>
               <div className="bar"/>
               <Grid container alignItems="center" className="m1 gridm" justify="center">
                 <Grid item xs={12} md={12} className="cctn">
                   <div className="blockgeek"/>
                 </Grid>
-                <Grid item xs={12} md={12} style={{maxWidth: `80vw`}} >
-                  <p className="para indent">{this.state.lang.host.blockGeek}</p>
+                <Grid item xs={12} md={12} style={{maxWidth: '960px'}} >
+                  <p className="indent">{this.state.lang.host.blockGeek}</p>
                 </Grid>
               </Grid>
               <Grid container alignItems="center" className="gridm" justify="center">
                 <Grid item xs={12} md={12} className="cctn"><div className="gdex" /></Grid>
-                <Grid item xs={12} md={12} style={{maxWidth: `80vw`}}>
+                <Grid item xs={12} md={12} style={{maxWidth: '960px'}} >
                   <Grid item xs={3} />                
-                  <p className="para indent">{this.state.lang.host.gdex}</p></Grid>
+                  <p className="indent">{this.state.lang.host.gdex}</p></Grid>
               </Grid>
             </TweenOne>
           </LazyLoad>
         </section>
-        <section key="j" className="ctn">
           <LazyLoad height={100} >
             <TweenOne className="ctn" animation={{ x: -100, type: 'from',duration:720,opacity:0 }}>
               <h2>{this.state.lang.assist.title}</h2>
@@ -228,12 +230,10 @@ class IndexPage extends React.Component{
                 <Grid item xs={12} md={12} className="cctn">
                   <div className="bcc" style={{marginTop:`3rem`}}/>
                 </Grid>
-                <Grid item xs={12} md={12} style={{maxWidth: `80vw`}}>
-                  <p className="para indent">{this.state.lang.assist.para}</p></Grid>
+                <Grid item xs={12} md={12} style={{maxWidth: `960px`}}>
+                  <p className="indent">{this.state.lang.assist.para}</p></Grid>
               </Grid>
             </TweenOne></LazyLoad>
-        </section>
-        <section key="k" className="ctn">
           <LazyLoad height={100}>
             <TweenOne className="ctn" animation={{ x: -100, type: 'from',duration:720,opacity:0 }}>
               <h2>{this.state.lang.partner.title}</h2>
@@ -244,13 +244,12 @@ class IndexPage extends React.Component{
                 <Grid item ><div className="cctn bf" /></Grid>                
               </Grid>
             </TweenOne></LazyLoad>
-        </section>
-        <section key="l" className="footer ctn" style={{color:'white', height:'auto'}} >
+          <section key="l" className="footer ctn" style={{color:'white', height:'auto'}} >
           <h5>{this.state.lang.footer.title}</h5>
           <div className="bar" style={{marginBottom:'1rem'}}></div>
-          <Grid container >
+          <Grid container  style={{maxWidth:'960px'}}>
             <Grid item sm={6} md={4} className="ftgrid">
-              <div className=" sr">
+              <div className=" sr" >
                 <div className="fticon ftcp"/>
                 <div className="ftgrid">
                   <p>{this.state.lang.footer.cp}</p>

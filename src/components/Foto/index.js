@@ -20,9 +20,9 @@ const Cards = ({list}) => {
   })
   
   return(
-    <Grid container justify="center" alignItems="center" style={{padding:"0 3vw"}}>
-    {fotoList}
-  </Grid>
+    <Grid container justify="center" alignItems="center" style={{maxWidth:'960px',padding:"0 3vw"}}>
+      {fotoList}
+    </Grid>
   )
 }
 

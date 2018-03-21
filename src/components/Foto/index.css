@@ -1,24 +1,24 @@
 @media screen and (min-width: 960px) {
-    #cardd{width: 13rem;height:17rem; line-height:1.2rem}
-    .avatar{ height: 13rem; width: 13rem; }
+    #cardd{width: 11rem;height:16rem; line-height:1.2rem}
+    .avatar{ height: 11rem; width: 11rem; }
     .name{ font-size: 0.8rem;}
     .info{ font-size: 0.7rem;}
 }
 
 @media screen and (max-width: 960px) {
-    #cardd{width: 10rem; height:14rem; line-height:1.2rem;}    
+    #cardd{width: 10rem; height:16rem; line-height:1.2rem;}    
     .avatar{ height: 10rem; width: 10rem; }
     .name{ font-size: 0.8rem;line-height:0.7rem}
     .info{ font-size: 0.7rem; line-height: 0.7rem}    
 }
 @media screen and (max-width: 640px) {
-    #cardd{width: 8rem; height:11rem;line-height:0.8rem;}
+    #cardd{width: 8rem; height:12rem;line-height:0.8rem;}
     .avatar{ height: 8rem; width: 8rem; }
     .name{ font-size: 0.6rem;}
     .info{ font-size: 0.5rem; line-height:0.5rem}    
 }
 @media screen and (max-width: 480px) {
-    #cardd{width: 8rem; line-height:0.8rem; height:11rem;}    
+    #cardd{width: 8rem; line-height:0.8rem; height:12rem;}    
     .avatar{ height: 8rem; width: 8rem; }
     .name{ font-size: 0.6rem;}
     .info{ font-size: 0.6rem; line-height:0.5rem}    

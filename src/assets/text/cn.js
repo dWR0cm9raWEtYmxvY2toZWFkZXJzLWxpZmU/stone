@@ -71,7 +71,7 @@ export const footer = {
   twitter: "推特"
 }
 
-const menu = ["大会介绍", "演讲嘉宾", "主办方", "赞助权益", "联系我们", "马上领票"]
+const menu = ["大会介绍", "演讲嘉宾", "主办方", "赞助权益", "联系我们", "购票入口"]
 
 const ticket = "https://www.bagevent.com/event/1274864"
 const cn = {

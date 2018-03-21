@@ -20,8 +20,8 @@ class DemoAutoPlay extends Component {
   render() {
     const { index } = this.state;
     return (
-      <SupportTouch>
-        <div className="root">
+      <SupportTouch >
+        <div className="root" style={{maxWidth:'960px',maxHeight:'480px'}}>
           <AutoPlaySwipeableViews
             index={index}
             onChangeIndex={this.handleChangeIndex}

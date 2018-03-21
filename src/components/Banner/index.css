@@ -6,7 +6,9 @@
 }
 .foto{
     height:40vw;
-    width: 80vw;    
+    width: 80vw;
+    max-height: 480px;
+    max-width: 960px;
     background-size: cover;
     background-position: center;
 }

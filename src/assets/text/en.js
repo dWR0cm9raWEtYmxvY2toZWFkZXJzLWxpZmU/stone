@@ -68,7 +68,7 @@ export const footer = {
   weibo:"Weibo",
   twitter: "twitter"
 }
-export const menu = ["Introduction", "Speakers","Organizer","Sponsorship","Contact","Claim-Tickets"]
+export const menu = ["Introduction", "Speakers","Organizer","Sponsorship","Contact","Tickets"]
 
 const ticket = "https://www.bagevent.com/event/1297890"
 

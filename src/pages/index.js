@@ -298,7 +298,7 @@ class IndexPage extends React.Component {
         <section className="ctn bg1">
           <LazyLoad height={200}>
             <TweenOne
-              className="ctn"
+              style={{ alignItems: 'center',justifyContent: 'center',display:'flex',flexDirection:'column'}}              
               animation={{ x: -100, type: 'from', duration: 720, opacity: 0 }}
             >
               <h2>{this.state.lang.overview.title}</h2>
@@ -312,7 +312,7 @@ class IndexPage extends React.Component {
         <section key="e" className="ctn">
           <LazyLoad height={200}>
             <TweenOne
-              className="ctn"
+              style={{ alignItems: 'center',justifyContent: 'center',display:'flex',flexDirection:'column'}}
               animation={{ x: -100, type: 'from', duration: 720, opacity: 0 }}
             >
               <h2>{this.state.lang.star.title}</h2>
@@ -324,12 +324,12 @@ class IndexPage extends React.Component {
                   <p className="info">{this.state.lang.star.p1}</p>
                 </Grid>
                 <Grid item xs={4} className="starctn">
-                  <div className="roundicon closedoor"/>
+                  <div className="roundicon roundtable "/>
                   <p style={{margin:'1rem 0'}}>{this.state.lang.star.head2}</p>
                   <p className="info">{this.state.lang.star.p2}</p>
                 </Grid>
                 <Grid item xs={4} className="starctn">
-                  <div className="roundicon closedoor"/>
+                  <div className="roundicon eos"/>
                   <p style={{margin:'1rem 0'}}>{this.state.lang.star.head3}</p>
                   <p className="info">{this.state.lang.star.p3}</p>
                 </Grid>                
@@ -337,22 +337,24 @@ class IndexPage extends React.Component {
             </TweenOne>
           </LazyLoad>
         </section>
+        
         <section key="g" className="ctn bg1" id="speakers">
           <LazyLoad height={1}>
-            <TweenOne
-              className="ctn"
+            <TweenOne 
               animation={{ x: -100, type: 'from', duration: 720, opacity: 0 }}
+              style={{ alignItems: 'center',justifyContent: 'center',display:'flex',flexDirection:'column'}}
             >
               <h2>{this.state.lang.vip.title}</h2>
               <div className="bar" />
-              <Fotos list={this.state.list} style={{ maxWidth: '960px' }} />
+              <Fotos list={this.state.list} style={{ width:'100vw', maxWidth: '960px' }} />
             </TweenOne>
           </LazyLoad>
         </section>
+        
         <section id="host" className="ctn">
           <LazyLoad height={100} offset={100}>
             <TweenOne
-              className="ctn"
+              style={{ alignItems: 'center',justifyContent: 'center',display:'flex',flexDirection:'column'}}
               animation={{ x: -100, type: 'from', duration: 720, opacity: 0 }}
             >
               <h2>{this.state.lang.host.title}</h2>

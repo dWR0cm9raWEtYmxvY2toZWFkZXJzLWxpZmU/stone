@@ -107,7 +107,7 @@ class IndexPage extends React.Component{
             <Toolbar className="nav">
               <div className="rowlist">
               <Link to="#introductin" style={{textDecoration:'none'}}>
-                <Button size="small" className="trans"
+                <Button size="small" className="trans" 
                         style={{color:'white'}}>
                   {this.state.lang.menu[0]}
                 </Button>                                  
@@ -138,7 +138,7 @@ class IndexPage extends React.Component{
               </Link>              
               <a href={this.state.lang.ticket} style={{textDecoration:'none'}}>
                 <Button size="small" className="trans"
-                        style={{color:'white'}}>
+                        style={{color:'white',borderRadius:'33rem' ,backgroundColor:'rgba(213,168,69,1)'}}>
                   {this.state.lang.menu[5]}
                 </Button>
               </a>

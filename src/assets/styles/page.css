@@ -9,6 +9,7 @@
     .menubtn{ display: none }
     .rowlist{ display: flex }            
 }
+
 @media screen and (max-width: 960px){
     h2{ font-size: 1.5rem; }
     p{ font-size: 1rem }
@@ -20,6 +21,7 @@
     .menubtn{ display: none }
     .rowlist{ display: flex }        
 }
+
 @media screen and (max-width: 640px){
     h2{ font-size: 1rem ;}
     p{ font-size: 0.8rem; }
@@ -31,8 +33,8 @@
     .menubtn{ display: inline-block }
     .rowlist{ display: none }    
 }
-@media screen and (max-width: 480px){
 
+@media screen and (max-width: 480px){
     h2{ font-size: 0.8rem }
     p{ font-size: 0.5rem; }
     .para{ max-width: 80vw }
@@ -209,6 +211,7 @@ p{
 }
 
 .nav{
+    height: 3rem;
     align-items: flex-end;
     display:flex;
     backgroundColor:rgba(9,12,36,0);

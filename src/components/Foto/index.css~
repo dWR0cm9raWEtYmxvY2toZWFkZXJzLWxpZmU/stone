@@ -8,20 +8,20 @@
 @media screen and (max-width: 960px) {
     #cardd{width: 8rem; height:12rem; line-height:1.2rem;}    
     .avatar{ height: 8rem; width: 8rem; }
-    .name{ font-size: 0.8rem;line-height:0.7rem}
-    .info{ font-size: 0.7rem; line-height: 0.7rem}    
+    .name{ font-size: 0.8rem;line-height:1rem}
+    .info{ font-size: 0.7rem; line-height: 1rem}    
 }
 @media screen and (max-width: 640px) {
     #cardd{width: 6rem; height:8rem;line-height:0.8rem;}
     .avatar{ height: 6rem; width: 6rem; }
     .name{ font-size: 0.6rem;}
-    .info{ font-size: 0.5rem; line-height:0.5rem}    
+    .info{ font-size: 0.5rem; line-height:0.8rem}    
 }
 @media screen and (max-width: 480px) {
     #cardd{width: 6rem; line-height:0.8rem; height:10rem;}
     .avatar{ height: 6rem; width: 6rem; }
     .name{ font-size: 0.5rem;}
-    .info{ font-size: 0.5rem; line-height:0.5rem}    
+    .info{ font-size: 0.5rem; line-height:0.7rem}    
 }
 
 body{

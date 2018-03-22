@@ -129,7 +129,7 @@ class IndexPage extends React.Component {
     )
     return (
       <div>
-        <Modal />
+        <LazyLoad height={0}><Modal /></LazyLoad>
         <LazyLoad height={0}>
           <AppBar
             style={{ backgroundColor: `rgba(9,12,36,0.3)` }}

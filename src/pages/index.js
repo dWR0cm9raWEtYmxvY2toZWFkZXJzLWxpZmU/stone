@@ -50,7 +50,6 @@ class IndexPage extends React.Component{
     bg: { backgroundImage: 'url(' + require('../assets/imgs/banner-en.jpg') + ')'},
     list: enlist,
     right: false,
-    windowWidth: document.body.clientWidth
   }
   toggleDrawer = (side, open) => () => {
     this.setState({

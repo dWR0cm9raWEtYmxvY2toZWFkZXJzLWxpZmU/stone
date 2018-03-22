@@ -165,7 +165,7 @@ class IndexPage extends React.Component{
             onClick={this.toggleDrawer('right', false)}
             onKeyDown={this.toggleDrawer('right', false)}
           >
-            <List style={{width:'9rem',backgroundColor:'rgba(4,21,38,1)',height:'100vh'}}>
+            <List className="drawerlist">
               <Link to="#introductin" style={{textDecoration:'none'}}>
                 <ListItem button style={{color:'white'}}>{this.state.lang.menu[0]}</ListItem>
               </Link>

@@ -49,6 +49,14 @@
     justify-content: center;
 }
 
+.drawerlist{
+    width: 9rem;
+    background: transparent;
+    background-color:rgba(4,21,38,1);
+    filter:Alpha(opacity=50);
+    height:100vh;
+}
+
 .picintro{ max-width: 80vw }    
 
 body{

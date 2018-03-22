@@ -1,4 +1,6 @@
-
+rm -r ./graphene
+gatsby build --prefix-paths
+mv public graphene
 rm -rf ../BlockGeek.io/blockgeek/web/graphene
 cp -r ./graphene ../BlockGeek.io/blockgeek/web/
 

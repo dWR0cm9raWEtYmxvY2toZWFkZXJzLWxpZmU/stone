@@ -1,5 +1,5 @@
-import React from 'react';
-import SwipeableViews from 'react-swipeable-views';
+import React from 'react'
+import SwipeableViews from 'react-swipeable-views'
 
 const styles = {
   slide: {
@@ -16,16 +16,22 @@ const styles = {
   slide3: {
     backgroundColor: '#6AC0FF',
   },
-};
+}
 
 function DemoSimple() {
   return (
     <SwipeableViews enableMouseEvents>
-      <div style={Object.assign({}, styles.slide, styles.slide1)}>slide n°1</div>
-      <div style={Object.assign({}, styles.slide, styles.slide2)}>slide n°2</div>
-      <div style={Object.assign({}, styles.slide, styles.slide3)}>slide n°3</div>
+      <div style={Object.assign({}, styles.slide, styles.slide1)}>
+        slide n°1
+      </div>
+      <div style={Object.assign({}, styles.slide, styles.slide2)}>
+        slide n°2
+      </div>
+      <div style={Object.assign({}, styles.slide, styles.slide3)}>
+        slide n°3
+      </div>
     </SwipeableViews>
-  );
+  )
 }
 
-export default DemoSimple;
+export default DemoSimple

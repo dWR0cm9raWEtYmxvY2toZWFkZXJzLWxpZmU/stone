@@ -10,287 +10,460 @@ import Banner from '../components/Banner'
 import Grid from 'material-ui/Grid'
 import Fotos from '../components/Foto'
 import LazyLoad from 'react-lazyload'
-import Table, { TableBody, TableCell, TableHead, TableRow } from 'material-ui/Table';
+import Table, {
+  TableBody,
+  TableCell,
+  TableHead,
+  TableRow,
+} from 'material-ui/Table'
 import Card from 'material-ui/Card'
-import Toolbar from 'material-ui/Toolbar';
+import Toolbar from 'material-ui/Toolbar'
 import Button from 'material-ui/Button'
 import TweenOne from 'rc-tween-one'
-import AppBar from 'material-ui/AppBar';
+import AppBar from 'material-ui/AppBar'
 import enlist from '../components/foto/enlist.js'
 import cnlist from '../components/foto/cnlist.js'
-import Drawer from 'material-ui/Drawer';
-import List,{ListItem, ListItemText} from 'material-ui/List'
-import IconButton from 'material-ui/IconButton';
-import MenuIcon from 'material-ui-icons/Menu';
+import Drawer from 'material-ui/Drawer'
+import List, { ListItem, ListItemText } from 'material-ui/List'
+import IconButton from 'material-ui/IconButton'
+import MenuIcon from 'material-ui-icons/Menu'
 import Divider from 'material-ui/Divider'
-import createHistory from "history/createBrowserHistory"
+import createHistory from 'history/createBrowserHistory'
 import Modal from '../components/Modal'
 
-
 const cnbg = {
-  backgroundImage: 'url(' + require('../assets/imgs/banner.png') + ')'
+  backgroundImage: 'url(' + require('../assets/imgs/banner.png') + ')',
 }
-const enbg= {
-  backgroundImage: 'url(' + require('../assets/imgs/banner-en.jpg') + ')'
+const enbg = {
+  backgroundImage: 'url(' + require('../assets/imgs/banner-en.jpg') + ')',
 }
 const ent = {
-  backgroundImage: 'url(' + require('../assets/imgs/table.jpg') + ')'
+  backgroundImage: 'url(' + require('../assets/imgs/table.jpg') + ')',
 }
 const cnt = {
-  backgroundImage: 'url(' + require('../assets/imgs/aaa.jpg') + ')'  
+  backgroundImage: 'url(' + require('../assets/imgs/aaa.jpg') + ')',
 }
 
-
-
-class IndexPage extends React.Component{
+class IndexPage extends React.Component {
   state = {
     lang: en,
-    toLang: "中文",
-    ttable: {  backgroundImage: 'url(' + require('../assets/imgs/table.jpg') + ')'},
-    bg: { backgroundImage: 'url(' + require('../assets/imgs/banner-en.jpg') + ')'},
+    toLang: '中文',
+    ttable: {
+      backgroundImage: 'url(' + require('../assets/imgs/table.jpg') + ')',
+    },
+    bg: {
+      backgroundImage: 'url(' + require('../assets/imgs/banner-en.jpg') + ')',
+    },
     list: enlist,
     right: false,
   }
   toggleDrawer = (side, open) => () => {
     this.setState({
       [side]: open,
-    });
-  };
-  render(){
+    })
+  }
+  render() {
     let arr = []
-    for (var i =1; i<8; i++){ arr.push(i) }
+    for (var i = 1; i < 8; i++) {
+      arr.push(i)
+    }
     let arr2 = []
-    for (var i =1; i<4; i++){ arr2.push(i) }
-    let list = arr.map((i)=>{
-      return(
-        <TableRow key={i} >
-          <TableCell style={{minWidth: '15vw',paddingRight:'0rem',}}>
-            <p>{this.state.lang.overview[`head`+i]}</p></TableCell>
-          <TableCell><p>{this.state.lang.overview[`p`+i]}</p></TableCell>
+    for (var i = 1; i < 4; i++) {
+      arr2.push(i)
+    }
+    let list = arr.map(i => {
+      return (
+        <TableRow key={i}>
+          <TableCell style={{ minWidth: '15vw', paddingRight: '0rem' }}>
+            <p>{this.state.lang.overview[`head` + i]}</p>
+          </TableCell>
+          <TableCell>
+            <p>{this.state.lang.overview[`p` + i]}</p>
+          </TableCell>
         </TableRow>
       )
     })
-    let list2 = arr2.map((i)=>{
-      return(
-        <TableRow key={i} >
-          <TableCell style={{ marginTop: `2rem`,
-                              minWidth: '25vw',paddingRight:'0rem'}}>
-            <p>{this.state.lang.star[`head`+i]}</p></TableCell>
-          <TableCell><p>{this.state.lang.star[`p`+i]}</p></TableCell>
+    let list2 = arr2.map(i => {
+      return (
+        <TableRow key={i}>
+          <TableCell
+            style={{
+              marginTop: `2rem`,
+              minWidth: '25vw',
+              paddingRight: '0rem',
+            }}
+          >
+            <p>{this.state.lang.star[`head` + i]}</p>
+          </TableCell>
+          <TableCell>
+            <p>{this.state.lang.star[`p` + i]}</p>
+          </TableCell>
         </TableRow>
       )
     })
-    const trans = () =>{
-      if(this.state.lang === en){
+    const trans = () => {
+      if (this.state.lang === en) {
         this.setState({
-          lang:cn,toLang:"English",ttable:cnt, bg:cnbg, list:cnlist
+          lang: cn,
+          toLang: 'English',
+          ttable: cnt,
+          bg: cnbg,
+          list: cnlist,
         })
-      }else{
+      } else {
         this.setState({
-          lang:en,toLang:"中文", ttable:ent, bg:enbg, list:enlist
+          lang: en,
+          toLang: '中文',
+          ttable: ent,
+          bg: enbg,
+          list: enlist,
         })
       }
-
     }
     const sideList = () => (
       <List>
         <ListItem button>
-          <p style={{color:'white'}}>hello</p>
+          <p style={{ color: 'white' }}>hello</p>
         </ListItem>
       </List>
     )
-    return(
+    return (
       <div>
         <Modal />
         <LazyLoad height={0}>
-          <AppBar style={{backgroundColor:`rgba(9,12,36,0.3)`}} className="nav" position="fixed">
+          <AppBar
+            style={{ backgroundColor: `rgba(9,12,36,0.3)` }}
+            className="nav"
+            position="fixed"
+          >
             <Toolbar className="nav">
               <div className="rowlist">
-              <Link to="#introductin" style={{textDecoration:'none'}}>
-                <Button size="small" className="trans" 
-                        style={{color:'white'}}>
-                  {this.state.lang.menu[0]}
-                </Button>                                  
-              </Link>
-              <Link to="#speakers" style={{textDecoration:'none'}}>
-                <Button size="small" className="trans"
-                        style={{color:'white'}}>
-                  {this.state.lang.menu[1]}
-                </Button>                                  
-              </Link>
-              <Link to="#host" style={{textDecoration:'none'}}>
-                <Button size="small" className="trans"
-                        style={{color:'white'}}>
-                  {this.state.lang.menu[2]}
-                </Button>                                  
-              </Link>
-              <Link to="#sponsorship" style={{textDecoration:'none'}}>
-                <Button size="small" className="trans"
-                        style={{color:'white'}}>
-                  {this.state.lang.menu[3]}
-                </Button>                                
-              </Link>
-              <Link to="#contact" style={{textDecoration:'none'}}>
-                <Button size="small" className="trans"
-                        style={{color:'white'}}>
-                  {this.state.lang.menu[4]}
-                </Button>                
-              </Link>              
-              <a href={this.state.lang.ticket} style={{textDecoration:'none'}}>
-                <Button size="small" className="trans"
-                        style={{color:'white',borderRadius:'33rem' ,backgroundColor:'rgba(213,168,69,1)'}}>
-                  {this.state.lang.menu[5]}
-                </Button>
-              </a>
+                <Link to="#introductin" style={{ textDecoration: 'none' }}>
+                  <Button
+                    size="small"
+                    className="trans"
+                    style={{ color: 'white' }}
+                  >
+                    {this.state.lang.menu[0]}
+                  </Button>
+                </Link>
+                <Link to="#speakers" style={{ textDecoration: 'none' }}>
+                  <Button
+                    size="small"
+                    className="trans"
+                    style={{ color: 'white' }}
+                  >
+                    {this.state.lang.menu[1]}
+                  </Button>
+                </Link>
+                <Link to="#host" style={{ textDecoration: 'none' }}>
+                  <Button
+                    size="small"
+                    className="trans"
+                    style={{ color: 'white' }}
+                  >
+                    {this.state.lang.menu[2]}
+                  </Button>
+                </Link>
+                <Link to="#sponsorship" style={{ textDecoration: 'none' }}>
+                  <Button
+                    size="small"
+                    className="trans"
+                    style={{ color: 'white' }}
+                  >
+                    {this.state.lang.menu[3]}
+                  </Button>
+                </Link>
+                <Link to="#contact" style={{ textDecoration: 'none' }}>
+                  <Button
+                    size="small"
+                    className="trans"
+                    style={{ color: 'white' }}
+                  >
+                    {this.state.lang.menu[4]}
+                  </Button>
+                </Link>
+                <a
+                  href={this.state.lang.ticket}
+                  style={{ textDecoration: 'none' }}
+                >
+                  <Button
+                    size="small"
+                    className="trans"
+                    style={{
+                      color: 'white',
+                      borderRadius: '33rem',
+                      backgroundColor: 'rgba(213,168,69,1)',
+                    }}
+                  >
+                    {this.state.lang.menu[5]}
+                  </Button>
+                </a>
               </div>
-              <Button disableRipple={true}
-                      size="small" disableFocusRipple={true}
-                      onClick={trans} className="trans"
-                      style={{color:'white',display:'flex'}} >
+              <Button
+                disableRipple={true}
+                size="small"
+                disableFocusRipple={true}
+                onClick={trans}
+                className="trans"
+                style={{ color: 'white', display: 'flex' }}
+              >
                 {this.state.toLang}
-              </Button>              
+              </Button>
               <div className="menubtn">
                 <IconButton onClick={this.toggleDrawer('right', true)}>
-                  <MenuIcon style={{color:'white'}} />
+                  <MenuIcon style={{ color: 'white' }} />
                 </IconButton>
               </div>
             </Toolbar>
           </AppBar>
         </LazyLoad>
-        <LazyLoad height={0}><Drawer anchor="right" open={this.state.right} onClose={this.toggleDrawer('right', false)}>
-          <div
-            tabIndex={0}
-            role="button"
-            onClick={this.toggleDrawer('right', false)}
-            onKeyDown={this.toggleDrawer('right', false)}
+        <LazyLoad height={0}>
+          <Drawer
+            anchor="right"
+            open={this.state.right}
+            onClose={this.toggleDrawer('right', false)}
           >
-            <List className="drawerlist">
-              <Link to="#introductin" style={{textDecoration:'none'}}>
-                <ListItem button style={{color:'white'}}>{this.state.lang.menu[0]}</ListItem>
-              </Link>
-              <Link to="#speakers" style={{textDecoration:'none'}}>
-                <ListItem button style={{color:'white'}}>{this.state.lang.menu[1]}</ListItem>
-              </Link>
-              <Link to="#host" style={{textDecoration:'none'}}>
-                <ListItem button style={{color:'white'}}>{this.state.lang.menu[2]}</ListItem>
-              </Link>
-              <Link to="#sponsorship" style={{textDecoration:'none'}}>
-                <ListItem button style={{color:'white'}}>{this.state.lang.menu[3]}</ListItem>
-              </Link>
-              <Link to="#contact" style={{textDecoration:'none'}}>
-                <ListItem button style={{color:'white'}}>{this.state.lang.menu[4]}</ListItem>
-              </Link>              
-              <a href={this.state.lang.ticket} style={{textDecoration:'none'}}>
-                <ListItem button style={{color:'white'}}>{this.state.lang.menu[5]}</ListItem>
-              </a>
-            </List>            
-          </div>
-        </Drawer></LazyLoad>
-        <section className="bnwrap banner" style={this.state.bg}>
-        </section>
-        <LazyLoad height={200}><section className="bg1" id="introductin">
-          <TweenOne className="ctn" animation={{ x: -100, type: 'from',duration:720,opacity:0 }}>
-            <h2>{this.state.lang.intro.title}</h2>
-            <div className="bar"/>
-            <p className="para indent ">{this.state.lang.intro.para1}</p>
-            <p className="para indent ">{this.state.lang.intro.para2}</p>
-          </TweenOne>          
-        </section></LazyLoad>
-        <section >
+            <div
+              tabIndex={0}
+              role="button"
+              onClick={this.toggleDrawer('right', false)}
+              onKeyDown={this.toggleDrawer('right', false)}
+            >
+              <List className="drawerlist">
+                <Link to="#introductin" style={{ textDecoration: 'none' }}>
+                  <ListItem button style={{ color: 'white' }}>
+                    {this.state.lang.menu[0]}
+                  </ListItem>
+                </Link>
+                <Link to="#speakers" style={{ textDecoration: 'none' }}>
+                  <ListItem button style={{ color: 'white' }}>
+                    {this.state.lang.menu[1]}
+                  </ListItem>
+                </Link>
+                <Link to="#host" style={{ textDecoration: 'none' }}>
+                  <ListItem button style={{ color: 'white' }}>
+                    {this.state.lang.menu[2]}
+                  </ListItem>
+                </Link>
+                <Link to="#sponsorship" style={{ textDecoration: 'none' }}>
+                  <ListItem button style={{ color: 'white' }}>
+                    {this.state.lang.menu[3]}
+                  </ListItem>
+                </Link>
+                <Link to="#contact" style={{ textDecoration: 'none' }}>
+                  <ListItem button style={{ color: 'white' }}>
+                    {this.state.lang.menu[4]}
+                  </ListItem>
+                </Link>
+                <a
+                  href={this.state.lang.ticket}
+                  style={{ textDecoration: 'none' }}
+                >
+                  <ListItem button style={{ color: 'white' }}>
+                    {this.state.lang.menu[5]}
+                  </ListItem>
+                </a>
+              </List>
+            </div>
+          </Drawer>
+        </LazyLoad>
+        <section className="bnwrap banner" style={this.state.bg} />
+        <LazyLoad height={200}>
+          <section className="bg1" id="introductin">
+            <TweenOne
+              className="ctn"
+              animation={{ x: -100, type: 'from', duration: 720, opacity: 0 }}
+            >
+              <h2>{this.state.lang.intro.title}</h2>
+              <div className="bar" />
+              <p className="para indent ">{this.state.lang.intro.para1}</p>
+              <p className="para indent ">{this.state.lang.intro.para2}</p>
+            </TweenOne>
+          </section>
+        </LazyLoad>
+        <section>
           <LazyLoad height={100}>
-            <TweenOne className="ctn" animation={{ x: -100, type: 'from',duration:720,opacity:0 }}>
+            <TweenOne
+              className="ctn"
+              animation={{ x: -100, type: 'from', duration: 720, opacity: 0 }}
+            >
               <h2>{this.state.lang.lookback.title}</h2>
-              <div className="bar"/>
+              <div className="bar" />
               <p className="para indent">{this.state.lang.lookback.para}</p>
               <Banner className="picintro" />
-            </TweenOne></LazyLoad>
+            </TweenOne>
+          </LazyLoad>
         </section>
-        <section  className="ctn bg1">
+        <section className="ctn bg1">
           <LazyLoad height={200}>
-            <TweenOne className="ctn" animation={{ x: -100, type: 'from',duration:720,opacity:0 }}>          
+            <TweenOne
+              className="ctn"
+              animation={{ x: -100, type: 'from', duration: 720, opacity: 0 }}
+            >
               <h2>{this.state.lang.overview.title}</h2>
-              <div className="bar"/>
-              <Table className="para" style={{marginTop:`1rem`}}><TableBody>{list}</TableBody></Table>
-            </TweenOne></LazyLoad>
+              <div className="bar" />
+              <Table className="para" style={{ marginTop: `1rem` }}>
+                <TableBody>{list}</TableBody>
+              </Table>
+            </TweenOne>
+          </LazyLoad>
         </section>
         <section key="e" className="ctn">
           <LazyLoad height={200}>
-            <TweenOne className="ctn" animation={{ x: -100, type: 'from',duration:720,opacity:0 }}>
+            <TweenOne
+              className="ctn"
+              animation={{ x: -100, type: 'from', duration: 720, opacity: 0 }}
+            >
               <h2>{this.state.lang.star.title}</h2>
               <div className="bar" />
-              <Table style={{marginTop:`1rem`}} className="para"><TableBody>{list2}</TableBody></Table>
-            </TweenOne></LazyLoad>
-        </section>
-        <section key="g" className="ctn bg1" id="speakers">
-          <LazyLoad height={1}>
-            <TweenOne className="ctn" animation={{ x: -100, type: 'from', duration:720, opacity:0 }}>
-              <h2>{this.state.lang.vip.title}</h2>
-              <div className="bar"/>            
-              <Fotos list={this.state.list} style={{maxWidth:'960px'}} />
-            </TweenOne></LazyLoad>
-        </section>
-        <section id="host" className="ctn" >
-          <LazyLoad height={100} offset={100}>
-            <TweenOne className="ctn" animation={{ x: -100, type: 'from', duration:720, opacity:0 }}>
-              <h2>{this.state.lang.host.title}</h2>
-              <div className="bar"/>
-              <Grid container alignItems="center" className="m1 gridm" justify="center">
-                <Grid item xs={12} md={12} className="cctn">
-                  <div className="blockgeek"/>
+              <Grid container>
+                <Grid item xs={4} className="starctn">
+                  <div className="roundicon closedoor"/>
+                  <p style={{margin:'1rem 0'}}>{this.state.lang.star.head1}</p>
+                  <p className="info">{this.state.lang.star.p1}</p>
                 </Grid>
-                <Grid item xs={12} md={12} style={{maxWidth: '960px'}} >
-                  <p className="indent">{this.state.lang.host.blockGeek}</p>
+                <Grid item xs={4} className="starctn">
+                  <div className="roundicon closedoor"/>
+                  <p style={{margin:'1rem 0'}}>{this.state.lang.star.head2}</p>
+                  <p className="info">{this.state.lang.star.p2}</p>
                 </Grid>
-              </Grid>
-              <Grid container alignItems="center" className="gridm" justify="center">
-                <Grid item xs={12} md={12} className="cctn"><div className="gdex" /></Grid>
-                <Grid item xs={12} md={12} style={{maxWidth: '960px'}} >
-                  <Grid item xs={3} />                
-                  <p className="indent">{this.state.lang.host.gdex}</p></Grid>
+                <Grid item xs={4} className="starctn">
+                  <div className="roundicon closedoor"/>
+                  <p style={{margin:'1rem 0'}}>{this.state.lang.star.head3}</p>
+                  <p className="info">{this.state.lang.star.p3}</p>
+                </Grid>                
               </Grid>
             </TweenOne>
           </LazyLoad>
         </section>
-        <LazyLoad height={100} >
-          <TweenOne className="ctn bg1" animation={{ x: -100, type: 'from',duration:720,opacity:0 }}>
-            <h2>{this.state.lang.assist.title}</h2>
-            <div className="bar"/>
-            <Grid container alignItems="center" className="gridm" justify="center">
-              <Grid item xs={12} md={12} className="cctn">
-                <div className="bcc" style={{marginTop:`3rem`}}/>
+        <section key="g" className="ctn bg1" id="speakers">
+          <LazyLoad height={1}>
+            <TweenOne
+              className="ctn"
+              animation={{ x: -100, type: 'from', duration: 720, opacity: 0 }}
+            >
+              <h2>{this.state.lang.vip.title}</h2>
+              <div className="bar" />
+              <Fotos list={this.state.list} style={{ maxWidth: '960px' }} />
+            </TweenOne>
+          </LazyLoad>
+        </section>
+        <section id="host" className="ctn">
+          <LazyLoad height={100} offset={100}>
+            <TweenOne
+              className="ctn"
+              animation={{ x: -100, type: 'from', duration: 720, opacity: 0 }}
+            >
+              <h2>{this.state.lang.host.title}</h2>
+              <div className="bar" />
+              <Grid
+                container
+                alignItems="center"
+                className="m1 gridm"
+                justify="center"
+              >
+                <Grid item xs={12} md={12} className="cctn">
+                  <div className="blockgeek" />
+                </Grid>
+                <Grid item xs={12} md={12} style={{ maxWidth: '960px' }}>
+                  <p className="indent">{this.state.lang.host.blockGeek}</p>
+                </Grid>
               </Grid>
-              <Grid item xs={12} md={12} style={{maxWidth: `960px`}}>
-                <p className="indent">{this.state.lang.assist.para}</p></Grid>
-            </Grid>
-          </TweenOne></LazyLoad>
+              <Grid
+                container
+                alignItems="center"
+                className="gridm"
+                justify="center"
+              >
+                <Grid item xs={12} md={12} className="cctn">
+                  <div className="gdex" />
+                </Grid>
+                <Grid item xs={12} md={12} style={{ maxWidth: '960px' }}>
+                  <Grid item xs={3} />
+                  <p className="indent">{this.state.lang.host.gdex}</p>
+                </Grid>
+              </Grid>
+            </TweenOne>
+          </LazyLoad>
+        </section>
         <LazyLoad height={100}>
-          <TweenOne className="ctn" animation={{ x: -100, type: 'from',duration:720,opacity:0 }}>
+          <TweenOne
+            className="ctn bg1"
+            animation={{ x: -100, type: 'from', duration: 720, opacity: 0 }}
+          >
+            <h2>{this.state.lang.assist.title}</h2>
+            <div className="bar" />
+            <Grid
+              container
+              alignItems="center"
+              className="gridm"
+              justify="center"
+            >
+              <Grid item xs={12} md={12} className="cctn">
+                <div className="bcc" style={{ marginTop: `3rem` }} />
+              </Grid>
+              <Grid item xs={12} md={12} style={{ maxWidth: `960px` }}>
+                <p className="indent">{this.state.lang.assist.para}</p>
+              </Grid>
+            </Grid>
+          </TweenOne>
+        </LazyLoad>
+        <LazyLoad height={100}>
+          <TweenOne
+            className="ctn"
+            animation={{ x: -100, type: 'from', duration: 720, opacity: 0 }}
+          >
             <h2>{this.state.lang.partner.title}</h2>
             <div className="bar" />
-            <Grid container justify="space-around" alignItems="center" className="para" >
-              <Grid item ><div className="cctn bs"/></Grid>
-              <Grid item ><div className="cctn bbt" /></Grid>
-              <Grid item ><div className="cctn bf" /></Grid>                
+            <Grid
+              container
+              justify="space-around"
+              alignItems="center"
+              className="para"
+            >
+              <Grid item>
+                <div className="cctn bs" />
+              </Grid>
+              <Grid item>
+                <div className="cctn bbt" />
+              </Grid>
+              <Grid item>
+                <div className="cctn bf" />
+              </Grid>
             </Grid>
-          </TweenOne></LazyLoad>
-        <section key="l" className="footer ctn" style={{color:'white', height:'auto'}} >
+          </TweenOne>
+        </LazyLoad>
+        <section
+          key="l"
+          className="footer ctn"
+          style={{ color: 'white', height: 'auto' }}
+        >
           <h5>{this.state.lang.footer.title}</h5>
-          <div className="bar" style={{marginBottom:'1rem'}}></div>
-          <Grid container  style={{maxWidth:'960px'}}>
+          <div className="bar" style={{ marginBottom: '1rem' }} />
+          <Grid container style={{ maxWidth: '960px' }}>
             <Grid item sm={6} md={4} className="ftgrid">
-              <div className=" sr" >
-                <div className="fticon ftcp"/>
+              <div className=" sr">
+                <div className="fticon ftcp" />
                 <div className="ftgrid">
                   <p>{this.state.lang.footer.cp}</p>
-                  <p style={{fontSize:'1rem',marginTop:'0.7rem',marginBottom:'0.5rem'}}>Linda</p>
+                  <p
+                    style={{
+                      fontSize: '1rem',
+                      marginTop: '0.7rem',
+                      marginBottom: '0.5rem',
+                    }}
+                  >
+                    Linda
+                  </p>
                   <p>{this.state.lang.footer.tel}</p>
-                  <p>{this.state.lang.footer.email}</p>                                                
+                  <p>{this.state.lang.footer.email}</p>
                 </div>
               </div>
             </Grid>
             <Grid item sm={6} md={4} className="ftgrid">
               <div className="sr">
-                <div className="fticon ftchat"/>                     
+                <div className="fticon ftchat" />
                 <div className="ftgrid">
                   <p>{this.state.lang.footer.consult}</p>
                   <p>{this.state.lang.footer.info}</p>
@@ -299,22 +472,22 @@ class IndexPage extends React.Component{
             </Grid>
             <Grid item sm={6} md={2} className="ftgrid">
               <div className="sr">
-                <div className="fticon weibo"/>                     
+                <div className="fticon weibo" />
                 <div className="ftgrid">
                   <p>{this.state.lang.footer.weibo}</p>
-                  <div className="qr qrw" />                  
+                  <div className="qr qrw" />
                 </div>
               </div>
             </Grid>
             <Grid item sm={6} md={2} className="ftgrid">
               <div className="sr">
-                <div className="fticon twitter"/>                     
+                <div className="fticon twitter" />
                 <div className="ftgrid">
                   <p>{this.state.lang.footer.twitter}</p>
                   <div className="qr qrt" />
                 </div>
               </div>
-            </Grid>            
+            </Grid>
           </Grid>
         </section>
       </div>

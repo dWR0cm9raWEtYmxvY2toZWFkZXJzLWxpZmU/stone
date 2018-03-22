@@ -1,7 +1,7 @@
-import React from 'react';
-import SwipeableViews from 'react-swipeable-views';
-import Animated from 'animated/lib/targets/react-dom';
-import SupportTouch from 'docs/src/modules/components/SupportTouch';
+import React from 'react'
+import SwipeableViews from 'react-swipeable-views'
+import Animated from 'animated/lib/targets/react-dom'
+import SupportTouch from 'docs/src/modules/components/SupportTouch'
 
 const styles = {
   root: {
@@ -22,7 +22,7 @@ const styles = {
     display: 'block',
     marginBottom: 16,
   },
-};
+}
 
 const albums = [
   {
@@ -57,28 +57,28 @@ const albums = [
     name: 'Lost Horizons',
     src: '/static/album-art-8.jpg',
   },
-];
+]
 
 class DemoCoverflow extends React.Component {
   state = {
     index: 0,
     position: new Animated.Value(0),
-  };
+  }
 
   handleChangeIndex = index => {
-    this.setState({ index });
-  };
+    this.setState({ index })
+  }
 
   handleSwitch = (index, type) => {
     if (type === 'end') {
-      Animated.spring(this.state.position, { toValue: index }).start();
-      return;
+      Animated.spring(this.state.position, { toValue: index }).start()
+      return
     }
-    this.state.position.setValue(index);
-  };
+    this.state.position.setValue(index)
+  }
 
   render() {
-    const { index, position } = this.state;
+    const { index, position } = this.state
 
     return (
       <SupportTouch>
@@ -89,25 +89,25 @@ class DemoCoverflow extends React.Component {
           onSwitching={this.handleSwitch}
         >
           {albums.map((album, currentIndex) => {
-            const inputRange = albums.map((_, i) => i);
+            const inputRange = albums.map((_, i) => i)
             const scale = position.interpolate({
               inputRange,
               outputRange: inputRange.map(i => {
-                return currentIndex === i ? 1 : 0.7;
+                return currentIndex === i ? 1 : 0.7
               }),
-            });
+            })
             const opacity = position.interpolate({
               inputRange,
               outputRange: inputRange.map(i => {
-                return currentIndex === i ? 1 : 0.3;
+                return currentIndex === i ? 1 : 0.3
               }),
-            });
+            })
             const translateX = position.interpolate({
               inputRange,
               outputRange: inputRange.map(i => {
-                return 100 / 2 * (i - currentIndex);
+                return 100 / 2 * (i - currentIndex)
               }),
-            });
+            })
 
             return (
               <Animated.div
@@ -117,18 +117,18 @@ class DemoCoverflow extends React.Component {
                     opacity,
                     transform: [{ scale }, { translateX }],
                   },
-                  styles.slide,
+                  styles.slide
                 )}
               >
                 <img style={styles.img} src={album.src} alt="cover" />
                 {album.name}
               </Animated.div>
-            );
+            )
           })}
         </SwipeableViews>
       </SupportTouch>
-    );
+    )
   }
 }
 
-export default DemoCoverflow;
+export default DemoCoverflow

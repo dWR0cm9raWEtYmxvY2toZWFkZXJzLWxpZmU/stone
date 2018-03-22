@@ -1,16 +1,16 @@
-import React from 'react';
-import classNames from 'classnames';
-import PropTypes from 'prop-types';
-import { withStyles } from 'material-ui/styles';
-import List from 'material-ui/List';
-import Toolbar from 'material-ui/Toolbar';
-import Drawer from 'material-ui/Drawer';
-import Typography from 'material-ui/Typography';
-import Divider from 'material-ui/Divider';
-import Hidden from 'material-ui/Hidden';
-import AppDrawerNavItem from 'docs/src/modules/components/AppDrawerNavItem';
-import Link from 'docs/src/modules/components/Link';
-import { pageToTitle } from 'docs/src/modules/utils/helpers';
+import React from 'react'
+import classNames from 'classnames'
+import PropTypes from 'prop-types'
+import { withStyles } from 'material-ui/styles'
+import List from 'material-ui/List'
+import Toolbar from 'material-ui/Toolbar'
+import Drawer from 'material-ui/Drawer'
+import Typography from 'material-ui/Typography'
+import Divider from 'material-ui/Divider'
+import Hidden from 'material-ui/Hidden'
+import AppDrawerNavItem from 'docs/src/modules/components/AppDrawerNavItem'
+import Link from 'docs/src/modules/components/Link'
+import { pageToTitle } from 'docs/src/modules/utils/helpers'
 
 const styles = theme => ({
   paper: {
@@ -36,22 +36,23 @@ const styles = theme => ({
   anchor: {
     color: theme.palette.text.secondary,
   },
-});
+})
 
 function renderNavItems(props, pages, activePage) {
-  let navItems = null;
+  let navItems = null
 
   if (pages && pages.length) {
     // eslint-disable-next-line no-use-before-define
-    navItems = pages.reduce(reduceChildRoutes.bind(null, props, activePage), []);
+    navItems = pages.reduce(reduceChildRoutes.bind(null, props, activePage), [])
   }
 
-  return <List>{navItems}</List>;
+  return <List>{navItems}</List>
 }
 
 function reduceChildRoutes(props, activePage, items, childPage, index) {
   if (childPage.children && childPage.children.length > 0) {
-    const openImmediately = activePage.pathname.indexOf(childPage.pathname) !== -1 || false;
+    const openImmediately =
+      activePage.pathname.indexOf(childPage.pathname) !== -1 || false
 
     items.push(
       <AppDrawerNavItem
@@ -60,8 +61,8 @@ function reduceChildRoutes(props, activePage, items, childPage, index) {
         title={pageToTitle(childPage)}
       >
         {renderNavItems(props, childPage.children, activePage)}
-      </AppDrawerNavItem>,
-    );
+      </AppDrawerNavItem>
+    )
   } else if (childPage.title !== false) {
     items.push(
       <AppDrawerNavItem
@@ -69,18 +70,24 @@ function reduceChildRoutes(props, activePage, items, childPage, index) {
         title={pageToTitle(childPage)}
         href={childPage.pathname}
         onClick={props.onRequestClose}
-      />,
-    );
+      />
+    )
   }
 
-  return items;
+  return items
 }
 
 const GITHUB_RELEASE_BASE_URL =
-  'https://github.com/oliviertassinari/react-swipeable-views/releases/tag/';
+  'https://github.com/oliviertassinari/react-swipeable-views/releases/tag/'
 
 function AppDrawer(props: Object, context: Object) {
-  const { classes, className, disablePermanent, mobileOpen, onRequestClose } = props;
+  const {
+    classes,
+    className,
+    disablePermanent,
+    mobileOpen,
+    onRequestClose,
+  } = props
 
   const drawer = (
     <div className={classes.nav}>
@@ -96,7 +103,9 @@ function AppDrawer(props: Object, context: Object) {
               className={classes.anchor}
               href={`${GITHUB_RELEASE_BASE_URL}v${process.env.LIB_VERSION}`}
             >
-              <Typography type="caption">{`v${process.env.LIB_VERSION}`}</Typography>
+              <Typography type="caption">{`v${
+                process.env.LIB_VERSION
+              }`}</Typography>
             </Link>
           ) : null}
           <Divider absolute />
@@ -104,7 +113,7 @@ function AppDrawer(props: Object, context: Object) {
       </div>
       {renderNavItems(props, context.pages, context.activePage)}
     </div>
-  );
+  )
 
   return (
     <div className={className}>
@@ -137,7 +146,7 @@ function AppDrawer(props: Object, context: Object) {
         </Hidden>
       )}
     </div>
-  );
+  )
 }
 
 AppDrawer.propTypes = {
@@ -146,11 +155,11 @@ AppDrawer.propTypes = {
   disablePermanent: PropTypes.bool.isRequired,
   mobileOpen: PropTypes.bool.isRequired,
   onRequestClose: PropTypes.func.isRequired,
-};
+}
 
 AppDrawer.contextTypes = {
   pages: PropTypes.array.isRequired,
   activePage: PropTypes.object,
-};
+}
 
-export default withStyles(styles)(AppDrawer);
+export default withStyles(styles)(AppDrawer)

@@ -1,11 +1,11 @@
 /* eslint-disable react/no-multi-comp */
 
-import React from 'react';
-import PropTypes from 'prop-types';
-import classNames from 'classnames';
-import NextLink from 'next/link';
-import { withStyles } from 'material-ui/styles';
-import { capitalizeFirstLetter } from 'material-ui/utils/helpers';
+import React from 'react'
+import PropTypes from 'prop-types'
+import classNames from 'classnames'
+import NextLink from 'next/link'
+import { withStyles } from 'material-ui/styles'
+import { capitalizeFirstLetter } from 'material-ui/utils/helpers'
 
 const styles = theme => ({
   root: {
@@ -28,22 +28,22 @@ const styles = theme => ({
       textDecoration: 'inherit',
     },
   },
-});
+})
 
 class OnClick extends React.Component {
   handleClick = event => {
     if (this.props.onClick) {
-      this.props.onClick(event);
+      this.props.onClick(event)
     }
 
     if (this.props.onCustomClick) {
-      this.props.onCustomClick(event);
+      this.props.onCustomClick(event)
     }
-  };
+  }
 
   render() {
-    const { component: ComponentProp, onCustomClick, ...props } = this.props;
-    return <ComponentProp {...props} onClick={this.handleClick} />;
+    const { component: ComponentProp, onCustomClick, ...props } = this.props
+    return <ComponentProp {...props} onClick={this.handleClick} />
   }
 }
 
@@ -51,7 +51,7 @@ OnClick.propTypes = {
   component: PropTypes.string.isRequired,
   onClick: PropTypes.func,
   onCustomClick: PropTypes.func,
-};
+}
 
 function Link(props, context) {
   const {
@@ -65,31 +65,31 @@ function Link(props, context) {
     onClick,
     prefetch,
     ...other
-  } = props;
+  } = props
 
-  let ComponentRoot;
+  let ComponentRoot
   const className = classNames(
     classes.root,
     classes[`variant${capitalizeFirstLetter(variant)}`],
-    classNameProp,
-  );
-  let rootProps;
-  let children = childrenProp;
+    classNameProp
+  )
+  let rootProps
+  let children = childrenProp
 
   if (ComponentProp) {
-    ComponentRoot = ComponentProp;
+    ComponentRoot = ComponentProp
     rootProps = {
       ...other,
       className,
-    };
+    }
   } else if (href) {
-    ComponentRoot = NextLink;
+    ComponentRoot = NextLink
     rootProps = {
       href,
       prefetch,
       passHref: true,
-    };
-    const active = context.url.pathname === href;
+    }
+    const active = context.url.pathname === href
     children = (
       <OnClick
         component="a"
@@ -101,28 +101,28 @@ function Link(props, context) {
       >
         {children}
       </OnClick>
-    );
+    )
   } else {
-    ComponentRoot = 'a';
+    ComponentRoot = 'a'
     rootProps = {
       ...other,
       className,
-    };
+    }
   }
 
-  return <ComponentRoot {...rootProps}>{children}</ComponentRoot>;
+  return <ComponentRoot {...rootProps}>{children}</ComponentRoot>
 }
 
 Link.defaultProps = {
   variant: 'default',
   activeClassName: 'active',
-};
+}
 
 Link.contextTypes = {
   url: PropTypes.shape({
     pathname: PropTypes.string.isRequired,
   }).isRequired,
-};
+}
 
 Link.propTypes = {
   activeClassName: PropTypes.string,
@@ -134,6 +134,6 @@ Link.propTypes = {
   onClick: PropTypes.func,
   prefetch: PropTypes.bool,
   variant: PropTypes.oneOf(['default', 'primary', 'accent', 'button']),
-};
+}
 
-export default withStyles(styles)(Link);
+export default withStyles(styles)(Link)

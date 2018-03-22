@@ -1,13 +1,13 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import LZString from 'lz-string';
-import { withStyles } from 'material-ui/styles';
-import IconButton from 'material-ui/IconButton';
-import Collapse from 'material-ui/transitions/Collapse';
-import ModeEditIcon from 'material-ui-icons/ModeEdit';
-import CodeIcon from 'material-ui-icons/Code';
-import MarkdownElement from 'docs/src/modules/components/MarkdownElement';
-import Tooltip from 'material-ui/Tooltip';
+import React from 'react'
+import PropTypes from 'prop-types'
+import LZString from 'lz-string'
+import { withStyles } from 'material-ui/styles'
+import IconButton from 'material-ui/IconButton'
+import Collapse from 'material-ui/transitions/Collapse'
+import ModeEditIcon from 'material-ui-icons/ModeEdit'
+import CodeIcon from 'material-ui-icons/Code'
+import MarkdownElement from 'docs/src/modules/components/MarkdownElement'
+import Tooltip from 'material-ui/Tooltip'
 
 const styles = theme => ({
   root: {
@@ -67,27 +67,27 @@ const styles = theme => ({
       right: 48,
     },
   },
-});
+})
 
 function compress(object) {
   return LZString.compressToBase64(JSON.stringify(object))
     .replace(/\+/g, '-') // Convert '+' to '-'
     .replace(/\//g, '_') // Convert '/' to '_'
-    .replace(/=+$/, ''); // Remove ending '='
+    .replace(/=+$/, '') // Remove ending '='
 }
 
 class Demo extends React.Component {
   state = {
     codeOpen: false,
-  };
+  }
 
-  codesandboxForm = null;
+  codesandboxForm = null
 
   handleClickCodeOpen = () => {
     this.setState({
       codeOpen: !this.state.codeOpen,
-    });
-  };
+    })
+  }
 
   handleClickCodesandbox = () => {
     const codesandboxValue = {
@@ -126,15 +126,17 @@ if (rootElement) {
             `,
         },
       },
-    };
+    }
 
-    this.codesandboxForm.querySelector('[name="parameters"]').value = compress(codesandboxValue);
-    this.codesandboxForm.submit();
-  };
+    this.codesandboxForm.querySelector('[name="parameters"]').value = compress(
+      codesandboxValue
+    )
+    this.codesandboxForm.submit()
+  }
 
   render() {
-    const { classes, js: DemoComponent, raw } = this.props;
-    const { codeOpen } = this.state;
+    const { classes, js: DemoComponent, raw } = this.props
+    const { codeOpen } = this.state
 
     return (
       <div className={classes.root}>
@@ -145,7 +147,7 @@ if (rootElement) {
             </IconButton>
             <form
               ref={node => {
-                this.codesandboxForm = node;
+                this.codesandboxForm = node
               }}
               method="get"
               action="https://codesandbox.io/api/v1/sandboxes/define"
@@ -155,19 +157,29 @@ if (rootElement) {
             </form>
           </div>
         </Tooltip>
-        <Tooltip title={codeOpen ? 'Hide the source' : 'Show the source'} placement="top">
-          <IconButton onClick={this.handleClickCodeOpen} className={classes.codeButton}>
+        <Tooltip
+          title={codeOpen ? 'Hide the source' : 'Show the source'}
+          placement="top"
+        >
+          <IconButton
+            onClick={this.handleClickCodeOpen}
+            className={classes.codeButton}
+          >
             <CodeIcon />
           </IconButton>
         </Tooltip>
         <Collapse in={codeOpen} unmountOnExit>
-          <MarkdownElement dir="ltr" className={classes.code} text={`\`\`\`js\n${raw}\n\`\`\``} />
+          <MarkdownElement
+            dir="ltr"
+            className={classes.code}
+            text={`\`\`\`js\n${raw}\n\`\`\``}
+          />
         </Collapse>
         <div className={classes.demo}>
           <DemoComponent />
         </div>
       </div>
-    );
+    )
   }
 }
 
@@ -175,6 +187,6 @@ Demo.propTypes = {
   classes: PropTypes.object.isRequired,
   js: PropTypes.func.isRequired,
   raw: PropTypes.string.isRequired,
-};
+}
 
-export default withStyles(styles)(Demo);
+export default withStyles(styles)(Demo)

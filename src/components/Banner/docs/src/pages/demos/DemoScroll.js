@@ -1,6 +1,6 @@
-import React from 'react';
-import SwipeableViews from 'react-swipeable-views';
-import SupportTouch from 'docs/src/modules/components/SupportTouch';
+import React from 'react'
+import SwipeableViews from 'react-swipeable-views'
+import SupportTouch from 'docs/src/modules/components/SupportTouch'
 
 const styles = {
   slideContainer: {
@@ -21,12 +21,12 @@ const styles = {
   slide3: {
     backgroundColor: '#6AC0FF',
   },
-};
+}
 
-const list = [];
+const list = []
 
 for (let i = 0; i < 30; i += 1) {
-  list.push(<div key={i}>{`item n°${i + 1}`}</div>);
+  list.push(<div key={i}>{`item n°${i + 1}`}</div>)
 }
 
 function DemoScroll() {
@@ -34,11 +34,15 @@ function DemoScroll() {
     <SupportTouch>
       <SwipeableViews containerStyle={styles.slideContainer}>
         <div style={Object.assign({}, styles.slide, styles.slide1)}>{list}</div>
-        <div style={Object.assign({}, styles.slide, styles.slide2)}>slide n°2</div>
-        <div style={Object.assign({}, styles.slide, styles.slide3)}>slide n°3</div>
+        <div style={Object.assign({}, styles.slide, styles.slide2)}>
+          slide n°2
+        </div>
+        <div style={Object.assign({}, styles.slide, styles.slide3)}>
+          slide n°3
+        </div>
       </SwipeableViews>
     </SupportTouch>
-  );
+  )
 }
 
-export default DemoScroll;
+export default DemoScroll

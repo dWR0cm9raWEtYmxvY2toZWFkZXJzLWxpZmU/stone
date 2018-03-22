@@ -1,33 +1,33 @@
-import warning from 'warning';
-import upperFirst from 'lodash/upperFirst';
-import camelCase from 'lodash/camelCase';
+import warning from 'warning'
+import upperFirst from 'lodash/upperFirst'
+import camelCase from 'lodash/camelCase'
 
 export function titleize(string) {
   warning(
     typeof string === 'string' && string.length > 0,
-    'titleize(string) expects a non empty string argument.',
-  );
+    'titleize(string) expects a non empty string argument.'
+  )
 
   return string
     .split('-')
     .map(word => word.split(''))
     .map(letters => {
-      const first = letters.shift();
-      return [first.toUpperCase(), ...letters].join('');
+      const first = letters.shift()
+      return [first.toUpperCase(), ...letters].join('')
     })
-    .join(' ');
+    .join(' ')
 }
 
 export function pageToTitle(page) {
   if (page.title) {
-    return page.title;
+    return page.title
   }
 
-  const name = page.pathname.replace(/.*\//, '');
+  const name = page.pathname.replace(/.*\//, '')
 
   if (page.pathname.indexOf('/api') === 0) {
-    return upperFirst(camelCase(name));
+    return upperFirst(camelCase(name))
   }
 
-  return titleize(name);
+  return titleize(name)
 }

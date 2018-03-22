@@ -1,16 +1,16 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import NProgress from 'nprogress';
-import Router from 'next/router';
-import { withStyles } from 'material-ui/styles';
-import Typography from 'material-ui/Typography';
-import AppBar from 'material-ui/AppBar';
-import Toolbar from 'material-ui/Toolbar';
-import IconButton from 'material-ui/IconButton';
-import MenuIcon from 'material-ui-icons/Menu';
-import Github from 'docs/src/modules/components/GitHub';
-import AppDrawer from 'docs/src/modules/components/AppDrawer';
-import { pageToTitle } from 'docs/src/modules/utils/helpers';
+import React from 'react'
+import PropTypes from 'prop-types'
+import NProgress from 'nprogress'
+import Router from 'next/router'
+import { withStyles } from 'material-ui/styles'
+import Typography from 'material-ui/Typography'
+import AppBar from 'material-ui/AppBar'
+import Toolbar from 'material-ui/Toolbar'
+import IconButton from 'material-ui/IconButton'
+import MenuIcon from 'material-ui-icons/Menu'
+import Github from 'docs/src/modules/components/GitHub'
+import AppDrawer from 'docs/src/modules/components/AppDrawer'
+import { pageToTitle } from 'docs/src/modules/utils/helpers'
 
 // Disaply a progress bar between route transitions
 NProgress.configure({
@@ -20,19 +20,19 @@ NProgress.configure({
       <dd></dd>
     </div>
   `,
-});
+})
 
 Router.onRouteChangeStart = () => {
-  NProgress.start();
-};
+  NProgress.start()
+}
 
 Router.onRouteChangeComplete = () => {
-  NProgress.done();
-};
+  NProgress.done()
+}
 
 Router.onRouteChangeError = () => {
-  NProgress.done();
-};
+  NProgress.done()
+}
 
 const styles = theme => ({
   '@global': {
@@ -56,7 +56,9 @@ const styles = theme => ({
       '& .bar': {
         position: 'fixed',
         background:
-          theme.palette.type === 'light' ? theme.palette.common.black : theme.palette.common.white,
+          theme.palette.type === 'light'
+            ? theme.palette.common.black
+            : theme.palette.common.white,
         borderRadius: 1,
         zIndex: theme.zIndex.tooltip,
         top: 0,
@@ -69,7 +71,9 @@ const styles = theme => ({
         top: 0,
         height: 2,
         boxShadow: `${
-          theme.palette.type === 'light' ? theme.palette.common.black : theme.palette.common.white
+          theme.palette.type === 'light'
+            ? theme.palette.common.black
+            : theme.palette.common.white
         } 1px 0 6px 1px`,
         borderRadius: '100%',
         animation: 'nprogress-pulse 2s ease-out 0s infinite',
@@ -136,33 +140,35 @@ const styles = theme => ({
       display: 'none',
     },
   },
-});
+})
 
 class AppFrame extends React.Component {
   state = {
     mobileOpen: false,
-  };
+  }
 
   handleDrawerToggle = () => {
-    this.setState({ mobileOpen: !this.state.mobileOpen });
-  };
+    this.setState({ mobileOpen: !this.state.mobileOpen })
+  }
 
   render() {
-    const { children, classes } = this.props;
+    const { children, classes } = this.props
     const title =
-      this.context.activePage.title !== false ? pageToTitle(this.context.activePage) : null;
+      this.context.activePage.title !== false
+        ? pageToTitle(this.context.activePage)
+        : null
 
-    let disablePermanent = false;
-    let navIconClassName = '';
-    let appBarClassName = classes.appBar;
+    let disablePermanent = false
+    let navIconClassName = ''
+    let appBarClassName = classes.appBar
 
     if (title === null) {
       // home route, don't shift app bar or dock drawer
-      disablePermanent = true;
-      appBarClassName += ` ${classes.appBarHome}`;
+      disablePermanent = true
+      appBarClassName += ` ${classes.appBarHome}`
     } else {
-      navIconClassName = classes.navIconHide;
-      appBarClassName += ` ${classes.appBarShift}`;
+      navIconClassName = classes.navIconHide
+      appBarClassName += ` ${classes.appBarShift}`
     }
 
     return (
@@ -178,7 +184,12 @@ class AppFrame extends React.Component {
               <MenuIcon />
             </IconButton>
             {title !== null && (
-              <Typography className={classes.title} type="title" color="inherit" noWrap>
+              <Typography
+                className={classes.title}
+                type="title"
+                color="inherit"
+                noWrap
+              >
                 {title}
               </Typography>
             )}
@@ -201,21 +212,21 @@ class AppFrame extends React.Component {
         />
         {children}
       </div>
-    );
+    )
   }
 }
 
 AppFrame.propTypes = {
   children: PropTypes.node.isRequired,
   classes: PropTypes.object.isRequired,
-};
+}
 
 AppFrame.contextTypes = {
   activePage: PropTypes.shape({
     pathname: PropTypes.string.isRequired,
   }),
-};
+}
 
 export default withStyles(styles, {
   name: 'AppFrame',
-})(AppFrame);
+})(AppFrame)

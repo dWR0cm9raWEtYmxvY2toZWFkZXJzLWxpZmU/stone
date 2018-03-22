@@ -1,11 +1,11 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import Link from 'docs/src/modules/components/Link';
-import classNames from 'classnames';
-import { withStyles } from 'material-ui/styles';
-import { ListItem } from 'material-ui/List';
-import Button from 'material-ui/Button';
-import Collapse from 'material-ui/transitions/Collapse';
+import React from 'react'
+import PropTypes from 'prop-types'
+import Link from 'docs/src/modules/components/Link'
+import classNames from 'classnames'
+import { withStyles } from 'material-ui/styles'
+import { ListItem } from 'material-ui/List'
+import Button from 'material-ui/Button'
+import Collapse from 'material-ui/transitions/Collapse'
 
 const styles = theme => ({
   button: theme.mixins.gutters({
@@ -40,29 +40,29 @@ const styles = theme => ({
   activeButton: {
     color: theme.palette.text.primary,
   },
-});
+})
 
 class AppDrawerNavItem extends React.Component {
   static defaultProps = {
     openImmediately: false,
-  };
+  }
 
   state = {
     open: false,
-  };
+  }
 
   componentWillMount() {
     if (this.props.openImmediately) {
-      this.setState({ open: true });
+      this.setState({ open: true })
     }
   }
 
   handleClick = () => {
-    this.setState({ open: !this.state.open });
-  };
+    this.setState({ open: !this.state.open })
+  }
 
   render() {
-    const { children, classes, href, title } = this.props;
+    const { children, classes, href, title } = this.props
 
     if (href) {
       return (
@@ -79,7 +79,7 @@ class AppDrawerNavItem extends React.Component {
             {title}
           </Button>
         </ListItem>
-      );
+      )
     }
 
     return (
@@ -91,7 +91,7 @@ class AppDrawerNavItem extends React.Component {
           {children}
         </Collapse>
       </ListItem>
-    );
+    )
   }
 }
 
@@ -102,6 +102,6 @@ AppDrawerNavItem.propTypes = {
   onClick: PropTypes.func,
   openImmediately: PropTypes.bool,
   title: PropTypes.string.isRequired,
-};
+}
 
-export default withStyles(styles)(AppDrawerNavItem);
+export default withStyles(styles)(AppDrawerNavItem)

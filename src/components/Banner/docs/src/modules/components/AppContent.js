@@ -1,7 +1,7 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import classNames from 'classnames';
-import { withStyles } from 'material-ui/styles';
+import React from 'react'
+import PropTypes from 'prop-types'
+import classNames from 'classnames'
+import { withStyles } from 'material-ui/styles'
 
 const styles = theme => ({
   root: theme.mixins.gutters({
@@ -15,18 +15,18 @@ const styles = theme => ({
       maxWidth: 900,
     },
   },
-});
+})
 
 function AppContent(props: Object) {
-  const { className, classes, children } = props;
+  const { className, classes, children } = props
 
-  return <div className={classNames(classes.root, className)}>{children}</div>;
+  return <div className={classNames(classes.root, className)}>{children}</div>
 }
 
 AppContent.propTypes = {
   children: PropTypes.node.isRequired,
   classes: PropTypes.object.isRequired,
   className: PropTypes.string,
-};
+}
 
-export default withStyles(styles)(AppContent);
+export default withStyles(styles)(AppContent)

@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 
 const styles = {
   root: {
@@ -20,29 +20,29 @@ const styles = {
   active: {
     backgroundColor: '#319fd6',
   },
-};
+}
 
 class PaginationDot extends Component {
   handleClick = event => {
-    this.props.onClick(event, this.props.index);
-  };
+    this.props.onClick(event, this.props.index)
+  }
 
   render() {
-    const { active } = this.props;
+    const { active } = this.props
 
-    let styleDot;
+    let styleDot
 
     if (active) {
-      styleDot = Object.assign({}, styles.dot, styles.active);
+      styleDot = Object.assign({}, styles.dot, styles.active)
     } else {
-      styleDot = styles.dot;
+      styleDot = styles.dot
     }
 
     return (
       <button style={styles.root} onClick={this.handleClick}>
         <div style={styleDot} />
       </button>
-    );
+    )
   }
 }
 
@@ -50,6 +50,6 @@ PaginationDot.propTypes = {
   active: PropTypes.bool.isRequired,
   index: PropTypes.number.isRequired,
   onClick: PropTypes.func.isRequired,
-};
+}
 
-export default PaginationDot;
+export default PaginationDot

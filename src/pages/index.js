@@ -230,17 +230,7 @@ class IndexPage extends React.Component{
               <Fotos list={this.state.list} style={{maxWidth:'960px'}} />
             </TweenOne></LazyLoad>
         </section>
-        <section key="i" id="sponsorship">
-          <LazyLoad height={200}>
-            <TweenOne className="ctn" animation={{ x: -100, type: 'from', duration:720, opacity:0 }}>
-              <h2>{this.state.lang.sponsor.title}</h2>
-              <div className="bar "/>
-              <Card >
-                <div className="ttable" style={this.state.ttable}/>
-              </Card>
-            </TweenOne></LazyLoad>
-        </section>
-        <section id="host" className="ctn bg1" >
+        <section id="host" className="ctn" >
           <LazyLoad height={100} offset={100}>
             <TweenOne className="ctn" animation={{ x: -100, type: 'from', duration:720, opacity:0 }}>
               <h2>{this.state.lang.host.title}</h2>
@@ -263,7 +253,7 @@ class IndexPage extends React.Component{
           </LazyLoad>
         </section>
         <LazyLoad height={100} >
-          <TweenOne className="ctn" animation={{ x: -100, type: 'from',duration:720,opacity:0 }}>
+          <TweenOne className="ctn bg1" animation={{ x: -100, type: 'from',duration:720,opacity:0 }}>
             <h2>{this.state.lang.assist.title}</h2>
             <div className="bar"/>
             <Grid container alignItems="center" className="gridm" justify="center">

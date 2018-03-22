@@ -7,13 +7,13 @@ import Button from 'material-ui/Button';
 import SendIcon from 'material-ui-icons/Send';
 import LazyLoad from 'react-lazyload'
 
-function rand() {
-  return Math.round(Math.random() * 20) - 10;
-}
+//function rand() {
+//  return Math.round(Math.random() * 20) - 10;
+//}
 
 function getModalStyle() {
-  const top = 50 + rand();
-  const left = 50 + rand();
+  const top = 50 
+  const left = 50 
 
   return {
     top: `${top}%`,
@@ -25,7 +25,7 @@ function getModalStyle() {
 const styles = theme => ({
   paper: {
     position: 'absolute',
-    width: theme.spacing.unit * 50,
+    width: theme.spacing.unit * 35,
     backgroundColor: theme.palette.background.paper,
     boxShadow: theme.shadows[5],
     padding: theme.spacing.unit * 4,

@@ -56,7 +56,7 @@ const assist = {
 }
 
 const partner = {
-  title: "合作伙伴"
+  title: "合作伙伴 (持续更新)"
 }
 
 export const footer = {

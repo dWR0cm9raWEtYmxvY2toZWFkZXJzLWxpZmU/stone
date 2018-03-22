@@ -54,7 +54,7 @@ const assist = {
 }
 
 const partner = {
-  title: "PARTNER"
+  title: "PARTNERS (to be updated)"
 }
 
 export const footer = {

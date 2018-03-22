@@ -50,6 +50,7 @@ class IndexPage extends React.Component{
     bg: { backgroundImage: 'url(' + require('../assets/imgs/banner-en.jpg') + ')'},
     list: enlist,
     right: false,
+    windowWidth: document.body.clientWidth
   }
   toggleDrawer = (side, open) => () => {
     this.setState({
@@ -101,20 +102,59 @@ class IndexPage extends React.Component{
     )
     return(
       <div>
-        <Modal/>
+        <Modal />
         <LazyLoad height={0}>
           <AppBar style={{backgroundColor:`rgba(9,12,36,0.3)`}} className="nav" position="fixed">
             <Toolbar className="nav">
-              <Button disableRipple={true}  size="small"
-                      disableFocusRipple={true}
+              <div className="rowlist">
+              <Link to="#introductin" style={{textDecoration:'none'}}>
+                <Button size="small" className="trans"
+                        style={{color:'white'}}>
+                  {this.state.lang.menu[0]}
+                </Button>                                  
+              </Link>
+              <Link to="#speakers" style={{textDecoration:'none'}}>
+                <Button size="small" className="trans"
+                        style={{color:'white'}}>
+                  {this.state.lang.menu[1]}
+                </Button>                                  
+              </Link>
+              <Link to="#host" style={{textDecoration:'none'}}>
+                <Button size="small" className="trans"
+                        style={{color:'white'}}>
+                  {this.state.lang.menu[2]}
+                </Button>                                  
+              </Link>
+              <Link to="#sponsorship" style={{textDecoration:'none'}}>
+                <Button size="small" className="trans"
+                        style={{color:'white'}}>
+                  {this.state.lang.menu[3]}
+                </Button>                                
+              </Link>
+              <Link to="#contact" style={{textDecoration:'none'}}>
+                <Button size="small" className="trans"
+                        style={{color:'white'}}>
+                  {this.state.lang.menu[4]}
+                </Button>                
+              </Link>              
+              <a href={this.state.lang.ticket} style={{textDecoration:'none'}}>
+                <Button size="small" className="trans"
+                        style={{color:'white'}}>
+                  {this.state.lang.menu[5]}
+                </Button>
+              </a>
+              </div>
+              <Button disableRipple={true}
+                      size="small" disableFocusRipple={true}
                       onClick={trans} className="trans"
-                      style={{color:'white',display:'flex'}}              
-              >
+                      style={{color:'white',display:'flex'}} >
                 {this.state.toLang}
-              </Button>
-              <IconButton onClick={this.toggleDrawer('right', true)}>
-                <MenuIcon style={{color:'white'}} />
-              </IconButton>            
+              </Button>              
+              <div className="menubtn">
+                <IconButton onClick={this.toggleDrawer('right', true)}>
+                  <MenuIcon style={{color:'white'}} />
+                </IconButton>
+              </div>
             </Toolbar>
           </AppBar>
         </LazyLoad>
@@ -222,29 +262,29 @@ class IndexPage extends React.Component{
             </TweenOne>
           </LazyLoad>
         </section>
-          <LazyLoad height={100} >
-            <TweenOne className="ctn" animation={{ x: -100, type: 'from',duration:720,opacity:0 }}>
-              <h2>{this.state.lang.assist.title}</h2>
-              <div className="bar"/>
-              <Grid container alignItems="center" className="gridm" justify="center">
-                <Grid item xs={12} md={12} className="cctn">
-                  <div className="bcc" style={{marginTop:`3rem`}}/>
-                </Grid>
-                <Grid item xs={12} md={12} style={{maxWidth: `960px`}}>
-                  <p className="indent">{this.state.lang.assist.para}</p></Grid>
+        <LazyLoad height={100} >
+          <TweenOne className="ctn" animation={{ x: -100, type: 'from',duration:720,opacity:0 }}>
+            <h2>{this.state.lang.assist.title}</h2>
+            <div className="bar"/>
+            <Grid container alignItems="center" className="gridm" justify="center">
+              <Grid item xs={12} md={12} className="cctn">
+                <div className="bcc" style={{marginTop:`3rem`}}/>
               </Grid>
-            </TweenOne></LazyLoad>
-          <LazyLoad height={100}>
-            <TweenOne className="ctn" animation={{ x: -100, type: 'from',duration:720,opacity:0 }}>
-              <h2>{this.state.lang.partner.title}</h2>
-              <div className="bar" />
-              <Grid container justify="space-around" alignItems="center" className="para" >
-                <Grid item ><div className="cctn bs"/></Grid>
-                <Grid item ><div className="cctn bbt" /></Grid>
-                <Grid item ><div className="cctn bf" /></Grid>                
-              </Grid>
-            </TweenOne></LazyLoad>
-          <section key="l" className="footer ctn" style={{color:'white', height:'auto'}} >
+              <Grid item xs={12} md={12} style={{maxWidth: `960px`}}>
+                <p className="indent">{this.state.lang.assist.para}</p></Grid>
+            </Grid>
+          </TweenOne></LazyLoad>
+        <LazyLoad height={100}>
+          <TweenOne className="ctn" animation={{ x: -100, type: 'from',duration:720,opacity:0 }}>
+            <h2>{this.state.lang.partner.title}</h2>
+            <div className="bar" />
+            <Grid container justify="space-around" alignItems="center" className="para" >
+              <Grid item ><div className="cctn bs"/></Grid>
+              <Grid item ><div className="cctn bbt" /></Grid>
+              <Grid item ><div className="cctn bf" /></Grid>                
+            </Grid>
+          </TweenOne></LazyLoad>
+        <section key="l" className="footer ctn" style={{color:'white', height:'auto'}} >
           <h5>{this.state.lang.footer.title}</h5>
           <div className="bar" style={{marginBottom:'1rem'}}></div>
           <Grid container  style={{maxWidth:'960px'}}>

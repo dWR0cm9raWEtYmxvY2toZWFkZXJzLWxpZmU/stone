@@ -5,7 +5,9 @@
     .subpara{ max-width: 60vw }
     .picintro{ max-width: 960px }
     .nav{ height: 2rem}
-    .banner{ height: 50vw; width: 100vw;}    
+    .banner{ height: 50vw; width: 100vw;}
+    .menubtn{ display: none }
+    .rowlist{ display: flex }            
 }
 @media screen and (max-width: 960px){
     h2{ font-size: 1.5rem; }
@@ -14,7 +16,9 @@
     .para{ max-width: 80vw }
     .subpara{ max-width: 60vw }
     .nav{ height: 1.8rem}
-    .banner{ height: 50vw; width: 100vw;}    
+    .banner{ height: 50vw; width: 100vw;}
+    .menubtn{ display: none }
+    .rowlist{ display: flex }        
 }
 @media screen and (max-width: 640px){
     h2{ font-size: 1rem ;}
@@ -24,8 +28,11 @@
     .nav{ height: 1.8rem}
     .banner{ height: 50vw; width: 100vw;}
     .menuicon{width: 2rem}
+    .menubtn{ display: inline-block }
+    .rowlist{ display: none }    
 }
 @media screen and (max-width: 480px){
+
     h2{ font-size: 0.8rem }
     p{ font-size: 0.5rem; }
     .para{ max-width: 80vw }
@@ -33,6 +40,13 @@
     .nav{ height: 1.8rem}
     .banner{ height: 75vw; width: 100vw;}
     .menuicon{width: 1rem}
+    .menubtn{ display: inline-block }
+    .rowlist{ display: none }
+}
+
+.rowlist{
+    align-items: center;
+    justify-content: center;
 }
 
 .picintro{ max-width: 80vw }    

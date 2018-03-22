@@ -5,6 +5,7 @@ import Typography from 'material-ui/Typography';
 import Modal from 'material-ui/Modal';
 import Button from 'material-ui/Button';
 import SendIcon from 'material-ui-icons/Send';
+import LazyLoad from 'react-lazyload'
 
 function rand() {
   return Math.round(Math.random() * 20) - 10;
@@ -57,7 +58,9 @@ class SimpleModal extends React.Component {
     return (
       <div>
         <Button classes={{root:classes.btn}}
-                onClick={this.handleOpen}><SendIcon /><p>&nbsp; Invitation Letter</p></Button>
+                onClick={this.handleOpen}>
+          <LazyLoad height={0}><SendIcon /></LazyLoad>
+          <p>&nbsp; Invitation Letter</p></Button>
         <Modal
           aria-labelledby="simple-modal-title"
           aria-describedby="simple-modal-description"

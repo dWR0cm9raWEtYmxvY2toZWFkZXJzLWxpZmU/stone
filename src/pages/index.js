@@ -79,8 +79,8 @@ class IndexPage extends React.Component {
       let qnum = 'q' + i
       let anum = 'a' + i
       return(
-        <div style={{marginBottom: '2rem'}}>
-          <b style={{marginBottom:'1rem'}}>Q{i}: {this.state.lang.faq[qnum]}</b>
+        <div key={i} style={{marginBottom: '2rem'}}>
+          <p><b>Q{i}: {this.state.lang.faq[qnum]}</b></p><br/>
           <p className="indent">{this.state.lang.faq[anum]}</p>
         </div>
       )
@@ -298,7 +298,6 @@ class IndexPage extends React.Component {
         </section>
         <LazyLoad height={100}>
           <TweenOne
-            className="ctn"
             animation={{ x: -100, type: 'from', duration: 720, opacity: 0 }}
           >
             <section className="ctn" id="faq">

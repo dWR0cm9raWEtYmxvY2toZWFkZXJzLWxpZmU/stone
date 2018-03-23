@@ -74,12 +74,12 @@ class SimpleModal extends React.Component {
               Invitation Letter
             </Typography>
             <br />
-            <Typography variant="subheading" id="simple-modal-description">
-              If you need invitation letter to apply for Visa, please send the following information to email:graphene.devcon@foxmail.com:
+            <Typography className="name" id="simple-modal-description">
+              If you need invitation letter to apply for Visa, please send the following information to email: graphene.devcon@foxmail.com:
             </Typography>
             <br />
-            <Typography style={{ fontStyle: 'italic' }}>
-              Full name, Gender, Date of Birth, Arrival date and depart date.
+            <Typography className="info" style={{ fontStyle: 'italic' }}>
+              Full name, Gender, Date of Birth, Arrival date and departure date
             </Typography>
           </div>
         </Modal>

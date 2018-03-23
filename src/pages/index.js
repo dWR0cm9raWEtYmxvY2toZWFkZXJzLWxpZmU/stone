@@ -165,15 +165,6 @@ class IndexPage extends React.Component {
                     {this.state.lang.menu[2]}
                   </Button>
                 </Link>
-                <Link to="#sponsorship" style={{ textDecoration: 'none' }}>
-                  <Button
-                    size="small"
-                    className="trans"
-                    style={{ color: 'white' }}
-                  >
-                    {this.state.lang.menu[3]}
-                  </Button>
-                </Link>
                 <Link to="#contact" style={{ textDecoration: 'none' }}>
                   <Button
                     size="small"
@@ -244,11 +235,6 @@ class IndexPage extends React.Component {
                 <Link to="#host" style={{ textDecoration: 'none' }}>
                   <ListItem button style={{ color: 'white' }}>
                     {this.state.lang.menu[2]}
-                  </ListItem>
-                </Link>
-                <Link to="#sponsorship" style={{ textDecoration: 'none' }}>
-                  <ListItem button style={{ color: 'white' }}>
-                    {this.state.lang.menu[3]}
                   </ListItem>
                 </Link>
                 <Link to="#contact" style={{ textDecoration: 'none' }}>
@@ -346,7 +332,7 @@ class IndexPage extends React.Component {
             >
               <h2>{this.state.lang.vip.title}</h2>
               <div className="bar" />
-              <Fotos list={this.state.list} style={{ width:'100vw', maxWidth: '960px' }} />
+              <Fotos list={this.state.list} style={{  maxWidth: '960px' }} />
             </TweenOne>
           </LazyLoad>
         </section>

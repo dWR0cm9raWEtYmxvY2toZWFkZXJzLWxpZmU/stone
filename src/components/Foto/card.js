@@ -6,7 +6,7 @@ import TweenOne from 'rc-tween-one'
 import LazyLoad from 'react-lazyload'
 
 const Intro = ({ seq, v, list }) => (
-  <div style={{ textAlign: 'center', margin: '0.1rem' }} id="cardd">
+  <div style={{ textAlign: 'center', margin: '0.7rem' }} id="cardd">
     <div
       className="avatar"
       style={{

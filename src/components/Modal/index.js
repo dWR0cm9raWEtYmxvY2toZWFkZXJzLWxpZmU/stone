@@ -70,17 +70,19 @@ class SimpleModal extends React.Component {
           onClose={this.handleClose}
         >
           <div style={getModalStyle()} className={classes.paper}>
-            <Typography variant="title" id="modal-title">
+            <Typography variant="subheading" id="modal-title">
               Invitation Letter
             </Typography>
             <br />
-            <Typography variant="subheading" id="simple-modal-description">
-              If you need invitation letter to apply for Visa, please send the following information to email: graphene.devcon@foxmail.com:
-            </Typography>
+            <p id="simple-modal-description" style={{wordBreak:'none'}}>
+              If you need invitation letter to apply for Visa, please send the following information to email:
+              
+            </p>
+            <p style={{fontWeight: 700}}>graphene.devcon@foxmail.com</p>
             <br />
-            <Typography style={{ fontStyle: 'italic' }}>
-              Full name, Gender, Date of Birth, Arrival date and depart date.
-            </Typography>
+            <p style={{ fontStyle: 'italic', wordBreak:'none',borderStyle:"solid",padding: '0.2rem',borderWidth:'0.08rem' }}>
+              Full name:<br/> Gender:<br/> Date of Birth:<br/>Arrival date and departure date:<br/>
+            </p>
           </div>
         </Modal>
       </div>

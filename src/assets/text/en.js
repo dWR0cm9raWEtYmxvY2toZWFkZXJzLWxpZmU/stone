@@ -50,7 +50,7 @@ const sponsor = {
 }
 
 const host = {
-  title: 'ORGANIZERS',
+  title: 'HOST',
   blockGeek: `Founded in Suzhou in Jan. 2018, and as an important part of the leading multi-national enterprise, Blockchain Global, BlockGeek is a Blockchain education company with the vision to building the ecosystem of the Blockchain talents and accelerating the adoption of the Blockchain technology. We work with academic experts and industry specialists to provide online and offline Blockchain courses for developers, entrepreneurs and all industries. We also run Blockchain Centre in China, the world’s first nonprofit Blockchain knowledge hub launched in Melbourne, Australia in 2014 and now expanded around the world.`,
   gdex: `GDEX is a decentralized digital asset exchange based on bitshares, created by Mr. bitcrab. GDEX offers a stack of financial services including exchange and banking on a blockchain.`,
 }

@@ -14,22 +14,27 @@
 @media screen and (max-width: 640px) {
     #cardd{width: 6rem; height:10rem;line-height:0.8rem; }
     .avatar{ height: 6rem; width: 6rem; }
-    .name{ font-size: 0.6rem;}
-    .info{ font-size: 0.5rem; line-height:0.8rem }    
+    .name{ font-size: 0.7rem;}
+    .info{ font-size: 0.6rem; line-height:0.8rem }
 }
 @media screen and (max-width: 480px) {
-    #cardd{width: 6rem; line-height:0.8rem; height:10rem;}
-    .avatar{ height: 6rem; width: 6rem; }
-    .name{ font-size: 0.5rem;}
-    .info{ font-size: 0.5rem; line-height:0.7rem}    
+    #cardd{width: 7rem; line-height:0.8rem; height:10rem;}
+    .avatar{ height: 7rem; width: 7rem; }
+    .name{ font-size: 0.7rem;}
+    .info{ font-size: 0.6rem; line-height:0.7rem}    
 }
 
 body{
     font-family: "Roboto", "Helvetica", "Arial", sans-serif!important;
 }
 
-#ccard{
-    
+.avatar{
+    box-shadow: 1px 2px 2px #888888;
+}
+
+#cardd{
+    textAlign: center;
+    margin: 1rem    
 }
 
 .cardctn{

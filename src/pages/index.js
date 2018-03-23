@@ -127,9 +127,12 @@ class IndexPage extends React.Component {
         </ListItem>
       </List>
     )
+
     return (
       <div>
-        <LazyLoad height={0}><Modal /></LazyLoad>
+        <LazyLoad height={0}>
+          {this.state.lang===en?<Modal />:<div />}
+        </LazyLoad>
         <LazyLoad height={0}>
           <AppBar
             style={{ backgroundColor: `rgba(9,12,36,0.3)` }}
@@ -430,7 +433,7 @@ class IndexPage extends React.Component {
           <h5>{this.state.lang.footer.title}</h5>
           <div className="bar" style={{ marginBottom: '1rem' }} />
           <Grid container style={{ maxWidth: '960px' }}>
-            <Grid item sm={6} md={4} className="ftgrid">
+            <Grid item xs={12} sm={6} md={4} className="ftgrid">
               <div className=" sr">
                 <div className="fticon ftcp" />
                 <div className="ftgrid">
@@ -449,7 +452,7 @@ class IndexPage extends React.Component {
                 </div>
               </div>
             </Grid>
-            <Grid item sm={6} md={4} className="ftgrid">
+            <Grid item xs={12} sm={6} md={4} className="ftgrid">
               <div className="sr">
                 <div className="fticon ftchat" />
                 <div className="ftgrid">

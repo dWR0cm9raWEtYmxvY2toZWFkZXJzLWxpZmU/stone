@@ -39,7 +39,7 @@ class PaginationDot extends Component {
     }
 
     return (
-      <button style={styles.root} onClick={this.handleClick}>
+      <button className="pagination" onClick={this.handleClick}>
         <div style={styleDot} />
       </button>
     )

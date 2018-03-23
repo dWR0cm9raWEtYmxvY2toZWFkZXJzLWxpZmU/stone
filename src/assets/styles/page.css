@@ -37,12 +37,13 @@
     .menubtn{ display: inline-block }
     .rowlist{ display: none }
     .roundicon{ height:4rem; width:4rem; }
-    .partner{ height: 6rem; width: 6em;}        
+    .partner{ height: 6rem; width: 6em;}
+    .pagination{ display: none}    
 }
 
 @media screen and (max-width: 480px){
-    h2{ font-size: 0.8rem }
-    p{ font-size: 0.5rem; }
+    h2{ font-size: 1rem }
+    p{ font-size: 0.7rem; }
     .para{ max-width: 80vw }
     .subpara{ max-width: 80vw }
     .nav{ height: 1.8rem}
@@ -51,7 +52,17 @@
     .menubtn{ display: inline-block }
     .rowlist{ display: none }
     .roundicon{ height:4rem; width:4rem; }
-    .partner{ height: 5rem; width: 5rem;}    
+    .partner{ height: 5rem; width: 5rem;}
+    .pagination{ display: none}
+}
+
+.pagination{
+    height: 18;
+    width: 18;
+    cursor: pointer;
+    border: 0;
+    background: none;
+    padding: 0;
 }
 
 .rowlist{

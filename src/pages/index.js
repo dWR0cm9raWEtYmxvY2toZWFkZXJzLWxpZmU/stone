@@ -352,7 +352,7 @@ class IndexPage extends React.Component {
                 justify="center"
               >
                 <Grid item xs={12} md={12} className="cctn">
-                  <div className="blockgeek" />
+                  <div className="organizer blockgeek" />
                 </Grid>
                 <Grid item xs={12} md={12} style={{ maxWidth: '960px' }}>
                   <p className="indent">{this.state.lang.host.blockGeek}</p>
@@ -365,7 +365,7 @@ class IndexPage extends React.Component {
                 justify="center"
               >
                 <Grid item xs={12} md={12} className="cctn">
-                  <div className="gdex" />
+                  <div className="organizer gdex" />
                 </Grid>
                 <Grid item xs={12} md={12} style={{ maxWidth: '960px' }}>
                   <Grid item xs={3} />
@@ -389,7 +389,7 @@ class IndexPage extends React.Component {
               justify="center"
             >
               <Grid item xs={12} md={12} className="cctn">
-                <div className="bcc" style={{ marginTop: `3rem` }} />
+                <div className="organizer bcc" />
               </Grid>
               <Grid item xs={12} md={12} style={{ maxWidth: `960px` }}>
                 <p className="indent">{this.state.lang.assist.para}</p>

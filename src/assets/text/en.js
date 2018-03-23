@@ -88,9 +88,8 @@ const faq = {
   q5: 'Are meals included with the ticket price released on your official website?',
   q6: 'Any recreational places around the Venue？',
   a1: 'Jumeirah Himalayas Hotel Shanghai, designed by World-renowned architect Arata Isozaki, who has presided over the design of Okanoyama Graphic Art Museum and Team Disney Building Florida. The hotel opened in April 2011 with a total of 393 rooms and 21 floors.',
-  a2: `<Shanghai Hongqiao Airport （SHA）(No. 1 / No. 2 terminal) / Shanghai Pudong Airport (PVG) -  Hotel> Take subway line 2 to Longyang road, transfer line 7 to Huamu road, and exit No. 3 to the hotel.
-< Shanghai railway station - hotel > Take subway line 1 to people's square, transfer line 2 to Longyang road, transfer line 7 to Huamu road, and exit No. 3 to the hotel.
-<Hongqiao railway station- hotel > Take subway line 2 to Longyang road, transfer line 7 to Huamu road, and exit No. 3 to the hotel.`,
+  a2: `✔︎ <Shanghai Hongqiao Airport （SHA）(No. 1 / No. 2 terminal) / Shanghai Pudong Airport (PVG) -  Hotel> Take subway line 2 to Longyang road, transfer line 7 to Huamu road, and exit No. 3 to the hotel. ✔︎ < Shanghai railway station - hotel > Take subway line 1 to people's square, transfer line 2 to Longyang road, transfer line 7 to Huamu road, and exit No. 3 to the hotel.
+ ✔︎ <Hongqiao railway station- hotel > Take subway line 2 to Longyang road, transfer line 7 to Huamu road, and exit No. 3 to the hotel.`,
   a3: 'We will provide enough simultaneous interpretation devices to ensure fluent communication and information exchange among guests. You may deposit your ID card or passport in exchange for such device for free.',
   a4: 'If you want to be a sponsors, please contact Linda, tel +86 15851461946, email graphene.devcon@foxmail.com',
   a5: `Are meals included with the ticket price released on your official website?

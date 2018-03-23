@@ -281,7 +281,7 @@ class IndexPage extends React.Component {
               <h2>{this.state.lang.intro.title}</h2>
               <div className="bar" />
               <p className="para indent ">{this.state.lang.intro.para1}</p>
-              <p className="para indent ">{this.state.lang.intro.para2}</p>
+              <p style={{width:'100%'}} className="para indent ">{this.state.lang.intro.para2}</p>
             </TweenOne>
           </section>
         </LazyLoad>
@@ -360,7 +360,9 @@ class IndexPage extends React.Component {
           >
             <h2>{this.state.lang.faq.title}</h2>
             <div className="bar" />
-            {faqRenderList}
+            <div>
+              {faqRenderList}
+              </div>
           </TweenOne>
         </LazyLoad>        
         <section id="host" className="ctn bg1">

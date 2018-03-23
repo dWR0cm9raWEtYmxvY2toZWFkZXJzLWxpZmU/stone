@@ -80,8 +80,8 @@ class IndexPage extends React.Component {
       let anum = 'a' + i
       return(
         <div style={{marginBottom: '2rem'}}>
-        <b style={{marginBottom:'1rem'}}>Q{i}: {this.state.lang.faq[qnum]}</b>
-        <p className="indent">{this.state.lang.faq[anum]}</p>
+          <b style={{marginBottom:'1rem'}}>Q{i}: {this.state.lang.faq[qnum]}</b>
+          <p className="indent">{this.state.lang.faq[anum]}</p>
         </div>
       )
     })
@@ -155,16 +155,6 @@ class IndexPage extends React.Component {
           >
             <Toolbar className="nav">
               <div className="rowlist">
-              <Button
-                disableRipple={true}
-                size="small"
-                disableFocusRipple={true}
-                onClick={trans}
-                className="trans"
-                style={{ color: 'white', display: 'flex' }}
-              >
-                {this.state.toLang}
-              </Button>                
                 <a href={this.state.lang.ticket}
                    style={{ textDecoration: 'none' }}
                 >
@@ -177,7 +167,18 @@ class IndexPage extends React.Component {
                   >
                     {this.state.lang.menu[5]}
                   </Button>
-                </a>
+                </a>                
+                <Button
+                  disableRipple={true}
+                  size="small"
+                  disableFocusRipple={true}
+                  onClick={trans}
+                  className="trans"
+                  style={{ color: 'white', display: 'flex' }}
+                >
+                  {this.state.toLang}
+                </Button>                
+
               </div>
 
               <div className="menubtn">
@@ -301,11 +302,11 @@ class IndexPage extends React.Component {
             animation={{ x: -100, type: 'from', duration: 720, opacity: 0 }}
           >
             <section className="ctn" id="faq">
-            <h2>{this.state.lang.faq.title}</h2>
-            <div className="bar" />
-            <div>
-              {faqRenderList}
-            </div>
+              <h2>{this.state.lang.faq.title}</h2>
+              <div className="bar" />
+              <div>
+                {faqRenderList}
+              </div>
             </section>
           </TweenOne>
         </LazyLoad>        
@@ -396,9 +397,9 @@ class IndexPage extends React.Component {
         </LazyLoad>
 
         <section id="contact"
-          key="l"
-          className="footer ctn"
-          style={{ color: 'white', height: 'auto' }}
+                 key="l"
+                 className="footer ctn"
+                 style={{ color: 'white', height: 'auto' }}
         >
           <h5>{this.state.lang.footer.title}</h5>
           <div className="bar" style={{ marginBottom: '1rem' }} />

@@ -71,6 +71,20 @@ class IndexPage extends React.Component {
     for (var i = 1; i < 4; i++) {
       arr2.push(i)
     }
+    let faqlist = []
+    for (var i = 1; i < 6; i++){
+      faqlist.push(i)
+    }
+    let faqRenderList = faqlist.map(i => {
+      let qnum = 'q' + i
+      let anum = 'a' + i
+      return(
+        <div style={{marginBottom: '2rem'}}>
+        <b style={{marginBottom:'1rem'}}>Q{i}: {this.state.lang.faq[qnum]}</b>
+        <p className="indent">{this.state.lang.faq[anum]}</p>
+        </div>
+      )
+    })
     let list = arr.map(i => {
       return (
         <TableRow key={i}>
@@ -339,8 +353,17 @@ class IndexPage extends React.Component {
             </TweenOne>
           </LazyLoad>
         </section>
-        
-        <section id="host" className="ctn">
+        <LazyLoad height={100}>
+          <TweenOne
+            className="ctn"
+            animation={{ x: -100, type: 'from', duration: 720, opacity: 0 }}
+          >
+            <h2>{this.state.lang.faq.title}</h2>
+            <div className="bar" />
+            {faqRenderList}
+          </TweenOne>
+        </LazyLoad>        
+        <section id="host" className="ctn bg1">
           <LazyLoad height={100} offset={100}>
             <TweenOne
               style={{ alignItems: 'center',justifyContent: 'center',display:'flex',flexDirection:'column'}}
@@ -380,7 +403,7 @@ class IndexPage extends React.Component {
         </section>
         <LazyLoad height={100}>
           <TweenOne
-            className="ctn bg1"
+            className="ctn"
             animation={{ x: -100, type: 'from', duration: 720, opacity: 0 }}
           >
             <h2>{this.state.lang.assist.title}</h2>
@@ -397,15 +420,20 @@ class IndexPage extends React.Component {
               <Grid item xs={12} md={12} style={{ maxWidth: `960px` }}>
                 <p className="indent">{this.state.lang.assist.para}</p>
               </Grid>
+              <Grid item xs={12} md={12} className="cctn">
+                <div className="organizer bs" />
+              </Grid>
+              <Grid item xs={12} md={12} style={{ maxWidth: `960px` }}>
+                <p className="indent">{this.state.lang.assist.para2}</p>
+              </Grid>
+              <Grid item xs={12} md={12} className="cctn">
+                <div className="organizer bf" />
+              </Grid>
+              <Grid item xs={12} md={12} style={{ maxWidth: `960px` }}>
+                <p className="indent">{this.state.lang.assist.para3}</p>
+              </Grid>              
             </Grid>
-          </TweenOne>
-        </LazyLoad>
-        <LazyLoad height={100}>
-          <TweenOne
-            className="ctn"
-            animation={{ x: -100, type: 'from', duration: 720, opacity: 0 }}
-          >
-            <h2>{this.state.lang.partner.title}</h2>
+            <h2 style={{marginTop:'2rem'}}>{this.state.lang.partner.title}</h2>
             <div className="bar" />
             <Grid
               container
@@ -413,18 +441,14 @@ class IndexPage extends React.Component {
               alignItems="center"
               className="para"
             >
+              <Grid item><div className="cctn partner bbt" /></Grid>
               <Grid item>
-                <div className="cctn partner bs" />
-              </Grid>
-              <Grid item>
-                <div className="cctn partner bbt" />
-              </Grid>
-              <Grid item>
-                <div className="cctn partner bf" />
-              </Grid>
-            </Grid>
+                <div className="cctn partner d45" />
+              </Grid>              
+            </Grid>            
           </TweenOne>
         </LazyLoad>
+
         <section
           key="l"
           className="footer ctn"

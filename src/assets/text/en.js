@@ -17,7 +17,7 @@ const overview = {
   head1: 'Attendes:',
   head2: 'Time:',
   head3: 'Format:',
-  head4: 'Organizers:',
+  head4: 'Host:',
   head5: 'Co-host:',
   head6: 'Venue:',
   head7: 'Attendees:',
@@ -25,7 +25,7 @@ const overview = {
   p2: '5th-6th, May, 2018.',
   p3: 'keynote speech + roundtable',
   p4: 'Blockgeek/GDEX',
-  p5: 'Blockchain Centre China',
+  p5: 'Blockchain Centre China, Blockshine, Shared Finance',
   p6: 'Jumeirah Himalayas Hotel Shanghai',
   p7:
     'Graphene technology developer, blockchain developers，blockchain enthusiasts',
@@ -59,8 +59,8 @@ const assist = {
   title: 'CO-HOST',
   para: `Blockchain Centre is the world’s first not-for-profit education and knowledge center focusing on blockchain technology. From its establishment in 2014, it has been devoting itself to the education and promotion of blockchain technology on a global scale. It has set up partnerships in Australia, China, the United States Malaysia and Lithuania. The centre works hand-in-hand with industries . Its incubation plan has incubated and invested in more than 50 blockchain start-ups and joint ventures.`,
   para2:`The world’s leading all-in-one blockchain solutions company, Blockshine exists for one simple purpose: make the best blockchain applications open and accessible to all. We focus on providing holistic solutions and consulting services for project development of Blockchain-related technology, blockchain applications and cryptocurrency exchanges. With rich industry resources, we offer data research and analysis to tailor-make IP development, operation and brand management for our clients, which will ultimately help them maximize their business value and brand influence. `,
-  para3:`Shared Finance" (www.gongxiangcj.com)  was founded in 2015, which is a seasoned media firm in cryptocurrency / blockchain industry based in Shanghai.
-Company provides comprehensive service included crypto news, investment and financing by its web portal , new-media channel 《Blockchain Fin-Tech》 and its SL Index mobile application. Currently Shared Finance reached 100,000+ users and brought significant impact both in crypto and mainstream finance field, service provided by company is recognized by market and well respected by industry.`
+  para3:`"Shared Finance" (www.gongxiangcj.com)  was founded in 2015, which is a seasoned media firm in cryptocurrency / blockchain industry based in Shanghai.
+Company provides comprehensive service included crypto news, investment and financing by its web portal , new-media channel "Blockchain Fin-Tech" and its SL Index mobile application. Currently Shared Finance reached 100,000+ users and brought significant impact both in crypto and mainstream finance field, service provided by company is recognized by market and well respected by industry.`
 }
 
 const partner = {
@@ -103,7 +103,7 @@ Nanjing road pedestrian street,  Yuyuan Garden , City Temple（Snack 、commerci
 export const menu = [
   'Introduction',
   'Speakers',
-  'Organizer',
+  'Host',
   'Sponsorship',
   'Contact',
   'Tickets',

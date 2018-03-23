@@ -22,13 +22,13 @@ const overview = {
   head6: '主办方:',
   head7: '协办方:',
   p1: '1000+',
-  p2: '2018年5月4日-5月6日',
+  p2: '2018年5月5日-5月6日',
   p3: '上海喜马拉雅酒店',
   p4:
     '石墨烯技术开发者、区块链开发者、区块链相关从业者、区块链技术爱好者、区块链相关投资人',
   p5: '主题演讲+圆桌论坛',
   p6: 'BlockGeek、GDEX',
-  p7: 'Blockchain Centre China',
+  p7: 'Blockchain Centre China、Blockshine、Shared Finance',
 }
 
 const star = {

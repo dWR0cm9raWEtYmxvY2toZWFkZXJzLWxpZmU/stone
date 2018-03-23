@@ -2,6 +2,7 @@
 git add .
 git commit -m 'graphene bundle update'
 git push lab lazyload
+git push origin lazyload
 
 rm -r ./graphene
 gatsby build --prefix-paths

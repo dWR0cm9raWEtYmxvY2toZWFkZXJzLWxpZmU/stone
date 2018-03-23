@@ -9,6 +9,7 @@
     .menubtn{ display: none }
     .rowlist{ display: flex }
     .roundicon{ height:6rem; width:6rem; }
+    .partner{ height: 8rem; width: 8em;}
 }
 
 @media screen and (max-width: 960px){
@@ -21,7 +22,8 @@
     .banner{ height: 50vw; width: 100vw;}
     .menubtn{ display: none }
     .rowlist{ display: flex }
-    .roundicon{ height:6rem; width:6rem; }    
+    .roundicon{ height:6rem; width:6rem; }
+    .partner{ height: 6rem; width: 6rem;}
 }
 
 @media screen and (max-width: 640px){
@@ -34,7 +36,8 @@
     .menuicon{width: 2rem}
     .menubtn{ display: inline-block }
     .rowlist{ display: none }
-    .roundicon{ height:4rem; width:4rem; }        
+    .roundicon{ height:4rem; width:4rem; }
+    .partner{ height: 6rem; width: 6em;}        
 }
 
 @media screen and (max-width: 480px){
@@ -47,7 +50,8 @@
     .menuicon{width: 1rem}
     .menubtn{ display: inline-block }
     .rowlist{ display: none }
-    .roundicon{ height:4rem; width:4rem; }            
+    .roundicon{ height:4rem; width:4rem; }
+    .partner{ height: 5rem; width: 5rem;}    
 }
 
 .rowlist{
@@ -166,45 +170,24 @@ p{
     align-items: center;
 }
 
-.bs{
-    height: 4rem;
-    width: 4em;
-    background-image: url('../../assets/imgs/bs.png');
+.partner{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     margin-bottom: 2rem;
+}
+
+.bs{
+    background-image: url('../../assets/imgs/bs.png');
 }
 
 .bbt{
-    height: 1.6rem;
-    width: 7em;
     background-image: url('../../assets/imgs/bbt.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    margin-bottom: 2rem;
-}
-
-.ff{
-    height: 2rem;
-    width: 7em;
-    background-image: url('../../assets/imgs/ff.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    margin-bottom: 2rem;
 }
 
 .bf{
-    height: 1.6rem;
-    width: 6em;
-    background-image: url('../../assets/imgs/bf.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    margin-bottom: 3rem;
-}
+     background-image: url('../../assets/imgs/bf.png');
+ }
 
 .bar{
     width: 1rem;

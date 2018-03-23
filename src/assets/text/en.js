@@ -35,17 +35,20 @@ const star = {
   title: 'Conference Highlights',
   head1: 'Private Session',
   head2: 'Unique Roundtable',
-  head3: 'Simultaneous Interpretation',
+  head3: 'EOS',
   p1: 'Face-to-face communication with world’s top graphene developers',
   p2: 'Debate on the future trend of Bitshares',
-  p3: 'Barrier-free communication between developers',
+  p3: 'A comprehensive understanding of the EOS ecosystem in China',
 }
+
 const vip = {
   title: 'SPEAKERS',
 }
+
 const sponsor = {
   title: 'Sponsorship Package',
 }
+
 const host = {
   title: 'ORGANIZERS',
   blockGeek: `Founded in Suzhou in Jan. 2018, and as an important part of the leading multi-national enterprise, Blockchain Global, BlockGeek is a Blockchain education company with the vision to building the ecosystem of the Blockchain talents and accelerating the adoption of the Blockchain technology. We work with academic experts and industry specialists to provide online and offline Blockchain courses for developers, entrepreneurs and all industries. We also run Blockchain Centre in China, the world’s first nonprofit Blockchain knowledge hub launched in Melbourne, Australia in 2014 and now expanded around the world.`,

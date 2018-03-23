@@ -122,6 +122,14 @@ const list = {
     intro:
       'He obtained master degree in computer science at Fudan University and is known as the senior evangelist of blockchain technology, the founder of West Miner, the founder of QChain Exchange, Litecoin expert, a famous Litecoin technical analyst and industry tycoon, the author of the analytical article “Litecoin Will Not Die” and the managing director and founder of EOS Gravity.',
   },
+  v21:{
+    name: 'Qiang Liu',
+    position: 'Founder of hellobts',
+  },
+  v22:{
+    name: 'Lingyan Zhao',
+    position: 'Founder of UnlimitedIP program, CEO of Link Entertainments Technology',
+  }
 }
 
 export default list

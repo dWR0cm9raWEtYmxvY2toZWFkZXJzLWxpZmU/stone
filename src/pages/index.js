@@ -411,13 +411,13 @@ class IndexPage extends React.Component {
               className="para"
             >
               <Grid item>
-                <div className="cctn bs" />
+                <div className="cctn partner bs" />
               </Grid>
               <Grid item>
-                <div className="cctn bbt" />
+                <div className="cctn partner bbt" />
               </Grid>
               <Grid item>
-                <div className="cctn bf" />
+                <div className="cctn partner bf" />
               </Grid>
             </Grid>
           </TweenOne>

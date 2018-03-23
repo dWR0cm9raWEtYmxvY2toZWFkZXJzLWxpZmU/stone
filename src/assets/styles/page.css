@@ -33,9 +33,9 @@
     .subpara{ max-width: 60vw; }
     .nav{ height: 1.8rem}
     .banner{ height: 50vw; width: 100vw;}
-    .menuicon{width: 2rem}
-    .menubtn{ display: inline-block }
-    .rowlist{ display: none }
+/*    .menuicon{width: 2rem} */
+    .menubtn{ display: none }
+/*    .rowlist{ display: none } */
     .roundicon{ height:4rem; width:4rem; }
     .partner{ height: 6rem; width: 6em;}
     .pagination{ display: none}    
@@ -48,9 +48,9 @@
     .subpara{ max-width: 80vw }
     .nav{ height: 1.8rem}
     .banner{ height: 75vw; width: 100vw;}
-    .menuicon{width: 1rem}
-    .menubtn{ display: inline-block }
-    .rowlist{ display: none }
+/*    .menuicon{width: 1rem} */
+    .menubtn{ display: none }
+/*    .rowlist{ display: none } */
     .roundicon{ height:4rem; width:4rem; }
     .partner{ height: 5rem; width: 5rem;}
     .pagination{ display: none}

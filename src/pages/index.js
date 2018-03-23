@@ -155,59 +155,6 @@ class IndexPage extends React.Component {
           >
             <Toolbar className="nav">
               <div className="rowlist">
-                <Link to="#introductin" style={{ textDecoration: 'none' }}>
-                  <Button
-                    size="small"
-                    className="trans"
-                    style={{ color: 'white' }}
-                  >
-                    {this.state.lang.menu[0]}
-                  </Button>
-                </Link>
-                <Link to="#speakers" style={{ textDecoration: 'none' }}>
-                  <Button
-                    size="small"
-                    className="trans"
-                    style={{ color: 'white' }}
-                  >
-                    {this.state.lang.menu[1]}
-                  </Button>
-                </Link>
-                <Link to="#host" style={{ textDecoration: 'none' }}>
-                  <Button
-                    size="small"
-                    className="trans"
-                    style={{ color: 'white' }}
-                  >
-                    {this.state.lang.menu[2]}
-                  </Button>
-                </Link>
-                <Link to="#contact" style={{ textDecoration: 'none' }}>
-                  <Button
-                    size="small"
-                    className="trans"
-                    style={{ color: 'white' }}
-                  >
-                    {this.state.lang.menu[4]}
-                  </Button>
-                </Link>
-                <a
-                  href={this.state.lang.ticket}
-                  style={{ textDecoration: 'none' }}
-                >
-                  <Button
-                    size="small"
-                    className="trans"
-                    style={{
-                      color: 'white',
-                      borderRadius: '33rem',
-                      backgroundColor: 'rgba(213,168,69,1)',
-                    }}
-                  >
-                    {this.state.lang.menu[5]}
-                  </Button>
-                </a>
-              </div>
               <Button
                 disableRipple={true}
                 size="small"
@@ -217,7 +164,22 @@ class IndexPage extends React.Component {
                 style={{ color: 'white', display: 'flex' }}
               >
                 {this.state.toLang}
-              </Button>
+              </Button>                
+                <a href={this.state.lang.ticket}
+                   style={{ textDecoration: 'none' }}
+                >
+                  <Button size="small" className="trans"
+                          style={{
+                            color: 'white',
+                            borderRadius: '33rem',
+                            backgroundColor: 'rgba(213,168,69,1)',
+                          }}
+                  >
+                    {this.state.lang.menu[5]}
+                  </Button>
+                </a>
+              </div>
+
               <div className="menubtn">
                 <IconButton onClick={this.toggleDrawer('right', true)}>
                   <MenuIcon style={{ color: 'white' }} />
@@ -239,26 +201,6 @@ class IndexPage extends React.Component {
               onKeyDown={this.toggleDrawer('right', false)}
             >
               <List className="drawerlist">
-                <Link to="#introductin" style={{ textDecoration: 'none' }}>
-                  <ListItem button style={{ color: 'white' }}>
-                    {this.state.lang.menu[0]}
-                  </ListItem>
-                </Link>
-                <Link to="#speakers" style={{ textDecoration: 'none' }}>
-                  <ListItem button style={{ color: 'white' }}>
-                    {this.state.lang.menu[1]}
-                  </ListItem>
-                </Link>
-                <Link to="#host" style={{ textDecoration: 'none' }}>
-                  <ListItem button style={{ color: 'white' }}>
-                    {this.state.lang.menu[2]}
-                  </ListItem>
-                </Link>
-                <Link to="#contact" style={{ textDecoration: 'none' }}>
-                  <ListItem button style={{ color: 'white' }}>
-                    {this.state.lang.menu[4]}
-                  </ListItem>
-                </Link>
                 <a
                   href={this.state.lang.ticket}
                   style={{ textDecoration: 'none' }}

@@ -56,7 +56,7 @@ const list = {
       'Entrepreneur, been in IT related businesses since 1987, investor. Fluent in several languages. International business consultancy. Blockchain initiatives and projects. Represents the BitShares Blockchain Foundation as global voted Spokesperson towards regulators, market parties and legal council.',
   },
   v10: {
-    name: 'Christopher Hering',
+    name: 'Christoph Hering',
     position: 'Founder and CEO of Payger',
     intro:
       'Payger is a Graphene based easy, fast & free payment platform that supports all of the new digital currencies plus Loyalty Points and eReceipts.',

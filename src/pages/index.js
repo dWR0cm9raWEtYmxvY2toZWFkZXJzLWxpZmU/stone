@@ -358,11 +358,13 @@ class IndexPage extends React.Component {
             className="ctn"
             animation={{ x: -100, type: 'from', duration: 720, opacity: 0 }}
           >
+            <section className="ctn" id="faq">
             <h2>{this.state.lang.faq.title}</h2>
             <div className="bar" />
             <div>
               {faqRenderList}
-              </div>
+            </div>
+            </section>
           </TweenOne>
         </LazyLoad>        
         <section id="host" className="ctn bg1">

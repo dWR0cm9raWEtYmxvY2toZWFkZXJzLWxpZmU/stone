@@ -155,7 +155,7 @@ class IndexPage extends React.Component {
           >
             <Toolbar className="nav">
               <div className="rowlist">
-                <Link to="#introductin" style={{ textDecoration: 'none' }}>
+                <Link to="/#introductin" style={{ textDecoration: 'none' }}>
                   <Button
                     size="small"
                     className="trans"
@@ -164,7 +164,7 @@ class IndexPage extends React.Component {
                     {this.state.lang.menu[0]}
                   </Button>
                 </Link>
-                <Link to="#speakers" style={{ textDecoration: 'none' }}>
+                <Link to="/#speakers" style={{ textDecoration: 'none' }}>
                   <Button
                     size="small"
                     className="trans"
@@ -173,7 +173,7 @@ class IndexPage extends React.Component {
                     {this.state.lang.menu[1]}
                   </Button>
                 </Link>
-                <Link to="#host" style={{ textDecoration: 'none' }}>
+                <Link to="/#host" style={{ textDecoration: 'none' }}>
                   <Button
                     size="small"
                     className="trans"
@@ -182,7 +182,7 @@ class IndexPage extends React.Component {
                     {this.state.lang.menu[2]}
                   </Button>
                 </Link>
-                <Link to="#contact" style={{ textDecoration: 'none' }}>
+                <Link to="/#contact" style={{ textDecoration: 'none' }}>
                   <Button
                     size="small"
                     className="trans"

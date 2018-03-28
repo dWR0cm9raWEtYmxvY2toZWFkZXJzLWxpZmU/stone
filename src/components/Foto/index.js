@@ -20,7 +20,7 @@ const Cards = ({ list }) => {
       container
       justify="center"
       alignItems="center"
-      style={{ maxWidth: '960px' }}
+      style={{ maxWidth: '960px',width:'90vw' }}
     >
       {fotoList}
     </Grid>

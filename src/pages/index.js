@@ -292,7 +292,7 @@ class IndexPage extends React.Component {
             >
               <h2>{this.state.lang.vip.title}</h2>
               <div className="bar" />
-              <Fotos list={this.state.list} style={{  maxWidth: '960px' }} />
+              <Fotos list={this.state.list} style={{  maxWidth: '960px',width:'90vw' }} />
             </TweenOne>
           </LazyLoad>
         </section>
@@ -303,7 +303,7 @@ class IndexPage extends React.Component {
             <section className="ctn" id="faq">
               <h2>{this.state.lang.faq.title}</h2>
               <div className="bar" />
-              <div>
+              <div style={{maxWidth:'960px'}}>
                 {faqRenderList}
               </div>
             </section>
@@ -326,7 +326,7 @@ class IndexPage extends React.Component {
                 <Grid item xs={12} md={12} className="cctn">
                   <div className="organizer blockgeek" />
                 </Grid>
-                <Grid item xs={12} md={12} style={{ maxWidth: '960px' }}>
+                <Grid item xs={12} md={12} style={{ maxWidth: '960px',width:'90vw;' }}>
                   <p className="indent">{this.state.lang.host.blockGeek}</p>
                 </Grid>
               </Grid>

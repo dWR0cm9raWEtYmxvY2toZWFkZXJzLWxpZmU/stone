@@ -60,6 +60,7 @@
     .organizer{height: 10rem; width: 10rem;}        
 }
 
+
 .pagination{
     height: 18;
     width: 18;
@@ -93,6 +94,8 @@ p{
     text-align: left;
     margin: 0
 }
+
+
 
 .bnwrap{
     padding-top:0.5rem;

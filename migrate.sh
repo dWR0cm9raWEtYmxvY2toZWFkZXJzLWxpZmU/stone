@@ -10,7 +10,7 @@ git commit -m 'graphene bundle update'
 git push lab lazyload
 git push origin lazyload
 
-cd ../BlockGeek.io/blockgeek/web/graphene && git pull
+cd ${remote}
 
 rm -rf ${remote}/graphene
 cp -r ${local}/graphene ${remote}/graphene

@@ -10,10 +10,10 @@ git commit -m 'graphene bundle update'
 git push lab lazyload
 git push origin lazyload
 
-cd ${remote}
-
 rm -rf ${remote}/graphene
 cp -r ${local}/graphene ${remote}/graphene
+
+cd ${remote}
 
 git add .
 git commit -m 'graphene bundle update'

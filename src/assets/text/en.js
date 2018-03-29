@@ -9,7 +9,7 @@ const intro = {
 const lookback = {
   title: '2018 China Graphene DevCon Recap',
   para:
-    'On January 21st, more than 12 speakers from fabulous blockchain projects including Bitshares, GXS, Cybex, DECENT  ,  gave speeches in conference, 400+ attendees, discussed the future of graphene technology.',
+    'On January 21st, 12 speakers from fabulous blockchain projects including Bitshares, GXS, Cybex, DECENT  ,  gave speeches in conference, 400+ attendees, discussed the future of graphene technology.',
 }
 
 const overview = {
@@ -22,19 +22,19 @@ const overview = {
   head6: 'Venue:',
   head7: 'Attendees:',
   p1: '1000+',
-  p2: '5th-6th, May, 2018.',
-  p3: 'keynote speech + roundtable',
-  p4: 'Blockgeek/GDEX',
+  p2: 'May 5th-6th, 2018.',
+  p3: 'keynote speech + panel discussion',
+  p4: 'BlockGeek/GDEX',
   p5: 'Blockchain Centre China, Blockshine, Shared Finance',
   p6: 'Jumeirah Himalayas Hotel Shanghai',
   p7:
-    'Graphene technology developer, blockchain developers，blockchain enthusiasts',
+    'Graphene technology developer, blockchain developers, blockchain enthusiasts',
 }
 
 const star = {
   title: 'Conference Highlights',
   head1: 'Private Session',
-  head2: 'Unique Roundtable',
+  head2: 'Unique Panel',
   head3: 'EOS',
   p1: 'Face-to-face communication with world’s top graphene developers',
   p2: 'Debate on the future trend of Bitshares',
@@ -57,14 +57,14 @@ const host = {
 
 const assist = {
   title: 'CO-HOST',
-  para: `Blockchain Centre is the world’s first not-for-profit education and knowledge center focusing on blockchain technology. From its establishment in 2014, it has been devoting itself to the education and promotion of blockchain technology on a global scale. It has set up partnerships in Australia, China, the United States Malaysia and Lithuania. The centre works hand-in-hand with industries . Its incubation plan has incubated and invested in more than 50 blockchain start-ups and joint ventures.`,
+  para: `Blockchain Centre is the world’s first not-for-profit education and knowledge center focusing on blockchain technology. From its establishment in 2014, it has been devoting itself to the education and promotion of blockchain technology on a global scale. It has set up partnerships in Australia, China, the United States, Malaysia and Lithuania. The centre works hand-in-hand with industries. Its incubation plan has incubated and invested in more than 50 blockchain start-ups and joint ventures. Blockchain Centre China is headquartered in Shanghai and will set up branches in major Chinese cities, open to educational institutions, communities, enterprises and the public to promote commercialization and application of blockchain technology.`,
   para2:`The world’s leading all-in-one blockchain solutions company, Blockshine exists for one simple purpose: make the best blockchain applications open and accessible to all. We focus on providing holistic solutions and consulting services for project development of Blockchain-related technology, blockchain applications and cryptocurrency exchanges. With rich industry resources, we offer data research and analysis to tailor-make IP development, operation and brand management for our clients, which will ultimately help them maximize their business value and brand influence. `,
   para3:`"Shared Finance" (www.gongxiangcj.com)  was founded in 2015, which is a seasoned media firm in cryptocurrency / blockchain industry based in Shanghai.
 Company provides comprehensive service included crypto news, investment and financing by its web portal , new-media channel "Blockchain Fin-Tech" and its SL Index mobile application. Currently Shared Finance reached 100,000+ users and brought significant impact both in crypto and mainstream finance field, service provided by company is recognized by market and well respected by industry.`
 }
 
 const partner = {
-  title: 'PARTNERS (to be updated)',
+  title: 'COOPERATIVE MEDIA (to be updated)',
 }
 
 export const footer = {

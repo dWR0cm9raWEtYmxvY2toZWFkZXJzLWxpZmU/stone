@@ -1,0 +1,76 @@
+@media screen and (min-width: 960px) {
+    #cardd{ width: 8rem;height:15rem; line-height:1.2rem }
+    .avatar{ height: 8rem; width: 8rem; }
+    .name{ font-size: 0.8rem; }
+    .info{ font-size: 0.7rem; }
+}
+
+@media screen and (max-width: 960px) {
+    #cardd{width: 8rem; height:12rem; line-height:1.2rem; }    
+    .avatar{ height: 8rem; width: 8rem; }
+    .name{ font-size: 0.8rem;line-height:1rem }
+    .info{ font-size: 0.7rem; line-height: 1rem }    
+}
+@media screen and (max-width: 640px) {
+    #cardd{width: 6rem; height:10rem;line-height:0.8rem; }
+    .avatar{ height: 6rem; width: 6rem; }
+    .name{ font-size: 0.7rem;}
+    .info{ font-size: 0.6rem; line-height:0.8rem }
+}
+@media screen and (max-width: 480px) {
+    #cardd{width: 7rem; line-height:0.8rem; height:10rem;}
+    .avatar{ height: 7rem; width: 7rem; }
+    .name{ font-size: 0.7rem;}
+    .info{ font-size: 0.6rem; line-height:0.7rem}    
+}
+
+body{
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif!important;
+}
+
+.avatar{
+    box-shadow: 1px 2px 2px #888888;
+}
+
+#cardd{
+    textAlign: center;
+    margin: 1rem    
+}
+
+.cardctn{
+    text-align: center;
+    padding: 0.2rem;
+}
+
+.detail{
+    height: 80%;
+    display:flex;
+    flex:1;
+    padding:0.6rem;
+    text-indent: 1rem;
+    text-align: left;
+    background-color: rgba(25,72,128,1);
+    overflow:auto;
+}
+
+.name{
+    color: rgba(52,103,157,1)
+}
+
+.avatar{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.f1{
+    background-image: url('../../assets/imgs/1.png');
+}
+
+.it{
+    display: flex;
+    font-size: 0.5rem;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+}

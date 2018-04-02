@@ -43,8 +43,8 @@ const cnlist = {
       'Fox对BitShares早期概念形成有巨大影响，是敏捷专家，在软件开发、项目管理等方面有丰富经验，同时在金融服务、抵押银行和制造等领域都有跨国经验。',
   },
   v8: {
-    name: 'Mark Babbitt',
-    position: 'Crypviser GmbH公司CCO',
+    name: 'Vadim Andryan',
+    position: 'Crypviser GmbH公司CEO',
     intro:
       'Vadim身兼多种角色，企业家、投资人、顾问、网络安全专家和土木工程专家。Vadim在计算机安全和数据加密领域有丰富的经验。他在政府和军队项目中负责网络安全和社会工程部分。',
   },

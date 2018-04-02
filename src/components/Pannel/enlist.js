@@ -43,7 +43,7 @@ const list = {
       'Fox has actively contributed to BitShares development from its inception.  He has an extensive professional background in project management with software development teams as a professional scrum master with multi-national experience in financial services, mortgage banking and manufacturing.',
   },
   v8: {
-    name: 'Mark Babbitt',
+    name: 'Mark Babbit',
     position: 'CCO of Crypviser GmbH',
     intro:
       'Entrepreneur, Investor, Adviser, cyber-security & civil engineering expert.Having broad experience and knowledge in computer security and data encryption fields. Worked in government and military projects focusing on cyber-security and social(civil) engineering areas. ',

@@ -9,6 +9,7 @@ import { OverPack } from 'rc-scroll-anim'
 import Banner from '../components/Banner'
 import Grid from 'material-ui/Grid'
 import Fotos from '../components/Foto'
+import Speakers from '../components/speakers'
 import LazyLoad from 'react-lazyload'
 import Table, {
   TableBody,
@@ -292,7 +293,7 @@ class IndexPage extends React.Component {
             >
               <h2>{this.state.lang.vip.title}</h2>
               <div className="bar" />
-              <Fotos list={this.state.list} style={{  maxWidth: '960px',width:'90vw' }} />
+              <Speakers list={this.state.list} style={{  maxWidth: '960px',width:'90vw' }} />
             </TweenOne>
           </LazyLoad>
         </section>

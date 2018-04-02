@@ -184,21 +184,13 @@ p{
     margin-bottom: 2rem;
 }
 
-.bs{
-    background-image: url('../../assets/imgs/bs.png');
-}
-
-.bbt{
-    background-image: url('../../assets/imgs/bbt.png');
-}
-
-.bf{
-     background-image: url('../../assets/imgs/bf.png');
-}
-
-.d45{
-     background-image: url('../../assets/imgs/d45.png');
- }
+.bs{ background-image: url('../../assets/imgs/bs.png')};
+.bbt{ background-image: url('../../assets/imgs/bbt.png')};
+.bw{ background-image: url('../../assets/imgs/bw.png')};
+.bh{ background-image: url('../../assets/imgs/bh.png')};
+.bf{ background-image: url('../../assets/imgs/bf.png')};
+.d45{ background-image: url('../../assets/imgs/d45.png')};
+.cp{ background-image: url('../../assets/imgs/cp.png')};
 
 .bar{
     width: 1rem;

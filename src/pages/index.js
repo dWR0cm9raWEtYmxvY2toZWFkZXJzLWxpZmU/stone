@@ -373,11 +373,23 @@ class IndexPage extends React.Component {
                 <p className="indent">{this.state.lang.assist.para2}</p>
               </Grid>
               <Grid item xs={12} md={12} className="cctn">
-                <div className="organizer bf" />
+                <div className="organizer bw" />
               </Grid>
               <Grid item xs={12} md={12} style={{ maxWidth: `960px` }}>
                 <p className="indent">{this.state.lang.assist.para3}</p>
-              </Grid>              
+              </Grid>
+              <Grid item xs={12} md={12} className="cctn">
+                <div className="organizer bh" />
+              </Grid>
+              <Grid item xs={12} md={12} style={{ maxWidth: `960px` }}>
+                <p className="indent">{this.state.lang.assist.para4}</p>
+              </Grid>
+              <Grid item xs={12} md={12} className="cctn">
+                <div className="organizer bf" />
+              </Grid>
+              <Grid item xs={12} md={12} style={{ maxWidth: `960px` }}>
+                <p className="indent">{this.state.lang.assist.para5}</p>
+              </Grid>                            
             </Grid>
             <h2 style={{marginTop:'2rem'}}>{this.state.lang.partner.title}</h2>
             <div className="bar" />
@@ -391,10 +403,19 @@ class IndexPage extends React.Component {
               <Grid item>
                 <div className="cctn partner d45" />
               </Grid>              
-            </Grid>            
+            </Grid>
+            <h2 style={{marginTop:'2rem'}}>{this.state.lang.sponsor.title}</h2>
+            <div className="bar" />
+            <Grid
+              container
+              justify="space-around"
+              alignItems="center"
+              className="para"
+            >
+              <Grid item><div className="cctn partner cp" /></Grid>
+            </Grid>
           </TweenOne>
         </LazyLoad>
-
         <section id="contact"
                  key="l"
                  className="footer ctn"

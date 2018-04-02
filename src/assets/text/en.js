@@ -46,7 +46,7 @@ const vip = {
 }
 
 const sponsor = {
-  title: 'Sponsorship Package',
+  title: 'Sponsor',
 }
 
 const host = {
@@ -59,7 +59,9 @@ const assist = {
   title: 'CO-HOST',
   para: `Blockchain Centre is the world’s first not-for-profit education and knowledge center focusing on blockchain technology. From its establishment in 2014, it has been devoting itself to the education and promotion of blockchain technology on a global scale. It has set up partnerships in Australia, China, the United States, Malaysia and Lithuania. The centre works hand-in-hand with industries. Its incubation plan has incubated and invested in more than 50 blockchain start-ups and joint ventures. Blockchain Centre China is headquartered in Shanghai and will set up branches in major Chinese cities, open to educational institutions, communities, enterprises and the public to promote commercialization and application of blockchain technology.`,
   para2:`The world’s leading all-in-one blockchain solutions company, Blockshine exists for one simple purpose: make the best blockchain applications open and accessible to all. We focus on providing holistic solutions and consulting services for project development of Blockchain-related technology, blockchain applications and cryptocurrency exchanges. With rich industry resources, we offer data research and analysis to tailor-make IP development, operation and brand management for our clients, which will ultimately help them maximize their business value and brand influence. `,
-  para3:`"Shared Finance" (www.gongxiangcj.com)  was founded in 2015, which is a seasoned media firm in cryptocurrency / blockchain industry based in Shanghai.
+  para3: "Bitask（www.bitask.org）is a question and answer platform for blockchain/cryptocurrency",
+  para4: "Bihu is a blockchain-based platform for crypto investors to share and obtain token-investment-related information. It is a combination of Reddit、Steem and Weibo, where KOLs、Blockchain Projects and crytpo investors can settle.",
+  para5:`"Shared Finance" (www.gongxiangcj.com)  was founded in 2015, which is a seasoned media firm in cryptocurrency / blockchain industry based in Shanghai.
 Company provides comprehensive service included crypto news, investment and financing by its web portal , new-media channel "Blockchain Fin-Tech" and its SL Index mobile application. Currently Shared Finance reached 100,000+ users and brought significant impact both in crypto and mainstream finance field, service provided by company is recognized by market and well respected by industry.`
 }
 

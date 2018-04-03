@@ -2,8 +2,6 @@ const list = {
   v1: {
     name: 'Jerry Liu',
     position: 'Founder of GDEX.IO  Committee Member of BitShares',
-    intro:
-      'Early evangelist of blockchain technology, co-founder of Bitsclub, co-founder of waterdrip capital. Famous investor in China.',
   },
   v2: {
     name: 'Stan Larimer',
@@ -50,10 +48,7 @@ const list = {
   },
   v9: {
     name: 'Annemieke Dirkes',
-    position:
-      'Official Public Face and sole Spokesperson of the BitShares Blockchain',
-    intro:
-      'Entrepreneur, been in IT related businesses since 1987, investor. Fluent in several languages. International business consultancy. Blockchain initiatives and projects. Represents the BitShares Blockchain Foundation as global voted Spokesperson towards regulators, market parties and legal council.',
+    position: 'Official Public Face and sole Spokesperson of the BitShares Blockchain'
   },
   v10: {
     name: 'Christoph Hering',
@@ -64,8 +59,6 @@ const list = {
   v11: {
     name: 'Jonathan Bahai',
     position: 'Founder of Peerplays',
-    intro:
-      "Peerplays is the World's first Decentralized Blockchain based eSports tournament and wagering platform.",
   },
   v12: {
     name: 'George Goognin',

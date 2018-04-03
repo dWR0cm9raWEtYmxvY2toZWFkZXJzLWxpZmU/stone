@@ -66,7 +66,7 @@ const list = {
   v17: {
     name: 'Neo Ma',
     position: 'Project leader of μMatrix, Shanlin blockchain'
-  }
+  },
   v18: {
     name: 'Xiangnian',
     position: 'CTO of YOYOW'

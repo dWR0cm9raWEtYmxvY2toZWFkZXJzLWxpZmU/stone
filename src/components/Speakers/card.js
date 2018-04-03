@@ -1,7 +1,6 @@
 import React from 'react'
 import Grid from 'material-ui/Grid'
 import Card, { CardContent } from 'material-ui/Card'
-import './index.css'
 import TweenOne from 'rc-tween-one'
 import LazyLoad from 'react-lazyload'
 
@@ -16,7 +15,7 @@ const Intro = ({ seq, v, list }) => (
       }}
     />
     <div className="cardctn">
-      <text style={{ margin: 0, padding: 0 }} className="name">
+      <text style={{ marginTop: 0, padding: 0 }} className="name">
         {list[v]['name']}
       </text>
       <br />

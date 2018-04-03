@@ -2,11 +2,10 @@ import React from 'react'
 import Grid from 'material-ui/Grid'
 import Card, { CardContent } from 'material-ui/Card'
 import Typography from 'material-ui/Typography'
-import './index.css'
 import MyCard from './card'
 
 var lists = []
-for (var i = 1; i < 20; i++) {
+for (var i = 1; i < 11; i++) {
   lists.push(i)
 }
 

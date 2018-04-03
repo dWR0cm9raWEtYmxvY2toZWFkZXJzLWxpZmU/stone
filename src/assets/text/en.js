@@ -41,6 +41,14 @@ const star = {
   p3: 'A comprehensive understanding of the EOS ecosystem in China',
 }
 
+const pannel = {
+  title: 'Unique Pannel'
+}
+
+const session = {
+  title: 'EOS Session'
+}
+
 const vip = {
   title: 'SPEAKERS',
 }
@@ -122,6 +130,8 @@ const en = {
   vip,
   host,
   assist,
+  pannel,
+  session,
   partner,
   sponsor,
   footer,

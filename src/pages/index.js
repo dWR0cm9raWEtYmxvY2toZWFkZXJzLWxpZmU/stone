@@ -8,8 +8,9 @@ import QueueAnim from 'rc-queue-anim'
 import { OverPack } from 'rc-scroll-anim'
 import Banner from '../components/Banner'
 import Grid from 'material-ui/Grid'
-import Fotos from '../components/Foto'
+import Pannel from '../components/pannel'
 import Speakers from '../components/speakers'
+import Session from '../components/session'
 import LazyLoad from 'react-lazyload'
 import Table, {
   TableBody,
@@ -17,13 +18,10 @@ import Table, {
   TableHead,
   TableRow,
 } from 'material-ui/Table'
-import Card from 'material-ui/Card'
 import Toolbar from 'material-ui/Toolbar'
 import Button from 'material-ui/Button'
 import TweenOne from 'rc-tween-one'
 import AppBar from 'material-ui/AppBar'
-import enlist from '../components/speakers/enlist.js'
-import cnlist from '../components/speakers/cnlist.js'
 import Drawer from 'material-ui/Drawer'
 import List, { ListItem, ListItemText } from 'material-ui/List'
 import IconButton from 'material-ui/IconButton'
@@ -31,6 +29,15 @@ import MenuIcon from 'material-ui-icons/Menu'
 import Divider from 'material-ui/Divider'
 import createHistory from 'history/createBrowserHistory'
 import Modal from '../components/Modal'
+import enlist from '../components/speakers/enlist'
+import cnlist from '../components/speakers/cnlist'
+import enPannelList from '../components/pannel/enlist'
+import cnPannelList from '../components/pannel/cnlist'
+import enSessionList from '../components/session/enlist'
+import cnSessionList from '../components/session/cnlist'
+
+console.log(enSessionList)
+console.log(cnSessionList)
 
 const cnbg = {
   backgroundImage: 'url(' + require('../assets/imgs/banner.png') + ')',
@@ -56,6 +63,8 @@ class IndexPage extends React.Component {
       backgroundImage: 'url(' + require('../assets/imgs/banner-en.jpg') + ')',
     },
     list: enlist,
+    pannelList: enPannelList,
+    sessionList: enSessionList,
     right: false,
   }
   toggleDrawer = (side, open) => () => {
@@ -81,7 +90,7 @@ class IndexPage extends React.Component {
       let anum = 'a' + i
       return(
         <div key={i} style={{marginBottom: '2rem'}}>
-          <p><b>Q{i}: {this.state.lang.faq[qnum]}</b></p><br/>
+          <p><b style={{color:"rgba(29,83,147,1)"}}>Q{i}: {this.state.lang.faq[qnum]}</b></p><br/>
           <p className="indent">{this.state.lang.faq[anum]}</p>
         </div>
       )
@@ -108,7 +117,7 @@ class IndexPage extends React.Component {
               paddingRight: '0rem',
             }}
           >
-            <p>{this.state.lang.star[`head` + i]}</p>
+            <p >{this.state.lang.star[`head` + i]}</p>
           </TableCell>
           <TableCell>
             <p>{this.state.lang.star[`p` + i]}</p>
@@ -124,6 +133,8 @@ class IndexPage extends React.Component {
           ttable: cnt,
           bg: cnbg,
           list: cnlist,
+          pannelList: cnPannelList,
+          sessionList: cnSessionList          
         })
       } else {
         this.setState({
@@ -132,6 +143,8 @@ class IndexPage extends React.Component {
           ttable: ent,
           bg: enbg,
           list: enlist,
+          pannelList: enPannelList,
+          sessionList: enSessionList
         })
       }
     }
@@ -267,17 +280,17 @@ class IndexPage extends React.Component {
               <Grid container>
                 <Grid item xs={4} className="starctn">
                   <div className="roundicon closedoor"/>
-                  <p style={{margin:'1rem 0'}}>{this.state.lang.star.head1}</p>
+                  <p style={{margin:'1rem 0',color: 'rgba(29,83,147,1)'}}>{this.state.lang.star.head1}</p>
                   <p className="info">{this.state.lang.star.p1}</p>
                 </Grid>
                 <Grid item xs={4} className="starctn">
                   <div className="roundicon roundtable "/>
-                  <p style={{margin:'1rem 0'}}>{this.state.lang.star.head2}</p>
+                  <p style={{margin:'1rem 0',color: 'rgba(29,83,147,1)'}}>{this.state.lang.star.head2}</p>
                   <p className="info">{this.state.lang.star.p2}</p>
                 </Grid>
                 <Grid item xs={4} className="starctn">
                   <div className="roundicon eos"/>
-                  <p style={{margin:'1rem 0'}}>{this.state.lang.star.head3}</p>
+                  <p style={{margin:'1rem 0',color: 'rgba(29,83,147,1)'}}>{this.state.lang.star.head3}</p>
                   <p className="info">{this.state.lang.star.p3}</p>
                 </Grid>                
               </Grid>
@@ -291,6 +304,12 @@ class IndexPage extends React.Component {
               animation={{ x: -100, type: 'from', duration: 720, opacity: 0 }}
               style={{ alignItems: 'center',justifyContent: 'center',display:'flex',flexDirection:'column'}}
             >
+              <h2>{this.state.lang.pannel.title}</h2>
+              <div className="bar" />
+              <Pannel list={this.state.pannelList} style={{  maxWidth: '960px',width:'90vw' }} />
+              <h2>{this.state.lang.session.title}</h2>
+              <div className="bar" />
+              <Session list={this.state.sessionList} style={{  maxWidth: '960px',width:'90vw' }} />
               <h2>{this.state.lang.vip.title}</h2>
               <div className="bar" />
               <Speakers list={this.state.list} style={{  maxWidth: '960px',width:'90vw' }} />

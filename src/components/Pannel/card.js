@@ -1,7 +1,6 @@
 import React from 'react'
 import Grid from 'material-ui/Grid'
 import Card, { CardContent } from 'material-ui/Card'
-import './index.css'
 import TweenOne from 'rc-tween-one'
 import LazyLoad from 'react-lazyload'
 
@@ -12,7 +11,7 @@ const Intro = ({ seq, v, list }) => (
       style={{
         borderRadius: '33rem',
         backgroundImage:
-          'url(' + require('../../assets/imgs/' + seq + '.png') + ')',
+          'url(' + require('../../assets/imgs/pannel/' + seq + '.png') + ')',
       }}
     />
     <div className="cardctn">

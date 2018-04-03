@@ -40,6 +40,14 @@ const star = {
   p2: '比特股未来走势大论战',
   p3: '全方位了解中国EOS社区生态',
 }
+const pannel = {
+  title: '特色圆桌'
+}
+
+const session = {
+  title: 'EOS专场'
+}
+
 const vip = {
   title: '特邀嘉宾',
 }
@@ -116,6 +124,8 @@ const cn = {
   partner,
   sponsor,
   footer,
+  pannel,
+  session,
   menu,
   ticket,
 }

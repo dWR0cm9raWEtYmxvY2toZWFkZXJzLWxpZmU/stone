@@ -109,7 +109,7 @@ p{
 }
 
 .indent{
-    text-indent: 2rem;
+    /*text-indent: 2rem;*/
 }
 .ttable{
     height: 115vw;

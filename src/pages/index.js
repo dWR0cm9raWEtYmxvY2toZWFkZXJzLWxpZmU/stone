@@ -12,12 +12,7 @@ import Pannel from '../components/pannel'
 import Speakers from '../components/speakers'
 import Session from '../components/session'
 import LazyLoad from 'react-lazyload'
-import Table, {
-  TableBody,
-  TableCell,
-  TableHead,
-  TableRow,
-} from 'material-ui/Table'
+import Table, { TableBody, TableCell, TableHead, TableRow } from 'material-ui/Table'
 import Toolbar from 'material-ui/Toolbar'
 import Button from 'material-ui/Button'
 import TweenOne from 'rc-tween-one'
@@ -54,17 +49,17 @@ const cnt = {
 
 class IndexPage extends React.Component {
   state = {
-    lang: en,
-    toLang: '中文',
+    lang: cn,
+    toLang: 'EN',
     ttable: {
       backgroundImage: 'url(' + require('../assets/imgs/table.jpg') + ')',
     },
     bg: {
       backgroundImage: 'url(' + require('../assets/imgs/banner-en.jpg') + ')',
     },
-    list: enlist,
-    pannelList: enPannelList,
-    sessionList: enSessionList,
+    list: cnlist,
+    pannelList: cnPannelList,
+    sessionList: cnSessionList,
     right: false,
   }
   toggleDrawer = (side, open) => () => {

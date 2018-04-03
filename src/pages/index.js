@@ -304,15 +304,15 @@ class IndexPage extends React.Component {
               animation={{ x: -100, type: 'from', duration: 720, opacity: 0 }}
               style={{ alignItems: 'center',justifyContent: 'center',display:'flex',flexDirection:'column'}}
             >
+              <h2>{this.state.lang.vip.title}</h2>
+              <div className="bar" />
+              <Speakers list={this.state.list} style={{  maxWidth: '960px',width:'90vw' }} />              
               <h2>{this.state.lang.pannel.title}</h2>
               <div className="bar" />
               <Pannel list={this.state.pannelList} style={{  maxWidth: '960px',width:'90vw' }} />
               <h2>{this.state.lang.session.title}</h2>
               <div className="bar" />
               <Session list={this.state.sessionList} style={{  maxWidth: '960px',width:'90vw' }} />
-              <h2>{this.state.lang.vip.title}</h2>
-              <div className="bar" />
-              <Speakers list={this.state.list} style={{  maxWidth: '960px',width:'90vw' }} />
             </TweenOne>
           </LazyLoad>
         </section>

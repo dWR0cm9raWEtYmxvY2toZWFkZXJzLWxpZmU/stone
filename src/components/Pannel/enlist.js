@@ -37,7 +37,7 @@ const cnlist = {
   },
   v10: {
     name: 'Huabo Hu',
-    position: 'Founder of Wine, Co-founder of Token++ wallet'
+    position: 'Founder of Winex, Co-founder of Token++ wallet'
   }
 }
 

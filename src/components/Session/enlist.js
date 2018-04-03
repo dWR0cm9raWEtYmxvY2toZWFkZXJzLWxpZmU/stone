@@ -8,7 +8,7 @@ const cnlist = {
     position: 'Founder of EOS gravity'
   },
   v3: {
-    name: 'Lingyan Zha',
+    name: 'Lingyan Zhao',
     position: 'Founder of UnlimitedIP program, CEO of Link Entertainments Technology'
   },
   v4: {

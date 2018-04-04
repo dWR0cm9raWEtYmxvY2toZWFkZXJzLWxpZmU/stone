@@ -28,7 +28,7 @@ const overview = {
     '石墨烯技术开发者、区块链开发者、区块链相关从业者、区块链技术爱好者、区块链相关投资人',
   p5: '主题演讲+圆桌论坛',
   p6: 'BlockGeek、GDEX',
-  p7: 'Blockchain Centre China、Blockshine、Shared Finance',
+  p7: 'Blockchain Centre China、Blockshine、币问、币乎、共享财经',
 }
 
 const star = {

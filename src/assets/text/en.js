@@ -25,7 +25,7 @@ const overview = {
   p2: 'May 5th-6th, 2018.',
   p3: 'keynote speech + panel discussion',
   p4: 'BlockGeek/GDEX',
-  p5: 'Blockchain Centre China, Blockshine, Shared Finance',
+  p5: 'Blockchain Centre China, Blockshine, bitask, bihu, Shared Finance',
   p6: 'Jumeirah Himalayas Hotel Shanghai',
   p7:
     'Graphene technology developer, blockchain developers, blockchain enthusiasts',

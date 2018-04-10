@@ -409,9 +409,7 @@ class IndexPage extends React.Component {
               className="para"
             >
               <Grid item><div className="cctn partner bbt" /></Grid>
-              <Grid item>
-                <div className="cctn partner d45" />
-              </Grid>              
+              <Grid item><div className="cctn partner d45" /></Grid>	
             </Grid>
             <h2 style={{marginTop:'2rem'}}>{this.state.lang.sponsor.title}</h2>
             <div className="bar" />
@@ -422,6 +420,8 @@ class IndexPage extends React.Component {
               className="para"
             >
               <Grid item><div className="cctn partner cp" /></Grid>
+              <Grid item><div className="cctn partner deex" /></Grid>
+              <Grid item><div className="cctn partner dc" /></Grid>              														
             </Grid>
           </TweenOne>
         </LazyLoad>

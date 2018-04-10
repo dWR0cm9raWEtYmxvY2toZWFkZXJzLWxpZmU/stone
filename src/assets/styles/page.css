@@ -185,7 +185,9 @@ p{
 }
 
 .bs{ background-image: url('../../assets/imgs/bs.png')};
-.bbt{ background-image: url('../../assets/imgs/bbt.png')};
+.bbt{ background-image: url('../../assets/imgs/bbt.png')}
+.dc{ background-image: url('../../assets/imgs/dc.png')};
+.deex{ background-image: url('../../assets/imgs/deex.png')};
 .bw{ background-image: url('../../assets/imgs/bw.png')};
 .bh{ background-image: url('../../assets/imgs/bh.png')};
 .bf{ background-image: url('../../assets/imgs/bf.png')};

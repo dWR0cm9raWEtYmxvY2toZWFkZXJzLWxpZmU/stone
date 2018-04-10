@@ -1,6 +1,6 @@
 const list = {
   v1: {
-    name: 'Jerry Liu',
+    name: '巨蟹',
     position: 'GDEX.IO创始人 比特股理事',
   },
   v2: {
@@ -8,72 +8,132 @@ const list = {
     position: 'Cryptonomex公司CEO',
   },
   v3: {
-    name: 'Annemieke Dirkes',
-    position: '比特股区块链全球发言人'
-  },
-  v4: {
     name: 'Ronny Boesing',
     position: 'OpenLedger创始人兼CEO',
+  },
+  v4: {
+    name: 'Annemieke Dirkes',
+    position: '比特股区块链全球发言人'    
   },  
   v5: {
+    name: 'Mark Babbitt',
+    position: 'Crypviser GmbH 公司 CCO'
+  },
+  v6: {
+    name: 'Bane Zelenak',
+    position: ''
+  },
+  v7: {
+    name: 'Damir Nedzibovic',
+    position: ''
+  },
+  v8: {
+    name: '张增波',
+    position: '鼓鼓钱包CTO'
+  },
+  v9: {
+    name: '赵微(老狼)',
+    position: 'Oracle Chain 创始人兼 CEO'
+  },
+  v10: {
+    name: '马杰',
+    position: 'DECENT创始人兼CEO，ALAX联合创始人'
+  },
+  v11: {
     name: 'Fabian Schuh (Xeroc)',
     position: '区块链项目CTO',
   },
-  v6: {
-    name: 'Mark Babbitt',
-    position: 'Crypviser GmbH公司CCO'
-  },
-  v7: {
-    name: '罗谊',
-    position: '区块链技术研究者，区块链开发团队负责人'
-  },
-  v8: {
-    name: 'Christoph Hering',
-    position: 'Payger创始人'
-  },
-  v9: {
-    name: 'Ryan R. Fox',
-    position: '比特股核心团队组织者'
-  },
-  v10: {
-    name: 'Alex Shkor',
-    position: 'Scorum CTO'
-  },
-  v11: {
-    name: 'George Goognin',
-    position: 'Karma创始人'
-  },
   v12: {
-    name: 'Jonathan Bahai',
-    position: 'Peerplays 创始人'
+    name: '白菜',
+    position: 'Hellobts 创始人'
   },
   v13: {
-    name: 'Alfredo Garcia',
-    position: '比特股核心开发者'
+    name: 'Ryan R. Fox',
+    position: '比特股核心团队组织者'
   },
   v14: {
     name: '黄敏强',
     position: '公信宝创始人兼CEO'
   },
   v15: {
-    name: '张增波',
-    position: '鼓鼓钱包CTO'
-  },
-  v16: {
     name: '陈彦丰',
     position: '目前任Cybex核心团队成员，加密资产托管服务商拓链科技CEO'
   },
+  v16: {
+    name: 'Jonathan Bahai',
+    position: 'Found of Peerplays and eXeBlock Technologies Corp (CSE.XBLK) '
+  },  
   v17: {
+    name: 'Alfredo Garcia',
+    position: '比特股核心开发者'
+  },
+  v18: {
+    name: 'Christoph Hering',
+    position: 'Payger创始人'
+  },  
+  v19: {
+    name: '梓岑',
+    position: '比特股理事，YOYOW联合创始人'
+  },
+  v20: {
+    name: '罗谊',
+    position: '区块链技术研究者，区块链开发团队负责人'
+  },
+  v21: {
+    name: 'Alex Shkor',
+    position: 'CTO at Scorum, Founder of DEIP.world'
+  },
+  v22: {
+    name: 'Sigve Kvalsvik',
+    position: '比特股前端开发负责人'
+  },
+  v23: {
+    name: '廖洋阳',
+    position: 'EOS 引力区创始人'
+  },
+  v24: {
+    name: '郑玉山',
+    position: '比特股理事，水滴资本理事'
+  },
+  v25: {
     name: '马宝春',
     position: '善林区块链μMatrix项目创始人'
   },
-  v18: {
+  v26: {
     name: '向念',
     position: 'YOYOW CTO'
   },
-  v19: {
+  v27: {
     name: '奚海峰',
     position: '边界智能联合创始人'
+  },
+  v28: {
+    name: '赵聆言',
+    position: '未来版权项目创始人，链娱科技CEO'
+  },
+  v29: {
+    name: '吴子臻',
+    position: 'Chaince交易平台创始人兼CEO'
+  },
+  v30: {
+    name: '施瑞琦',
+    position: 'EOS Cannon共建者，BYSTAKE创始人，”胖哥说币”自媒体主理人。'
+  },
+  v31: {
+    name: '吴亚皇',
+    position: 'MEET.ONE项目CTO'
+  },
+  v32: {
+    name: '胡华波',
+    position: 'Winex.pro创始人，Token++钱包联合创始人'
+  },
+  v33: {
+    name: '吴序强',
+    position: '比特帝国创始人'
+  },
+  v34: {
+    name: '姚宗秋',
+    position: '比特股节点见证人 比特股布道者'
   }
 }
 

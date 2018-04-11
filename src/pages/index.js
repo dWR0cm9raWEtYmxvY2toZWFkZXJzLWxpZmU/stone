@@ -420,8 +420,15 @@ class IndexPage extends React.Component {
               className="para"
             >
               <Grid item><div className="cctn partner cp" /></Grid>
-              <Grid item><div className="cctn partner deex" /></Grid>
               <Grid item><div className="cctn partner dc" /></Grid>              														
+            </Grid>						
+            <Grid
+              container
+              justify="space-around"
+              alignItems="center"
+              className="para"
+            >
+              <Grid item><div className="cctn partner deex" /></Grid>
             </Grid>
           </TweenOne>
         </LazyLoad>

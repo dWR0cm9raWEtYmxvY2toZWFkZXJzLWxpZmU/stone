@@ -1,7 +1,7 @@
 const list = {
   v1: {
     name: 'Jerry Liu',
-    position: 'CEO of Gdex.io Committee Member of Bitshares',
+    position: 'CEO of GEDX.IO Committee Member of BitShares',
   },
   v2: {
     name: 'Stan Larimer',
@@ -9,7 +9,7 @@ const list = {
   },
   v3: {
     name: 'Ronny Boesing',
-    position: 'CEO of OpenLedger.info',
+    position: 'Founder and CEO of OpenLedger ApS Committee Member of BitShares',
   },
   v4: {
     name: 'Annemieke Dirkes',
@@ -20,12 +20,12 @@ const list = {
     position: 'CCO of Crypviser GmbH'
   },
   v6: {
-    name: 'Bane Zelenak',
-    position: ''
+    name: 'Branislav Zelenak',
+    position: 'Blockchain Team Leader of DasCoin'
   },
   v7: {
-    name: 'Damir Nedzibovic',
-		position: ''
+    name: 'Damir Nedžibović',
+		position: 'Senior Blockchain developer of DasCoin'
   },
   v8: {
     name: 'Zengbo Zhang',
@@ -33,11 +33,11 @@ const list = {
   },
   v9: {
     name: 'Harvey Zhao',
-    position: 'Founder of OracleChain'
+    position: 'Founder and CEO of OracleChain'
   },
   v10: {
     name: 'Matej Michalko',
-    position: 'Matej Michalko Founder and CEO of DECENT Foundation, Co-founder of ALAX'
+    position: 'Founder and CEO of DECENT Foundation, Co-founder of ALAX'
   },
   v11: {
     name: 'Fabian Schuh (Xeroc)',
@@ -57,11 +57,11 @@ const list = {
   },
   v15: {
     name: 'Yanfeng Chen',
-    position: 'core team member of Cybex, CEO of NBLTrust Technology'
+    position: 'Core member of Cybex, CEO of NBLTrust Technology'
   },
   v16: {
     name: 'Jonathan Bahai',
-    position: 'Peerplays and eXeBlock Technologies Corp (CSE.XBLK) 创始人'
+    position: 'Found of Peerplays and eXeBlock Technologies Corp (CSE.XBLK)'
   },  
   v17: {
     name: 'Alfredo Garcia',
@@ -81,7 +81,7 @@ const list = {
   },
   v21: {
     name: 'Alex Shkor',
-    position: 'CTO at Scorum, Founder of DEIP.world Scorum CTO'
+    position: 'CTO at Scorum, Founder of DEIP.world'
   },
   v22: {
     name: 'Sigve Kvalsvik',
@@ -97,7 +97,7 @@ const list = {
   },
   v25: {
     name: 'Neo Ma',
-    position: 'Project leader of μMatrix, Shanlin blockchain'
+    position: 'Technical geek'
   },
   v26: {
     name: 'Xiangnian',

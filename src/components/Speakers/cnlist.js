@@ -9,23 +9,23 @@ const list = {
   },
   v3: {
     name: 'Ronny Boesing',
-    position: 'OpenLedger创始人兼CEO',
+    position: 'OpenLedger ApS 创始人兼 CEO 比特股理事',
   },
   v4: {
     name: 'Annemieke Dirkes',
-    position: '比特股区块链全球发言人'    
+    position: '比特股区块链全球发言人'   
   },  
   v5: {
     name: 'Mark Babbitt',
     position: 'Crypviser GmbH 公司 CCO'
   },
   v6: {
-    name: 'Bane Zelenak',
-    position: ''
+    name: 'Branislav Zelenak',
+    position: 'DasCoin 区块链团队 leader'
   },
   v7: {
-    name: 'Damir Nedzibovic',
-    position: ''
+    name: 'Damir Nedžibović',
+    position: 'DasCoin 资深区块链开发者'
   },
   v8: {
     name: '张增波',
@@ -37,7 +37,7 @@ const list = {
   },
   v10: {
     name: '马杰',
-    position: 'DECENT创始人兼CEO，ALAX联合创始人'
+    position: 'DECENT创始人兼CEO ALAX联合创始人'
   },
   v11: {
     name: 'Fabian Schuh (Xeroc)',
@@ -57,11 +57,11 @@ const list = {
   },
   v15: {
     name: '陈彦丰',
-    position: '目前任Cybex核心团队成员，加密资产托管服务商拓链科技CEO'
+    position: 'Cybex 团队核心成员 拓链科技CEO'
   },
   v16: {
     name: 'Jonathan Bahai',
-    position: 'Found of Peerplays and eXeBlock Technologies Corp (CSE.XBLK) '
+    position: 'Peerplays创始人 eXeBlock 科技公司创始人'
   },  
   v17: {
     name: 'Alfredo Garcia',
@@ -73,15 +73,15 @@ const list = {
   },  
   v19: {
     name: '梓岑',
-    position: '比特股理事，YOYOW联合创始人'
+    position: '比特股理事 YOYOW联合创始人'
   },
   v20: {
     name: '罗谊',
-    position: '区块链技术研究者，区块链开发团队负责人'
+    position: '区块链技术研究者 区块链开发团队负责人'
   },
   v21: {
     name: 'Alex Shkor',
-    position: 'CTO at Scorum, Founder of DEIP.world'
+    position: 'Scorum 项目 CTO DEIP.world 创始人'
   },
   v22: {
     name: 'Sigve Kvalsvik',
@@ -97,7 +97,7 @@ const list = {
   },
   v25: {
     name: '马宝春',
-    position: '善林区块链μMatrix项目创始人'
+    position: '技术极客'
   },
   v26: {
     name: '向念',

@@ -1,34 +1,24 @@
 const cnlist = {
   v1: {
     name: '巨蟹',
-    position: 'GDEX.IO创始人 比特股理事',
-    intro:
-      '国内早期区块链项目布道者和投资者，比特创业营创始成员，水滴资本联合创始人，国内著名投资人。',
+    position: 'GDEX.IO 创始人 比特股理事'
   },
   v2: {
     name: 'Stan Larimer',
-    position: 'Cryptonomex公司CEO',
-    intro:
-      '2013年，Stan与Daniel Larimer（又名BM）一同创立bitshares，2015年共同创立Cryptonomex 公司任CEO，该公司提出石墨烯底层开发框架。Stan拥有40年的软、硬件、系统工程、项目管理等经验，参与过17个涉及海、陆、空系统的研发工作。',
+    position: 'Cryptonomex 公司 CEO'
   },
   v3: {
     name: 'Fabian Schuh',
-    position: '区块链项目CTO',
-    intro:
-      'Fabian博士是一个企业家和区块链倡导者。比特股最早的核心开发者，他在区块链领域为多个项目担任技术顾问和开发，并在欧洲大范围推广区块链技术。',
-  },
+    position: '区块链项目CTO'
+	},
   v4: {
     name: 'Ronny Boesing',
-    position: 'OpenLedger创始人兼CEO',
-    intro:
-      'OpenLedger是包含openledger去中心化交易所和提供众筹服务在内的生态系统。',
+    position: 'OpenLedger ApS 创始人兼 CEO 比特股理事'
   },
   v5: {
     name: '赵薇(老狼)',
     position: 'Oracle Chain创始人兼CEO',
-    company: 'OracleChain',
-    intro:
-      '2011年开始接触比特币，参与多项区块链社区项目（Peercoin、Factom、Bitshares），具有丰富的区块链行业经验。',
+    company: 'OracleChain'
   },
   v6: {
     name: '黄敏强',

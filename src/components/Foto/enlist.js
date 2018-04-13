@@ -1,50 +1,35 @@
 const list = {
   v1: {
     name: 'Jerry Liu',
-    position: 'Founder of GDEX.IO  Committee Member of BitShares',
+    position: 'Founder of GDEX.IO Committee Member of BitShares',
   },
   v2: {
     name: 'Stan Larimer',
-    position: 'CEO of Cryptonomex',
-    intro:
-      'Forty years experience in software, hardware, systems engineering, program management, and business development. Contributed on 17 different R&D programs about air, ground, sea and space systems.',
+    position: 'CEO of Cryptonomex'
   },
   v3: {
     name: 'Fabian Schuh (Xeroc)',
-    position: 'CTO of Blockchain Projects',
-    intro:
-      'Dr. Fabian Schuh is an entrepreneur and fervent blockchain advocate.He has been technical consultant and developer for numerous projects throughout the blockchain ,advocating the advancement of blockchain technologies in Europe on a larger scale.',
+    position: 'CTO of Blockchain Projects'
   },
   v4: {
     name: 'Ronny Boesing',
-    position:
-      'CEO and Co-founder of OpenLedger ApS. Committee member of BitShares',
-    intro:
-      "OpenLedger is a platform which supports an ecosystem , including the OpenLedger DEX and OpenLedger's Crowdfunding Services.",
+    position: 'CEO and Co-founder of OpenLedger ApS. Committee member of BitShares',
   },
   v5: {
     name: 'Harvey Zhao',
-    position: 'Founder of OracleChain',
-    intro:
-      'Harvey  came in contact with bitcoin in 2011 and participated several blockchain projects such as Peercoin/Factom/Bitshares. He has rich experience in blockchain.',
+    position: 'Founder of OracleChain'
   },
   v6: {
     name: 'Minqiang Huang',
-    position: 'Founder and CEO of GXS',
-    intro:
-      'Minqiang has over 10 years’ experience in the field of data exchange, financial technology, and blockchain. He dived into cryptocurrency and blockchain in 2012,  initiated several projects as well. Minqiang’s expertise lies in design of blockchain product and digital currency economic models.',
+    position: 'Founder and CEO of GXS'
   },
   v7: {
     name: 'Ryan R. Fox',
-    position: 'Coordinator of BitShares Core Team',
-    intro:
-      'Fox has actively contributed to BitShares development from its inception.  He has an extensive professional background in project management with software development teams as a professional scrum master with multi-national experience in financial services, mortgage banking and manufacturing.',
+    position: 'Coordinator of BitShares Core Team'
   },
   v8: {
     name: 'Mark Babbitt',
-    position: 'CCO of Crypviser GmbH',
-    intro:
-      'Entrepreneur, Investor, Adviser, cyber-security & civil engineering expert.Having broad experience and knowledge in computer security and data encryption fields. Worked in government and military projects focusing on cyber-security and social(civil) engineering areas. ',
+    position: 'CCO of Crypviser GmbH'
   },
   v9: {
     name: 'Annemieke Dirkes',
@@ -52,9 +37,7 @@ const list = {
   },
   v10: {
     name: 'Christoph Hering',
-    position: 'Founder and CEO of Payger',
-    intro:
-      'Payger is a Graphene based easy, fast & free payment platform that supports all of the new digital currencies plus Loyalty Points and eReceipts.',
+    position: 'Founder and CEO of Payger'
   },
   v11: {
     name: 'Jonathan Bahai',
@@ -62,21 +45,15 @@ const list = {
   },
   v12: {
     name: 'George Goognin',
-    position: 'Founder of Karma',
-    intro:
-      'Karma is a global decentralized blockchain-platform where people and companies can interchange directly to each other. George is a Ph.D in Economy Math Models; Vice chairman of the Russian Parliament Blockchain Experts Chamber; IT-career since 2002, first IT-startup made in 2008.',
+    position: 'Founder of Karma'
   },
   v13: {
     name: 'Alex Shkor',
-    position: 'CTO of Scorum',
-    intro:
-      'Alex has rich software development experience He used to be CTO and blockchain architecture in Paralect.Now he also is blockchain architecture advisor of PlayHall.Inc  and Hero.org.',
+    position: 'CTO of Scorum'
   },
   v14: {
     name: 'Neo Ma',
-    position: 'Project leader of μMatrix, Shanlin blockchain',
-    intro:
-      'Neo worked in F500 such as GE, Delta, etc. 15yr+ industrial MP experience and 20yr+ applied crypto experience. 2nd prize award in Smart Terminal Category of Wanxiang Smart City Global Blockchain Challenge. Rich experience in leading smart hardware solutions building for start-ups.',
+    position: 'Project leader of μMatrix, Shanlin blockchain'
   },
   v15: {
     name: 'Luo Yi',
@@ -86,9 +63,7 @@ const list = {
   },
   v16: {
     name: 'Zengbo Zhang',
-    position: 'CTO of Magicwallet',
-    intro:
-      'Master of Engineering in BeiHang University 15+ years software development experience.',
+    position: 'CTO of Magicwallet'
   },
   v17: {
     name: 'Xiangnian',

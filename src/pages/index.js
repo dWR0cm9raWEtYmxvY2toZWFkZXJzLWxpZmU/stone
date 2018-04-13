@@ -31,6 +31,7 @@ import cnPannelList from '../components/pannel/cnlist'
 import enSessionList from '../components/session/enlist'
 import cnSessionList from '../components/session/cnlist'
 
+
 console.log(enSessionList)
 console.log(cnSessionList)
 

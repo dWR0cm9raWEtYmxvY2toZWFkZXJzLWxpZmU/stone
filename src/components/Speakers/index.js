@@ -3,6 +3,7 @@ import Grid from 'material-ui/Grid'
 import Card, { CardContent } from 'material-ui/Card'
 import Typography from 'material-ui/Typography'
 import MyCard from './card'
+import './index.css'
 
 var lists = []
 for (var i = 1; i < 32; i++) {

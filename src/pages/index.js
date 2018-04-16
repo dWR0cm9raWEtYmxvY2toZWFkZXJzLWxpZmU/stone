@@ -22,13 +22,8 @@ import createHistory from 'history/createBrowserHistory'
 import Footer from '../components/Footer'
 import Modal from '../components/Modal'
 import Speakers from '../components/speakers'
-import Session from '../components/session'
 import enlist from '../components/speakers/enlist'
 import cnlist from '../components/speakers/cnlist'
-import enPannelList from '../components/pannel/enlist'
-import cnPannelList from '../components/pannel/cnlist'
-import enSessionList from '../components/session/enlist'
-import cnSessionList from '../components/session/cnlist'
 
 const cnbg = {
   backgroundImage: 'url(' + require('../assets/imgs/banner.png') + ')',
@@ -54,8 +49,6 @@ class IndexPage extends React.Component {
       backgroundImage: 'url(' + require('../assets/imgs/banner-en.jpg') + ')',
     },
     list: cnlist,
-    pannelList: cnPannelList,
-    sessionList: cnSessionList,
     right: false,
   }
   toggleDrawer = (side, open) => () => {
@@ -139,8 +132,6 @@ class IndexPage extends React.Component {
           ttable: ent,
           bg: enbg,
           list: enlist,
-          pannelList: enPannelList,
-          sessionList: enSessionList
         })
       }
     }

@@ -122,8 +122,6 @@ class IndexPage extends React.Component {
           ttable: cnt,
           bg: cnbg,
           list: cnlist,
-          pannelList: cnPannelList,
-          sessionList: cnSessionList          
         })
       } else {
         this.setState({

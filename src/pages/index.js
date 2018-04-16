@@ -390,6 +390,15 @@ class IndexPage extends React.Component {
             </Grid>
             <h2 style={{marginTop:'2rem'}}>{this.state.lang.sponsor.title}</h2>
             <div className="bar" />
+						<div className="subtitle">{this.state.lang.sponsor.agent}</div>
+            <Grid
+              container
+              justify="space-around"
+              alignItems="center"
+              className="para"
+            >
+              <Grid item><div className="cctn partner oc" /></Grid>              														
+            </Grid>						
 						<div className="subtitle">{this.state.lang.sponsor.gold}</div>
             <Grid
               container

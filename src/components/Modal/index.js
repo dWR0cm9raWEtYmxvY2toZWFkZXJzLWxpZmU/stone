@@ -5,11 +5,16 @@ import Typography from 'material-ui/Typography'
 import Modal from 'material-ui/Modal'
 import Button from 'material-ui/Button'
 import SendIcon from 'material-ui-icons/Send'
+import Top from '../../assets/imgs/top.svg'
 import LazyLoad from 'react-lazyload'
 
 //function rand() {
 //  return Math.round(Math.random() * 20) - 10;
 //}
+
+var toTop = () => {
+	window.scroll(0,0)
+}
 
 function getModalStyle() {
   const top = 50
@@ -30,13 +35,26 @@ const styles = theme => ({
     boxShadow: theme.shadows[5],
     padding: theme.spacing.unit * 4,
   },
+	ctn: {
+		display: 'flex',
+		flexDirection: 'column'
+	},
   btn: {
     backgroundColor: 'rgba(19,60,104,0.5)',
     color: 'white',
     position: 'fixed',
     bottom: '10vh',
     zIndex: 99,
+		right: 0
   },
+  btn2: {
+    backgroundColor: 'rgba(19,60,104,0.5)',
+    position: 'fixed',
+		height: '20px',
+    bottom: '4vh',
+    zIndex: 99,
+		right: 0
+  },	
 })
 
 class SimpleModal extends React.Component {
@@ -51,17 +69,14 @@ class SimpleModal extends React.Component {
   handleClose = () => {
     this.setState({ open: false })
   }
-
   render() {
     const { classes } = this.props
 
     return (
-      <div>
+      <div className={classes.ctn}>
+				<Button className={ classes.btn2} onClick={toTop}><img style={{color:'height'}} src={Top} /></Button>
         <Button classes={{ root: classes.btn }} onClick={this.handleOpen}>
-          <LazyLoad height={0}>
-            <SendIcon />
-          </LazyLoad>
-          <p>&nbsp; Invitation Letter</p>
+          <SendIcon />
         </Button>
         <Modal
           aria-labelledby="simple-modal-title"

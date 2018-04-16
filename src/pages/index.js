@@ -377,17 +377,18 @@ class IndexPage extends React.Component {
                 <p className="indent">{this.state.lang.assist.para5}</p>
               </Grid>                            
             </Grid>
-            <h2 style={{marginTop:'2rem'}}>{this.state.lang.sponsor.title}</h2>
-            <div className="bar" />
-						<div className="subtitle">{this.state.lang.sponsor.agent}</div>
+            <h2 style={{marginTop:'2rem'}}>{this.state.lang.sponsor.agent}</h2>						
             <Grid
               container
               justify="space-around"
               alignItems="center"
               className="para"
             >
-              <Grid item><div className="cctn partner oc" /></Grid>              														
+              <a href="https://oraclechain.io"><Grid item><div className="cctn partner oc" /></Grid></a>
             </Grid>						
+            <h2 style={{marginTop:'2rem'}}>{this.state.lang.sponsor.title}</h2>
+            <div className="bar" />
+
 						<div className="subtitle">{this.state.lang.sponsor.gold}</div>
             <Grid
               container
@@ -396,7 +397,7 @@ class IndexPage extends React.Component {
               className="para"
             >
               <Grid item><div className="cctn partner cp" /></Grid>
-              <Grid item><div className="cctn partner dc" /></Grid>              														
+              <Grid item><div className="cctn partner dc" /></Grid>
             </Grid>
 						<div className="subtitle">{this.state.lang.sponsor.ag}</div>
             <Grid

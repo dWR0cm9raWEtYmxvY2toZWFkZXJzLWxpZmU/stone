@@ -43,6 +43,7 @@ const styles = theme => ({
     backgroundColor: 'rgba(19,60,104,0.5)',
     color: 'white',
     position: 'fixed',
+		width: '20px',		
     bottom: '10vh',
     zIndex: 99,
 		right: 0
@@ -51,6 +52,7 @@ const styles = theme => ({
     backgroundColor: 'rgba(19,60,104,0.5)',
     position: 'fixed',
 		height: '20px',
+		width: '20px',
     bottom: '4vh',
     zIndex: 99,
 		right: 0
@@ -74,8 +76,7 @@ class SimpleModal extends React.Component {
 
     return (
       <div className={classes.ctn}>
-				<Button className={ classes.btn2} onClick={toTop}><img style={{color:'height'}} src={Top} /></Button>
-        <Button classes={{ root: classes.btn }} onClick={this.handleOpen}>
+        <Button classes={{root: classes.btn}} onClick={this.handleOpen}>
           <SendIcon />
         </Button>
         <Modal

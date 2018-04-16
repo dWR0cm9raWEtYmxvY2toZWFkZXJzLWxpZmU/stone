@@ -83,7 +83,12 @@ class IndexPage extends React.Component {
       return(
         <div key={i} style={{marginBottom: '2rem'}}>
           <p><b style={{color:"rgba(29,83,147,1)"}}>Q{i}: {this.state.lang.faq[qnum]}</b></p><br/>
-          <p className="indent">{this.state.lang.faq[anum]}</p>
+          {typeof(this.state.lang.faq[anum])==="string"?
+					 <p className="indent">{this.state.lang.faq[anum]}</p>:
+					 <div><p className="indent">{this.state.lang.faq[anum]["a"]}</p>
+					 <p className="indent">{this.state.lang.faq[anum]["b"]}</p>
+					 <p className="indent">{this.state.lang.faq[anum]["c"]}</p></div>
+					}
         </div>
       )
     })

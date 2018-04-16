@@ -302,19 +302,6 @@ class IndexPage extends React.Component {
             </TweenOne>
           </LazyLoad>
         </section>
-        <LazyLoad height={100}>
-          <TweenOne
-            animation={{ x: -100, type: 'from', duration: 720, opacity: 0 }}
-          >
-            <section className="ctn" id="faq">
-              <h2>{this.state.lang.faq.title}</h2>
-              <div className="bar" />
-              <div style={{maxWidth:'960px'}}>
-                {faqRenderList}
-              </div>
-            </section>
-          </TweenOne>
-        </LazyLoad>        
         <section id="host" className="ctn bg1">
           <LazyLoad height={100} offset={100}>
             <TweenOne
@@ -431,6 +418,19 @@ class IndexPage extends React.Component {
             </Grid>						
           </TweenOne>
         </LazyLoad>
+        <LazyLoad height={100}>
+          <TweenOne
+            animation={{ x: -100, type: 'from', duration: 720, opacity: 0 }}
+          >
+            <section className="ctn" id="faq">
+              <h2>{this.state.lang.faq.title}</h2>
+              <div className="bar" />
+              <div style={{maxWidth:'960px'}}>
+                {faqRenderList}
+              </div>
+            </section>
+          </TweenOne>
+        </LazyLoad>				
         <section id="contact"
                  key="l"
                  className="footer ctn"

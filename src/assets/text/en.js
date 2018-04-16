@@ -1,9 +1,10 @@
 const intro = {
   title: 'PREFACE',
   para1:
-    'Graphene is a toolkit or technology for real-time blockchains created by Daniel Larimer, who developed influential projects based on this framework including Bitshares, Steem, EOS. Many other famous blockchain projects such as  GXS, YOYOW, Peerplays, Cybex, Decent, MUSE, Ark, Scorum, Crypviser, Karma, Payger, ECHO, SEER, are also based on this framework.',
+    'Graphene is a toolkit or technology for high efficiency blockchain applications, it was originally developed by a team under the lead of Daniel Larimer, who founded BitShares, Steem and EOS. Many other famous blockchain projects such as OracleChain, Crypviser, DasCoin, DEEX, GXS, YOYOW, Peerplays, Cybex, Decent, MUSE, Ark, Scorum,  Karma, Payger, ECHO, SEER, are also based on this technology.
+',
   para2:
-    "Graphene DEVCON is the world's leading conference for blockchain developer and developer marketing practitioner. ",
+    "Graphene DEVCON is a leading conference for Graphene blockchain developers and marketing practitioners from all over the world.",
 }
 
 const lookback = {

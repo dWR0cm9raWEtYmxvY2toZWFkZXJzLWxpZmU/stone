@@ -55,6 +55,9 @@ const vip = {
 
 const sponsor = {
   title: 'Sponsor',
+	agent: 'Exclusive strategic partner',
+	gold: 'Gold Sponsor',
+	ag: 'Silver Sponsor'
 }
 
 const host = {

@@ -303,3 +303,8 @@ p{
     align-items: center;
     flex-direction: column;
 }
+
+.subtitle{
+		font-size: 10pt;
+		color: #999;
+}

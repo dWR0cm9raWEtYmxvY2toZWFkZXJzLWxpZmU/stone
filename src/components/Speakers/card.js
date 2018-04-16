@@ -22,6 +22,12 @@ const Intro = ({ seq, v, list }) => (
       <text style={{ margin: 0, padding: 0 }} className="info">
         {list[v]['position']}
       </text>
+      {list[v]['position2']?<text style={{ margin: 0, padding: 0 }} className="info">
+        <br/>{list[v]['position2']}
+      </text>:<div />}
+      {list[v]['position3']?<text style={{ margin: 0, padding: 0 }} className="info">
+        <br/>{list[v]['position3']}
+      </text>:<div />}
       <br />
     </div>
   </div>

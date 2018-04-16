@@ -53,6 +53,9 @@ const vip = {
 }
 const sponsor = {
   title: '赞助商',
+	agent: '独家战略合作伙伴',
+	gold: '金牌赞助',
+	ag: '银牌赞助'	
 }
 const host = {
   title: '主办方',

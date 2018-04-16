@@ -5,7 +5,7 @@ import Typography from 'material-ui/Typography'
 import MyCard from './card'
 
 var lists = []
-for (var i = 1; i < 35; i++) {
+for (var i = 1; i < 32; i++) {
   lists.push(i)
 }
 

@@ -31,10 +31,6 @@ import cnPannelList from '../components/pannel/cnlist'
 import enSessionList from '../components/session/enlist'
 import cnSessionList from '../components/session/cnlist'
 
-
-console.log(enSessionList)
-console.log(cnSessionList)
-
 const cnbg = {
   backgroundImage: 'url(' + require('../assets/imgs/banner.png') + ')',
 }
@@ -401,6 +397,27 @@ class IndexPage extends React.Component {
                 <p className="indent">{this.state.lang.assist.para5}</p>
               </Grid>                            
             </Grid>
+            <h2 style={{marginTop:'2rem'}}>{this.state.lang.sponsor.title}</h2>
+            <div className="bar" />
+						<div className="subtitle">{this.state.lang.sponsor.gold}</div>
+            <Grid
+              container
+              justify="space-around"
+              alignItems="center"
+              className="para"
+            >
+              <Grid item><div className="cctn partner cp" /></Grid>
+              <Grid item><div className="cctn partner dc" /></Grid>              														
+            </Grid>
+						<div className="subtitle">{this.state.lang.sponsor.ag}</div>
+            <Grid
+              container
+              justify="space-around"
+              alignItems="center"
+              className="para"
+            >
+              <Grid item><div className="cctn partner deex" /></Grid>
+            </Grid>
             <h2 style={{marginTop:'2rem'}}>{this.state.lang.partner.title}</h2>
             <div className="bar" />
             <Grid
@@ -411,26 +428,7 @@ class IndexPage extends React.Component {
             >
               <Grid item><div className="cctn partner bbt" /></Grid>
               <Grid item><div className="cctn partner d45" /></Grid>	
-            </Grid>
-            <h2 style={{marginTop:'2rem'}}>{this.state.lang.sponsor.title}</h2>
-            <div className="bar" />
-            <Grid
-              container
-              justify="space-around"
-              alignItems="center"
-              className="para"
-            >
-              <Grid item><div className="cctn partner cp" /></Grid>
-              <Grid item><div className="cctn partner dc" /></Grid>              														
             </Grid>						
-            <Grid
-              container
-              justify="space-around"
-              alignItems="center"
-              className="para"
-            >
-              <Grid item><div className="cctn partner deex" /></Grid>
-            </Grid>
           </TweenOne>
         </LazyLoad>
         <section id="contact"

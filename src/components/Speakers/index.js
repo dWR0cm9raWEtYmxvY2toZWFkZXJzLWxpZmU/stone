@@ -6,7 +6,7 @@ import MyCard from './card'
 import './index.css'
 
 var lists = []
-for (var i = 1; i < 34; i++) {
+for (var i = 1; i < 35; i++) {
   lists.push(i)
 }
 
@@ -20,9 +20,7 @@ const Cards = ({ list }) => {
       justify="center"
       alignItems="center"
       style={{ maxWidth: '960px',width:'90vw' }}
-    >
-      {fotoList}
-    </Grid>
+    >{fotoList}</Grid>
   )
 }
 

@@ -46,7 +46,7 @@ const list = {
     name: 'Zicen',
     position: 'Committee Member of BitShares',
 		position2: 'Co-founder of YOYOW'
-  },	
+  },
   v12: {
     name: 'Zengbo Zhang',
     position: 'CTO of Magicwallet'

@@ -396,8 +396,8 @@ class IndexPage extends React.Component {
               alignItems="center"
               className="para"
             >
-              <Grid item><div className="cctn partner cp" /></Grid>
-              <Grid item><div className="cctn partner dc" /></Grid>
+              <a href="https://crypviser.network"><Grid item><div className="cctn partner cp" /></Grid></a>
+              <a href="https://dascoin.com"><Grid item><div className="cctn partner dc" /></Grid></a>
             </Grid>
 						<div className="subtitle">{this.state.lang.sponsor.ag}</div>
             <Grid

@@ -377,7 +377,8 @@ class IndexPage extends React.Component {
                 <p className="indent">{this.state.lang.assist.para5}</p>
               </Grid>                            
             </Grid>
-            <h2 style={{marginTop:'2rem'}}>{this.state.lang.sponsor.agent}</h2>						
+            <h2 style={{marginTop:'2rem'}}>{this.state.lang.sponsor.agent}</h2>
+            <div className="bar" />						
             <Grid
               container
               justify="space-around"
@@ -388,7 +389,6 @@ class IndexPage extends React.Component {
             </Grid>						
             <h2 style={{marginTop:'2rem'}}>{this.state.lang.sponsor.title}</h2>
             <div className="bar" />
-
 						<div className="subtitle">{this.state.lang.sponsor.gold}</div>
             <Grid
               container

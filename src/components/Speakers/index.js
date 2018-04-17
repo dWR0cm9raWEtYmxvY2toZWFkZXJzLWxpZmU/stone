@@ -6,7 +6,7 @@ import MyCard from './card'
 import './index.css'
 
 var lists = []
-for (var i = 1; i < 32; i++) {
+for (var i = 1; i < 34; i++) {
   lists.push(i)
 }
 

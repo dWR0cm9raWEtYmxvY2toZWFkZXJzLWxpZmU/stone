@@ -43,48 +43,47 @@ const list = {
 		position: 'Co-founder and CEO of deex.exchange'
 	},
   v11: {
+    name: 'Zicen',
+    position: 'Committee Member of BitShares',
+		position2: 'Co-founder of YOYOW'
+  },	
+  v12: {
     name: 'Zengbo Zhang',
     position: 'CTO of Magicwallet'
   },
-  v12: {
+  v13: {
     name: 'Matej Michalko',
     position: 'Founder and CEO of DECENT Foundation Co-founder of ALAX'
   },
-  v13: {
+  v14: {
     name: 'Fabian Schuh (Xeroc)',
     position: 'CTO of Blockchain Projects',
   },
-  v14: {
+  v15: {
     name: 'Ryan R. Fox',
     position: 'Coordinator of BitShares Core Team'
   },
-  v15: {
+  v16: {
     name: 'Minqiang Huang',
     position: 'Founder and CEO of GXS'
   },
-  v16: {
-    name: 'Yanfeng Chen',
-    position: 'Core member of Cybex',
-		position2: 'CEO of NBLTrust Technology'
-  },
   v17: {
+    name: 'Alex Ye',
+    position: 'CYBEX CTO',
+  },
+  v18: {
     name: 'Jonathan Bahai',
     position: 'Found of Peerplays',
 		position2: 'eXeBlock Technologies Corp (CSE.XBLK)'
   },  
-  v18: {
+  v19: {
     name: 'Alfredo Garcia',
     position: 'BitShares Core Developer'
   },
-  v19: {
+  v20: {
     name: 'Christoph Hering',
     position: 'Founder and CEO of Payger'
   },  
-  v20: {
-    name: 'Zicen',
-    position: 'Committee Member of BitShares',
-		position2: 'Co-founder of YOYOW'
-  },
   v21: {
     name: 'Yi Luo',
     position: 'Researcher of blockchain technology'
@@ -110,35 +109,39 @@ const list = {
     name: 'Neo Ma',
     position: 'Technical geek'
   },
-  v27: {
+	v27: {
+		name: 'Chao Wang',
+		position: 'Co-founder and CTO of Bottos'
+	},
+  v28: {
     name: 'Lingyan Zhao',
     position: 'Founder of UnlimitedIP program',
 		position2: 'CEO of Link Entertainments Technology'
   },
-  v28: {
+  v29: {
     name: 'Peter Wu',
     position: 'Founder and CEO of Chaince Trading Platform'
   },
-  v29: {
+  v30: {
     name: 'Ruiqi Shi',
     position: 'Co-Founder of EOS Cannon  Founder',
 		position2: 'Director of @BYSTAKE',
 		position3: '“胖哥说币”blogger owner'
   },
-  v30: {
+  v31: {
     name: 'Yahuang Wu',
     position: 'CTO of MEET.ONE'
   },
-  v31: {
+  v32: {
     name: 'Huabo Hu',
     position: 'Founder of Winex',
 		position2: 'Co-founder of Token++ wallet'
   },
-  v32: {
+  v33: {
     name: 'Xuqiang Wu',
     position: 'Founder of btsabc.org'
   },
-  v33: {
+  v34: {
     name: 'Zongqiu Yao',
     position: 'Witness of BitShares Evangelist'
   }

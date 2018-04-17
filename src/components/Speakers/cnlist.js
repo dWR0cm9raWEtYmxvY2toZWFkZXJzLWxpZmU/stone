@@ -42,49 +42,48 @@ const list = {
     position: 'DEEX 交易所联合创始人兼 CEO'
 	},
   v11: {
+    name: '梓岑',
+    position: '比特股理事',
+		position2: 'YOYOW联合创始人'
+  },	
+  v12: {
     name: '张增波',
     position: '鼓鼓钱包CTO'
   },
-  v12: {
+  v13: {
     name: '马杰',
     position: 'DECENT 创始人兼 CEO',
 		position2: 'ALAX联合创始人'
   },
-  v13: {
+  v14: {
     name: 'Fabian Schuh (Xeroc)',
     position: '区块链项目CTO',
   },
-  v14: {
+  v15: {
     name: 'Ryan R. Fox',
     position: '比特股核心团队组织者'
   },
-  v15: {
+  v16: {
     name: '黄敏强',
     position: '公信宝创始人兼CEO'
   },
-  v16: {
-    name: '陈彦丰',
-    position: 'Cybex 团队核心成员',
-		position2: '拓链科技CEO'
-  },
   v17: {
+    name: '叶芷',
+    position: 'CYBEX CTO',
+  },
+  v18: {
     name: 'Jonathan Bahai',
     position: 'Peerplays 创始人',
 		position2: 'eXeBlock 科技公司创始人'
   },  
-  v18: {
+  v19: {
     name: 'Alfredo Garcia',
     position: '比特股核心开发者'
   },
-  v19: {
+  v20: {
     name: 'Christoph Hering',
     position: 'Payger 创始人'
   },  
-  v20: {
-    name: '梓岑',
-    position: '比特股理事',
-		position2: 'YOYOW联合创始人'
-  },
   v21: {
     name: '罗谊',
     position: '区块链技术研究者',
@@ -112,35 +111,39 @@ const list = {
     name: '马宝春',
     position: '技术极客'
   },
-  v27: {
+	v27: {
+		name: '王超',
+		position: '铂链 CTO, 联合创始人',
+	},
+  v28: {
     name: '赵聆言',
     position: '未来版权项目创始人',
 		position2: '链娱科技CEO'
   },
-  v28: {
+  v29: {
     name: '吴子臻',
     position: 'Chaince 交易平台创始人兼 CEO'
   },
-  v29: {
+  v30: {
     name: '施瑞琦',
     position: 'EOS Cannon共建者',
 		position2: 'BYSTAKE创始人',
 		position3: '”胖哥说币”自媒体主理人'
   },
-  v30: {
+  v31: {
     name: '吴亚皇',
     position: 'MEET.ONE 项目 CTO'
   },
-  v31: {
+  v32: {
     name: '胡华波',
     position: 'Winex.pro 创始人',
 		position2: 'Token++ 钱包联合创始人'
   },
-  v32: {
+  v33: {
     name: '吴序强',
     position: '比特帝国创始人'
   },
-  v33: {
+  v34: {
     name: '姚宗秋',
     position: '比特股节点见证人',
 		position2: '比特股布道者'

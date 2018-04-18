@@ -154,7 +154,7 @@ class IndexPage extends React.Component {
           >
             <Toolbar className="nav">
               <div className="rowlist">
-                <a href={this.state.lang.ticket}
+                <a href={this.state.lang.ticket} target="__blank"
                    style={{ textDecoration: 'none' }}
                 >
                   <Button size="small" className="trans"
@@ -385,7 +385,7 @@ class IndexPage extends React.Component {
               alignItems="center"
               className="para"
             >
-              <a href="https://oraclechain.io"><Grid item><div className="cctn partner oc" /></Grid></a>
+              <a href="https://oraclechain.io" target="__blank"><Grid item><div className="cctn partner oc" /></Grid></a>
             </Grid>						
             <h2 style={{marginTop:'2rem'}}>{this.state.lang.sponsor.title}</h2>
             <div className="bar" />
@@ -396,8 +396,8 @@ class IndexPage extends React.Component {
               alignItems="center"
               className="para"
             >
-              <a href="https://crypviser.network"><Grid item><div className="cctn partner cp" /></Grid></a>
-              <a href="https://dascoin.com"><Grid item><div className="cctn partner dc" /></Grid></a>
+              <a href="https://crypviser.network" target="__blank"><Grid item><div className="cctn partner cp" /></Grid></a>
+              <a href="https://dascoin.com" target="__blank"><Grid item><div className="cctn partner dc" /></Grid></a>
             </Grid>
 						<div className="subtitle">{this.state.lang.sponsor.ag}</div>
             <Grid
@@ -406,9 +406,9 @@ class IndexPage extends React.Component {
               alignItems="center"
               className="para"
             >
-              <a href="https://www.deex.exchange">
-								<Grid item><div className="cctn partner deex" /></Grid>
-							</a>
+              
+								<Grid item><a href="https://www.deex.exchange" target="__blank"><div className="cctn partner deex" /></a></Grid>
+								<Grid item><a href="https://www.deex.exchange" target="__blank"><div className="cctn partner token" /></a></Grid>
             </Grid>
             <h2 style={{marginTop:'2rem'}}>{this.state.lang.partner.title}</h2>
             <div className="bar" />

@@ -159,7 +159,9 @@ p{
 .blockgeek{
     background-image: url('../../assets/imgs/bg.png');
 }
-
+.token{
+		background-image: url("../../assets/imgs/token.png")
+}
 .oc{
     background-image: url('../../assets/imgs/oc.png');
 }

@@ -406,7 +406,9 @@ class IndexPage extends React.Component {
               alignItems="center"
               className="para"
             >
-              <Grid item><div className="cctn partner deex" /></Grid>
+              <a href="https://www.deex.exchange">
+								<Grid item><div className="cctn partner deex" /></Grid>
+							</a>
             </Grid>
             <h2 style={{marginTop:'2rem'}}>{this.state.lang.partner.title}</h2>
             <div className="bar" />

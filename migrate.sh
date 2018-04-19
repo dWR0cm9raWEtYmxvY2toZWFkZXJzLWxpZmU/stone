@@ -15,7 +15,7 @@ cp -r ${local}/graphene ${remote}/graphene
 
 cd ${remote}
 
-git pull
 git add .
+git pull
 git commit -m 'graphene bundle update'
 git push origin master

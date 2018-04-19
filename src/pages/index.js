@@ -24,7 +24,6 @@ import Modal from '../components/Modal'
 import Speakers from '../components/speakers'
 import enlist from '../components/speakers/enlist'
 import cnlist from '../components/speakers/cnlist'
-import $ from "jquery";
 // No cache;
 
 const cnbg = {

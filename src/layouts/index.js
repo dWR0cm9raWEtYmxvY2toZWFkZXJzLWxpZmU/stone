@@ -7,24 +7,16 @@ import Header from '../components/Header'
 import './index.css'
 
 const TemplateWrapper = ({ children }) => (
-  <div>
-    <Helmet
-      title="Graphene DEVCON"
-      meta={[
-        { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'sample, something' },
-      ]}
-    />
-
-    <div
-      style={{
-        margin: '0 auto',
-        paddingTop: 0,
-      }}
-    >
-      {children()}
-    </div>
-  </div>
+	<div>
+		<Helmet
+		title="Graphene DEVCON"
+		meta={[
+			{ name: 'pragma', content: 'no-cache' },
+			{ name: 'Cache-Control', content: 'no-cache, must-revalidate' },
+			{ name: 'expires', content: '0' },				
+		]}/> <div style={{ margin: '0 auto', paddingTop: 0 }}>{children()}
+		</div>
+	</div>
 )
 
 TemplateWrapper.propTypes = {

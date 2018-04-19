@@ -1,7 +1,7 @@
 const list = {
   v1: {
     name: '巨蟹',
-    position: 'GDEX.IO创始人',
+    position: 'GDEX 创始人',
 		position2: '比特股理事'
   },
   v2: {

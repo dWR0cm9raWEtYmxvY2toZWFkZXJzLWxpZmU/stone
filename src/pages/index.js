@@ -420,6 +420,8 @@ class IndexPage extends React.Component {
 			alignItems="center"
 			className="para"
 			>
+				<Grid item><div className="cctn partner bb" /></Grid>
+			<Grid item><div className="cctn partner jscj" /></Grid>				
 			<Grid item><div className="cctn partner bbt" /></Grid>
 			<Grid item><div className="cctn partner d45" /></Grid>	
 			</Grid>						

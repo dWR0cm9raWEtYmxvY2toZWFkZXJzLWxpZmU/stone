@@ -35,9 +35,9 @@
     .subpara{ max-width: 60vw; }
     .nav{ height: 1.8rem}
     .banner{ height: 50vw; width: 100vw;}
-/*    .menuicon{width: 2rem} */
+		/*    .menuicon{width: 2rem} */
     .menubtn{ display: none }
-/*    .rowlist{ display: none } */
+		/*    .rowlist{ display: none } */
     .roundicon{ height:4rem; width:4rem; }
     .partner{ height: 8rem; width: 8rem;}
     .pagination{ display: none}
@@ -51,9 +51,9 @@
     .subpara{ max-width: 80vw }
     .nav{ height: 1.8rem}
     .banner{ height: 75vw; width: 100vw;}
-/*    .menuicon{width: 1rem} */
+		/*    .menuicon{width: 1rem} */
     .menubtn{ display: none }
-/*    .rowlist{ display: none } */
+		/*    .rowlist{ display: none } */
     .roundicon{ height:4rem; width:4rem; }
     .partner{ height: 8rem; width: 8rem;}
     .pagination{ display: none}
@@ -172,6 +172,14 @@ p{
 
 .bcc{
     background-image: url('../../assets/imgs/bcc.png');
+}
+
+.bb{
+    background-image: url('../../assets/imgs/bb.png');		
+}
+
+.jscj{
+    background-image: url('../../assets/imgs/jscj.png');
 }
 
 .gridm{

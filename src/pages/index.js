@@ -46,7 +46,7 @@ class IndexPage extends React.Component {
       backgroundImage: 'url(' + require('../assets/imgs/table.jpg') + ')',
     },
     bg: {
-      backgroundImage: 'url(' + require('../assets/imgs/banner-en.jpg') + ')',
+      backgroundImage: 'url(' + require('../assets/imgs/banner.png') + ')',
     },
     list: cnlist,
     right: false,

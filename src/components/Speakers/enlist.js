@@ -1,7 +1,7 @@
 const list = {
   v1: {
     name: 'Jerry Liu',
-    position: 'CEO of GEDX',
+    position: 'Founder of GEDX',
 		position2: 'Committee Member of BitShares'
   },
   v2: {

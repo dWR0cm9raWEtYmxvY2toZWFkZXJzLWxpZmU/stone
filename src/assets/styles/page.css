@@ -5,7 +5,8 @@
     .subpara{ max-width: 60vw }
     .picintro{ max-width: 960px }
     .nav{ height: 2rem}
-    .banner{ height: 50vw; width: 100vw;}
+    .banner{ height: 40rem; }
+    .innerbg{ height: 22rem; width: 50rem;}
     .menubtn{ display: none }
     .rowlist{ display: flex }
     .roundicon{ height:6rem; width:6rem; }
@@ -20,7 +21,8 @@
     .para{ max-width: 80vw }
     .subpara{ max-width: 60vw }
     .nav{ height: 1.8rem}
-    .banner{ height: 50vw; width: 100vw;}
+    .banner{ height: 60vw; }
+    .innerbg{ height: 12rem; width: 28rem;}
     .menubtn{ display: none }
     .rowlist{ display: flex }
     .roundicon{ height:6rem; width:6rem; }
@@ -34,7 +36,8 @@
     .para{ max-width: 80vw }
     .subpara{ max-width: 60vw; }
     .nav{ height: 1.8rem}
-    .banner{ height: 50vw; width: 100vw;}
+    .banner{ height: 60vw; }		
+		.innerbg{ height: 32vw; width: 72vw;}
 		/*    .menuicon{width: 2rem} */
     .menubtn{ display: none }
 		/*    .rowlist{ display: none } */
@@ -50,7 +53,7 @@
     .para{ max-width: 80vw }
     .subpara{ max-width: 80vw }
     .nav{ height: 1.8rem}
-    .banner{ height: 75vw; width: 100vw;}
+    /*.innerbg{ height: 20vw; width: 45vw;}*/
 		/*    .menuicon{width: 1rem} */
     .menubtn{ display: none }
 		/*    .rowlist{ display: none } */
@@ -129,14 +132,25 @@ p{
 }
 
 .banner{
-
+		width: 100vw;		
+		background-image: url('../../assets/imgs/bgback.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+		display:flex;
+		flex:1;
+		align-items: center;
+		justify-content: center;
+}
+
+.innerbg{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;		
 }
 
 .bg1{
-    background-color: rgba(242,242,242,1)
+    background-color: rgba(242,242,242,1);
 }
 
 .ml{
@@ -153,7 +167,6 @@ p{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-
 }
 
 .blockgeek{

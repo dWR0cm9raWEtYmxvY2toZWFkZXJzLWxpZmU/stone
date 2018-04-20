@@ -144,328 +144,330 @@ class IndexPage extends React.Component {
 
 		return (
 			<div>
-			<LazyLoad height={0}>
-			{this.state.lang===en?<Modal />:<div />}
-			</LazyLoad>
-			<LazyLoad height={0}>
-			<AppBar
-			style={{ backgroundColor: `rgba(9,12,36,0.3)` }}
-			className="nav"
-			position="fixed"
-			>
-			<Toolbar className="nav">
-			<div className="rowlist">
-			<a href={this.state.lang.ticket} target="__blank"
-			style={{ textDecoration: 'none' }}
-			>
-			<Button size="small" className="trans"
-			style={{
-				color: 'white',
-				borderRadius: '33rem',
-				backgroundColor: 'rgba(213,168,69,1)',
-			}}
-			>
-			{this.state.lang.menu[5]}
-			</Button>
-			</a>                
-			<Button
-			disableRipple={true}
-			size="small"
-			disableFocusRipple={true}
-			onClick={trans}
-			className="trans"
-			style={{ color: 'white', display: 'flex' }}
-			>
-			{this.state.toLang}
-			</Button>                
+				<LazyLoad height={0}>
+					{this.state.lang===en?<Modal />:<div />}
+				</LazyLoad>
+				<LazyLoad height={0}>
+					<AppBar
+						style={{ backgroundColor: `rgba(9,12,36,0.3)` }}
+						className="nav"
+						position="fixed"
+					>
+						<Toolbar className="nav">
+							<div className="rowlist">
+								<a href={this.state.lang.ticket} target="__blank"
+									style={{ textDecoration: 'none' }}
+								>
+									<Button size="small" className="trans"
+										style={{
+											color: 'white',
+											borderRadius: '33rem',
+											backgroundColor: 'rgba(213,168,69,1)',
+										}}
+									>
+										{this.state.lang.menu[5]}
+									</Button>
+								</a>                
+								<Button
+									disableRipple={true}
+									size="small"
+									disableFocusRipple={true}
+									onClick={trans}
+									className="trans"
+									style={{ color: 'white', display: 'flex' }}
+								>
+									{this.state.toLang}
+								</Button>                
 
-			</div>
+							</div>
 
-			<div className="menubtn">
-			<IconButton onClick={this.toggleDrawer('right', true)}>
-			<MenuIcon style={{ color: 'white' }} />
-			</IconButton>
-			</div>
-			</Toolbar>
-			</AppBar>
-			</LazyLoad>
-			<LazyLoad height={0}>
-			<Drawer
-			anchor="right"
-			open={this.state.right}
-			onClose={this.toggleDrawer('right', false)}
-			>
-			<div
-			tabIndex={0}
-			role="button"
-			onClick={this.toggleDrawer('right', false)}
-			onKeyDown={this.toggleDrawer('right', false)}
-			>
-			<List className="drawerlist">
-			<a
-			href={this.state.lang.ticket}
-			style={{ textDecoration: 'none' }}
-			>
-			<ListItem button style={{ color: 'white' }}>
-			{this.state.lang.menu[5]}
-			</ListItem>
-			</a>
-			</List>
-			</div>
-			</Drawer>
-			</LazyLoad>
-			<section className="bnwrap banner" style={this.state.bg} />
-			<LazyLoad height={200}>
-			<section className="bg1" id="introductin">
-			<TweenOne
-			className="ctn"
-			animation={{ x: -100, type: 'from', duration: 720, opacity: 0 }}
-			>
-			<h2>{this.state.lang.intro.title}</h2>
-			<div className="bar" />
-			<p className="para indent ">{this.state.lang.intro.para1}</p>
-			<p style={{width:'100%'}} className="para indent ">{this.state.lang.intro.para2}</p>
-			</TweenOne>
-			</section>
-			</LazyLoad>
-			<section>
-			<LazyLoad height={100}>
-			<TweenOne
-			className="ctn"
-			animation={{ x: -100, type: 'from', duration: 720, opacity: 0 }}
-			>
-			<h2>{this.state.lang.lookback.title}</h2>
-			<div className="bar" />
-			<p className="para indent">{this.state.lang.lookback.para}</p>
-			<Banner className="picintro" />
-			</TweenOne>
-			</LazyLoad>
-			</section>
-			<section className="ctn bg1">
-			<LazyLoad height={200}>
-			<TweenOne
-			style={{ alignItems: 'center',justifyContent: 'center',display:'flex',flexDirection:'column'}}              
-			animation={{ x: -100, type: 'from', duration: 720, opacity: 0 }}
-			>
-			<h2>{this.state.lang.overview.title}</h2>
-			<div className="bar" />
-			<Table className="para" style={{ marginTop: `1rem` }}>
-			<TableBody>{list}</TableBody>
-			</Table>
-			</TweenOne>
-			</LazyLoad>
-			</section>
-			<section key="e" className="ctn">
-			<LazyLoad height={200}>
-			<TweenOne
-			style={{ alignItems: 'center',justifyContent: 'center',display:'flex',flexDirection:'column'}}
-			animation={{ x: -100, type: 'from', duration: 720, opacity: 0 }}
-			>
-			<h2>{this.state.lang.star.title}</h2>
-			<div className="bar" />
-			<Grid container>
-			<Grid item xs={4} className="starctn">
-			<div className="roundicon closedoor"/>
-			<p style={{margin:'1rem 0',color: 'rgba(29,83,147,1)'}}>{this.state.lang.star.head1}</p>
-			<p className="info">{this.state.lang.star.p1}</p>
-			</Grid>
-			<Grid item xs={4} className="starctn">
-			<div className="roundicon roundtable "/>
-			<p style={{margin:'1rem 0',color: 'rgba(29,83,147,1)'}}>{this.state.lang.star.head2}</p>
-			<p className="info">{this.state.lang.star.p2}</p>
-			</Grid>
-			<Grid item xs={4} className="starctn">
-			<div className="roundicon eos"/>
-			<p style={{margin:'1rem 0',color: 'rgba(29,83,147,1)'}}>{this.state.lang.star.head3}</p>
-			<p className="info">{this.state.lang.star.p3}</p>
-			</Grid>                
-			</Grid>
-			</TweenOne>
-			</LazyLoad>
-			</section>
-			
-			<section key="g" className="ctn bg1" id="speakers">
-			<LazyLoad height={1}>
-			<TweenOne 
-			animation={{ x: -100, type: 'from', duration: 720, opacity: 0 }}
-			style={{ alignItems: 'center',justifyContent: 'center',display:'flex',flexDirection:'column'}}
-			>
-			<h2>{this.state.lang.vip.title}</h2>
-			<div className="bar" />
-			<Speakers list={this.state.list} style={{  maxWidth: '960px',width:'90vw' }} />              
-			</TweenOne>
-			</LazyLoad>
-			</section>
-			<section id="host" className="ctn bg1">
-			<LazyLoad height={100} offset={100}>
-			<TweenOne
-			style={{ alignItems: 'center',justifyContent: 'center',display:'flex',flexDirection:'column'}}
-			animation={{ x: -100, type: 'from', duration: 720, opacity: 0 }}
-			>
-			<h2>{this.state.lang.host.title}</h2>
-			<div className="bar" />
-			<Grid
-			container
-			alignItems="center"
-			className="m1 gridm"
-			justify="center"
-			>
-			<Grid item xs={12} md={12} className="cctn">
-			<div className="organizer blockgeek" />
-			</Grid>
-			<Grid item xs={12} md={12} style={{ maxWidth: '960px',width:'90vw;' }}>
-			<p className="indent">{this.state.lang.host.blockGeek}</p>
-			</Grid>
-			</Grid>
-			<Grid
-			container
-			alignItems="center"
-			className="gridm"
-			justify="center"
-			>
-			<Grid item xs={12} md={12} className="cctn">
-			<div className="organizer gdex" />
-			</Grid>
-			<Grid item xs={12} md={12} style={{ maxWidth: '960px' }}>
-			<Grid item xs={3} />
-			<p className="indent">{this.state.lang.host.gdex}</p>
-			</Grid>
-			</Grid>
-			</TweenOne>
-			</LazyLoad>
-			</section>
-			<LazyLoad height={100}>
-			<TweenOne
-			className="ctn"
-			animation={{ x: -100, type: 'from', duration: 720, opacity: 0 }}
-			>
-			<h2>{this.state.lang.assist.title}</h2>
-			<div className="bar" />
-			<Grid
-			container
-			alignItems="center"
-			className="gridm"
-			justify="center"
-			>
-			<Grid item xs={12} md={12} className="cctn">
-			<div className="organizer bcc" />
-			</Grid>
-			<Grid item xs={12} md={12} style={{ maxWidth: `960px` }}>
-			<p className="indent">{this.state.lang.assist.para}</p>
-			</Grid>
-			<Grid item xs={12} md={12} className="cctn">
-			<div className="organizer bs" />
-			</Grid>
-			<Grid item xs={12} md={12} style={{ maxWidth: `960px` }}>
-			<p className="indent">{this.state.lang.assist.para2}</p>
-			</Grid>
-			<Grid item xs={12} md={12} className="cctn">
-			<div className="organizer bw" />
-			</Grid>
-			<Grid item xs={12} md={12} style={{ maxWidth: `960px` }}>
-			<p className="indent">{this.state.lang.assist.para3}</p>
-			</Grid>
-			<Grid item xs={12} md={12} className="cctn">
-			<div className="organizer bh" />
-			</Grid>
-			<Grid item xs={12} md={12} style={{ maxWidth: `960px` }}>
-			<p className="indent">{this.state.lang.assist.para4}</p>
-			</Grid>
-			<Grid item xs={12} md={12} className="cctn">
-			<div className="organizer bf" />
-			</Grid>
-			<Grid item xs={12} md={12} style={{ maxWidth: `960px` }}>
-			<p className="indent">{this.state.lang.assist.para5}</p>
-			</Grid>                            
-			</Grid>
-			<h2 style={{marginTop:'2rem'}}>{this.state.lang.sponsor.agent}</h2>
-			<div className="bar" />						
-			<Grid
-			container
-			justify="space-around"
-			alignItems="center"
-			className="para"
-			>
-			<a href="https://oraclechain.io" target="__blank"><Grid item><div className="cctn partner oc" /></Grid></a>
-			</Grid>						
-			<h2 style={{marginTop:'2rem'}}>{this.state.lang.sponsor.title}</h2>
-			<div className="bar" />
-			<div className="subtitle">{this.state.lang.sponsor.gold}</div>
-			<Grid
-			container
-			justify="space-around"
-			alignItems="center"
-			className="para"
-			>
-			<a href="https://crypviser.network" target="__blank"><Grid item><div className="cctn partner cp" /></Grid></a>
-			<a href="https://dascoin.com" target="__blank"><Grid item><div className="cctn partner dc" /></Grid></a>
-			</Grid>
-			<div className="subtitle">{this.state.lang.sponsor.ag}</div>
-			<Grid
-			container
-			justify="space-around"
-			alignItems="center"
-			className="para"
-			>
-			
-			<Grid item><a href="https://www.deex.exchange" target="__blank"><div className="cctn partner deex" /></a></Grid>
-			<Grid item><a href="https://www.deex.exchange" target="__blank"><div className="cctn partner token" /></a></Grid>
-			<Grid item><a href="https://www.magicw.net" target="__blank"><div className="cctn partner b" /></a></Grid>
-			</Grid>
-			<h2 style={{marginTop:'2rem'}}>{this.state.lang.partner.title}</h2>
-			<div className="bar" />
-			<Grid
-			container
-			justify="space-around"
-			alignItems="center"
-			className="para"
-			>
-				<Grid item><div className="cctn partner bb" /></Grid>
-			<Grid item><div className="cctn partner jscj" /></Grid>				
-			<Grid item><div className="cctn partner bbt" /></Grid>
-			<Grid item><div className="cctn partner d45" /></Grid>	
-			</Grid>						
-			</TweenOne>
-			</LazyLoad>
-			<LazyLoad height={100}>
-			<TweenOne
-			animation={{ x: -100, type: 'from', duration: 720, opacity: 0 }}
-			>
-			<section className="ctn" id="faq">
-			<h2>{this.state.lang.faq.title}</h2>
-			<div className="bar" />
-			<div style={{maxWidth:'960px'}}>
-			{faqRenderList}
-			</div>
-			</section>
-			</TweenOne>
-			</LazyLoad>				
-			<section id="contact"
-			key="l"
-			className="footer ctn"
-			style={{ color: 'white', height: 'auto' }}
-			>
-			<h5>{this.state.lang.footer.title}</h5>
-			<div className="bar" style={{ marginBottom: '1rem' }} />
-			<Grid container style={{ maxWidth: '960px' }}>
-			<Grid item xs={12} sm={6} md={4} className="ftgrid">
-			<div className=" sr">
-			<div className="fticon ftcp" />
-			<div className="ftgrid">
-			<p>{this.state.lang.footer.cp}</p>
-			<p
-			style={{
-				fontSize: '1rem',
-				marginTop: '0.7rem',
-				marginBottom: '0.5rem',
-			}}
-			>
-			Linda
-					</p>
-					<p>{this.state.lang.footer.tel}</p>
-					<p>{this.state.lang.footer.email}</p>
-				</div>
-				</div>
+							<div className="menubtn">
+								<IconButton onClick={this.toggleDrawer('right', true)}>
+									<MenuIcon style={{ color: 'white' }} />
+								</IconButton>
+							</div>
+						</Toolbar>
+					</AppBar>
+				</LazyLoad>
+				<LazyLoad height={0}>
+					<Drawer
+						anchor="right"
+						open={this.state.right}
+						onClose={this.toggleDrawer('right', false)}
+					>
+						<div
+							tabIndex={0}
+							role="button"
+							onClick={this.toggleDrawer('right', false)}
+							onKeyDown={this.toggleDrawer('right', false)}
+						>
+							<List className="drawerlist">
+								<a
+									href={this.state.lang.ticket}
+									style={{ textDecoration: 'none' }}
+								>
+									<ListItem button style={{ color: 'white' }}>
+										{this.state.lang.menu[5]}
+									</ListItem>
+								</a>
+							</List>
+						</div>
+					</Drawer>
+				</LazyLoad>
+				<section className="bnwrap banner">
+					<div className="innerbg" style={this.state.bg} />
+					</section>
+				<LazyLoad height={200} >
+					<section className="bg1" id="introductin">
+						<TweenOne
+							className="ctn"
+							animation={{ x: -100, type: 'from', duration: 720, opacity: 0 }}
+						>
+							<h2>{this.state.lang.intro.title}</h2>
+							<div className="bar" />
+							<p className="para indent ">{this.state.lang.intro.para1}</p>
+							<p style={{width:'100%'}} className="para indent ">{this.state.lang.intro.para2}</p>
+						</TweenOne>
+					</section>
+				</LazyLoad>
+				<section>
+					<LazyLoad height={100}>
+						<TweenOne
+							className="ctn"
+							animation={{ x: -100, type: 'from', duration: 720, opacity: 0 }}
+						>
+							<h2>{this.state.lang.lookback.title}</h2>
+							<div className="bar" />
+							<p className="para indent">{this.state.lang.lookback.para}</p>
+							<Banner className="picintro" />
+						</TweenOne>
+					</LazyLoad>
+				</section>
+				<section className="ctn bg1">
+					<LazyLoad height={200}>
+						<TweenOne
+							style={{ alignItems: 'center',justifyContent: 'center',display:'flex',flexDirection:'column'}}
+							animation={{ x: -100, type: 'from', duration: 720, opacity: 0 }}
+						>
+							<h2>{this.state.lang.overview.title}</h2>
+							<div className="bar" />
+							<Table className="para" style={{ marginTop: `1rem` }}>
+								<TableBody>{list}</TableBody>
+							</Table>
+						</TweenOne>
+					</LazyLoad>
+				</section>
+				<section key="e" className="ctn">
+					<LazyLoad height={200}>
+						<TweenOne
+							style={{ alignItems: 'center',justifyContent: 'center',display:'flex',flexDirection:'column'}}
+							animation={{ x: -100, type: 'from', duration: 720, opacity: 0 }}
+						>
+							<h2>{this.state.lang.star.title}</h2>
+							<div className="bar" />
+							<Grid container>
+								<Grid item xs={4} className="starctn">
+									<div className="roundicon closedoor"/>
+									<p style={{margin:'1rem 0',color: 'rgba(29,83,147,1)'}}>{this.state.lang.star.head1}</p>
+									<p className="info">{this.state.lang.star.p1}</p>
+								</Grid>
+								<Grid item xs={4} className="starctn">
+									<div className="roundicon roundtable "/>
+									<p style={{margin:'1rem 0',color: 'rgba(29,83,147,1)'}}>{this.state.lang.star.head2}</p>
+									<p className="info">{this.state.lang.star.p2}</p>
+								</Grid>
+								<Grid item xs={4} className="starctn">
+									<div className="roundicon eos"/>
+									<p style={{margin:'1rem 0',color: 'rgba(29,83,147,1)'}}>{this.state.lang.star.head3}</p>
+									<p className="info">{this.state.lang.star.p3}</p>
+								</Grid>                
+							</Grid>
+						</TweenOne>
+					</LazyLoad>
+				</section>
+				
+				<section key="g" className="ctn bg1" id="speakers">
+					<LazyLoad height={1}>
+						<TweenOne 
+							animation={{ x: -100, type: 'from', duration: 720, opacity: 0 }}
+							style={{ alignItems: 'center',justifyContent: 'center',display:'flex',flexDirection:'column'}}
+						>
+							<h2>{this.state.lang.vip.title}</h2>
+							<div className="bar" />
+							<Speakers list={this.state.list} style={{  maxWidth: '960px',width:'90vw' }} />              
+						</TweenOne>
+					</LazyLoad>
+				</section>
+				<section id="host" className="ctn bg1">
+					<LazyLoad height={100} offset={100}>
+						<TweenOne
+							style={{ alignItems: 'center',justifyContent: 'center',display:'flex',flexDirection:'column'}}
+							animation={{ x: -100, type: 'from', duration: 720, opacity: 0 }}
+						>
+							<h2>{this.state.lang.host.title}</h2>
+							<div className="bar" />
+							<Grid
+								container
+								alignItems="center"
+								className="m1 gridm"
+								justify="center"
+							>
+								<Grid item xs={12} md={12} className="cctn">
+									<div className="organizer blockgeek" />
+								</Grid>
+								<Grid item xs={12} md={12} style={{ maxWidth: '960px',width:'90vw;' }}>
+									<p className="indent">{this.state.lang.host.blockGeek}</p>
+								</Grid>
+							</Grid>
+							<Grid
+								container
+								alignItems="center"
+								className="gridm"
+								justify="center"
+							>
+								<Grid item xs={12} md={12} className="cctn">
+									<div className="organizer gdex" />
+								</Grid>
+								<Grid item xs={12} md={12} style={{ maxWidth: '960px' }}>
+									<Grid item xs={3} />
+									<p className="indent">{this.state.lang.host.gdex}</p>
+								</Grid>
+							</Grid>
+						</TweenOne>
+					</LazyLoad>
+				</section>
+				<LazyLoad height={100}>
+					<TweenOne
+						className="ctn"
+						animation={{ x: -100, type: 'from', duration: 720, opacity: 0 }}
+					>
+						<h2>{this.state.lang.assist.title}</h2>
+						<div className="bar" />
+						<Grid
+							container
+							alignItems="center"
+							className="gridm"
+							justify="center"
+						>
+							<Grid item xs={12} md={12} className="cctn">
+								<div className="organizer bcc" />
+							</Grid>
+							<Grid item xs={12} md={12} style={{ maxWidth: `960px` }}>
+								<p className="indent">{this.state.lang.assist.para}</p>
+							</Grid>
+							<Grid item xs={12} md={12} className="cctn">
+								<div className="organizer bs" />
+							</Grid>
+							<Grid item xs={12} md={12} style={{ maxWidth: `960px` }}>
+								<p className="indent">{this.state.lang.assist.para2}</p>
+							</Grid>
+							<Grid item xs={12} md={12} className="cctn">
+								<div className="organizer bw" />
+							</Grid>
+							<Grid item xs={12} md={12} style={{ maxWidth: `960px` }}>
+								<p className="indent">{this.state.lang.assist.para3}</p>
+							</Grid>
+							<Grid item xs={12} md={12} className="cctn">
+								<div className="organizer bh" />
+							</Grid>
+							<Grid item xs={12} md={12} style={{ maxWidth: `960px` }}>
+								<p className="indent">{this.state.lang.assist.para4}</p>
+							</Grid>
+							<Grid item xs={12} md={12} className="cctn">
+								<div className="organizer bf" />
+							</Grid>
+							<Grid item xs={12} md={12} style={{ maxWidth: `960px` }}>
+								<p className="indent">{this.state.lang.assist.para5}</p>
+							</Grid>                            
+						</Grid>
+						<h2 style={{marginTop:'2rem'}}>{this.state.lang.sponsor.agent}</h2>
+						<div className="bar" />						
+						<Grid
+							container
+							justify="space-around"
+							alignItems="center"
+							className="para"
+						>
+							<a href="https://oraclechain.io" target="__blank"><Grid item><div className="cctn partner oc" /></Grid></a>
+						</Grid>						
+						<h2 style={{marginTop:'2rem'}}>{this.state.lang.sponsor.title}</h2>
+						<div className="bar" />
+						<div className="subtitle">{this.state.lang.sponsor.gold}</div>
+						<Grid
+							container
+							justify="space-around"
+							alignItems="center"
+							className="para"
+						>
+							<a href="https://crypviser.network" target="__blank"><Grid item><div className="cctn partner cp" /></Grid></a>
+							<a href="https://dascoin.com" target="__blank"><Grid item><div className="cctn partner dc" /></Grid></a>
+						</Grid>
+						<div className="subtitle">{this.state.lang.sponsor.ag}</div>
+						<Grid
+							container
+							justify="space-around"
+							alignItems="center"
+							className="para"
+						>
+							
+							<Grid item><a href="https://www.deex.exchange" target="__blank"><div className="cctn partner deex" /></a></Grid>
+							<Grid item><a href="https://www.deex.exchange" target="__blank"><div className="cctn partner token" /></a></Grid>
+							<Grid item><a href="https://www.magicw.net" target="__blank"><div className="cctn partner b" /></a></Grid>
+						</Grid>
+						<h2 style={{marginTop:'2rem'}}>{this.state.lang.partner.title}</h2>
+						<div className="bar" />
+						<Grid
+							container
+							justify="space-around"
+							alignItems="center"
+							className="para"
+						>
+							<Grid item><div className="cctn partner bb" /></Grid>
+							<Grid item><div className="cctn partner jscj" /></Grid>				
+							<Grid item><div className="cctn partner bbt" /></Grid>
+							<Grid item><div className="cctn partner d45" /></Grid>	
+						</Grid>						
+					</TweenOne>
+				</LazyLoad>
+				<LazyLoad height={100}>
+					<TweenOne
+						animation={{ x: -100, type: 'from', duration: 720, opacity: 0 }}
+					>
+						<section className="ctn" id="faq">
+							<h2>{this.state.lang.faq.title}</h2>
+							<div className="bar" />
+							<div style={{maxWidth:'960px'}}>
+								{faqRenderList}
+							</div>
+						</section>
+					</TweenOne>
+				</LazyLoad>				
+				<section id="contact"
+					key="l"
+					className="footer ctn"
+					style={{ color: 'white', height: 'auto' }}
+				>
+					<h5>{this.state.lang.footer.title}</h5>
+					<div className="bar" style={{ marginBottom: '1rem' }} />
+					<Grid container style={{ maxWidth: '960px' }}>
+						<Grid item xs={12} sm={6} md={4} className="ftgrid">
+							<div className=" sr">
+								<div className="fticon ftcp" />
+								<div className="ftgrid">
+									<p>{this.state.lang.footer.cp}</p>
+									<p
+									style={{
+										fontSize: '1rem',
+										marginTop: '0.7rem',
+										marginBottom: '0.5rem',
+									}}
+									>
+										Linda
+									</p>
+									<p>{this.state.lang.footer.tel}</p>
+									<p>{this.state.lang.footer.email}</p>
+								</div>
+							</div>
 						</Grid>
 						<Grid item xs={12} sm={6} md={4} className="ftgrid">
 							<div className="sr">
@@ -494,9 +496,9 @@ class IndexPage extends React.Component {
 								</div>
 							</div>
 						</Grid>
-			</Grid>
+					</Grid>
 				</section>
-				</div>
+			</div>
 		)
 	}
 }

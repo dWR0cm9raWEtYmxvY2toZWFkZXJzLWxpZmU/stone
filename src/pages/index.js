@@ -24,6 +24,7 @@ import Modal from '../components/Modal'
 import Speakers from '../components/speakers'
 import enlist from '../components/speakers/enlist'
 import cnlist from '../components/speakers/cnlist'
+import Cp from '../components/Cp'
 // No cache;
 
 const cnbg = {
@@ -66,6 +67,7 @@ class IndexPage extends React.Component {
 		for (var i = 1; i < 4; i++) {
 			arr2.push(i)
 		}
+
 		let faqlist = []
 		for (var i = 1; i < 6; i++){
 			faqlist.push(i)
@@ -416,17 +418,7 @@ class IndexPage extends React.Component {
 						</Grid>
 						<h2 style={{marginTop:'2rem'}}>{this.state.lang.partner.title}</h2>
 						<div className="bar" />
-						<Grid
-							container
-							justify="space-around"
-							alignItems="center"
-							className="para"
-						>
-							<Grid item><div className="cctn partner bb" /></Grid>
-							<Grid item><div className="cctn partner jscj" /></Grid>				
-							<Grid item><div className="cctn partner bbt" /></Grid>
-							<Grid item><div className="cctn partner d45" /></Grid>	
-						</Grid>						
+						<Cp />
 					</TweenOne>
 				</LazyLoad>
 				<LazyLoad height={100}>

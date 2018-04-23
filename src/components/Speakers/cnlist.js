@@ -50,100 +50,108 @@ const list = {
     name: '张增波',
     position: '鼓鼓钱包CTO'
   },
-  v13: {
+	v13: {
+		name: 'Yury Parsamov',
+		position: 'Gravity Protocol 公司 CEO'
+	},
+	v14: {
+		name: 'Peter Asalkhanov',
+		position: 'Gravity Protocol 技术主管'
+	},
+  v15: {
     name: '马杰',
     position: 'DECENT 创始人兼 CEO',
 		position2: 'ALAX联合创始人'
   },
-  v14: {
+  v16: {
     name: 'Fabian Schuh (Xeroc)',
     position: '区块链项目CTO',
   },
-  v15: {
+	v17: {			
     name: 'Ryan R. Fox',
-    position: '比特股核心团队组织者'
+				position: '比特股核心团队组织者'
   },
-  v16: {
+  v18: {
     name: '黄敏强',
     position: '公信宝创始人兼CEO'
   },
-  v17: {
-    name: '叶芷',
+  v19: {
+	  name: '叶芷',
     position: 'CYBEX CTO',
   },
-  v18: {
+  v20: {
     name: 'Jonathan Bahai',
     position: 'Peerplays 创始人',
 		position2: 'eXeBlock 科技公司创始人'
   },  
-  v19: {
+  v21: {
     name: 'Alfredo Garcia',
     position: '比特股核心开发者'
   },
-  v20: {
+  v22: {
     name: 'Christoph Hering',
     position: 'Payger 创始人'
   },  
-  v21: {
+  v23: {
     name: '罗谊',
     position: '区块链技术研究者',
 		position2: '区块链开发团队负责人'
   },
-  v22: {
+  v24: {
     name: 'Alex Shkor',
     position: 'Scorum 项目 CTO',
 		position2: 'DEIP.world 创始人'
   },
-  v23: {
+  v25: {
     name: 'Sigve Kvalsvik',
     position: '比特股前端开发负责人'
   },
-  v24: {
+  v26: {
     name: '廖洋阳',
     position: 'EOS 引力区创始人',
   },
-  v25: {
+  v27: {
     name: '郑玉山',
     position: '比特股理事',
 		position2: '水滴资本理事'		
   },
-  v26: {
+  v28: {
     name: '马宝春',
     position: '技术极客'
   },
-	v27: {
+	v29: {
 		name: '王超',
 		position: '铂链 CTO, 联合创始人',
 	},
-  v28: {
+  v30: {
     name: '赵聆言',
     position: '未来版权项目创始人',
 		position2: '链娱科技CEO'
   },
-  v29: {
+  v31: {
     name: '吴子臻',
     position: 'Chaince 交易平台创始人兼 CEO'
   },
-  v30: {
+  v32: {
     name: '施瑞琦',
     position: 'EOS Cannon共建者',
 		position2: 'BYSTAKE创始人',
 		position3: '”胖哥说币”自媒体主理人'
   },
-  v31: {
+  v33: {
     name: '吴亚皇',
     position: 'MEET.ONE 项目 CTO'
   },
-  v32: {
+  v34: {
     name: '胡华波',
     position: 'Winex.pro 创始人',
 		position2: 'Token++ 钱包联合创始人'
   },
-  v33: {
+  v35: {
     name: '吴序强',
     position: '比特帝国创始人'
   },
-  v34: {
+  v36: {
     name: '姚宗秋',
     position: '比特股节点见证人',
 		position2: '比特股布道者'

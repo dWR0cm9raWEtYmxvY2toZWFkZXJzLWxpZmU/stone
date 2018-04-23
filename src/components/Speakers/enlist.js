@@ -51,97 +51,105 @@ const list = {
     name: 'Zengbo Zhang',
     position: 'CTO of Magicwallet'
   },
-  v13: {
+	v13: {
+		name: 'Yury Parsamov',
+		position: 'Gravity Protocol CEO'
+	},
+	v14: {
+		name: 'Peter Asalkhanov',
+		position: 'Head of Research, Gravity Protocol '
+	},
+  v15: {
     name: 'Matej Michalko',
     position: 'Founder and CEO of DECENT Foundation Co-founder of ALAX'
   },
-  v14: {
+  v16: {
     name: 'Fabian Schuh (Xeroc)',
     position: 'CTO of Blockchain Projects',
   },
-  v15: {
+  v17: {
     name: 'Ryan R. Fox',
     position: 'Coordinator of BitShares Core Team'
   },
-  v16: {
+  v18: {
     name: 'Minqiang Huang',
     position: 'Founder and CEO of GXS'
   },
-  v17: {
+  v19: {
     name: 'Alex Ye',
     position: 'CYBEX CTO',
   },
-  v18: {
+  v20: {
     name: 'Jonathan Bahai',
     position: 'Found of Peerplays',
 		position2: 'eXeBlock Technologies Corp (CSE.XBLK)'
   },  
-  v19: {
+  v21: {
     name: 'Alfredo Garcia',
     position: 'BitShares Core Developer'
   },
-  v20: {
+  v22: {
     name: 'Christoph Hering',
     position: 'Founder and CEO of Payger'
   },  
-  v21: {
+  v23: {
     name: 'Yi Luo',
     position: 'Researcher of blockchain technology'
   },
-  v22: {
+  v24: {
     name: 'Alex Shkor',
     position: 'CTO at Scorum Founder of DEIP.world'
   },
-  v23: {
+  v25: {
     name: 'Sigve Kvalsvik',
     position: 'Developer of BitShares UI team'
   },
-  v24: {
+  v26: {
     name: 'Ocean Liao',
     position: 'Founder of EOS gravity'
   },
-  v25: {
+  v27: {
     name: 'Jademont Zheng',
     position: 'Committee Member of BitShares',
 		position2: 'Committee Member of Waterdrip Capital'
   },
-  v26: {
+  v28: {
     name: 'Neo Ma',
     position: 'Technical geek'
   },
-	v27: {
+	v29: {
 		name: 'Chao Wang',
 		position: 'Co-founder and CTO of Bottos'
 	},
-  v28: {
+  v30: {
     name: 'Lingyan Zhao',
     position: 'Founder of UnlimitedIP program',
 		position2: 'CEO of Link Entertainments Technology'
   },
-  v29: {
+  v31: {
     name: 'Peter Wu',
     position: 'Founder and CEO of Chaince Trading Platform'
   },
-  v30: {
+  v32: {
     name: 'Ruiqi Shi',
     position: 'Co-Founder of EOS Cannon  Founder',
 		position2: 'Director of @BYSTAKE',
 		position3: '“胖哥说币”blogger owner'
   },
-  v31: {
+  v33: {
     name: 'Yahuang Wu',
     position: 'CTO of MEET.ONE'
   },
-  v32: {
+  v34: {
     name: 'Huabo Hu',
     position: 'Founder of Winex',
 		position2: 'Co-founder of Token++ wallet'
   },
-  v33: {
+  v35: {
     name: 'Xuqiang Wu',
     position: 'Founder of btsabc.org'
   },
-  v34: {
+  v36: {
     name: 'Zongqiu Yao',
     position: 'Witness of BitShares Evangelist'
   }

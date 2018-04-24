@@ -19,7 +19,9 @@ const list = {
   },
   v5: {
     name: '白菜',
-    position: 'Hellobts 创始人'
+    position: 'YOYOW 创始人',
+		position2: 'Hellobts 创始人',
+		
   },
   v6: {
     name: '赵微(老狼)',

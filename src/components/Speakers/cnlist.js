@@ -42,116 +42,121 @@ const list = {
     position: 'DEEX 交易所联合创始人兼 CEO'
 	},
   v11: {
+    name: 'Ivan Bandaryk',
+    position: 'OpenLedger CTO',
+		position2: '比特股见证人',
+  },		
+  v12: {
     name: '梓岑',
     position: '比特股理事',
 		position2: 'YOYOW联合创始人'
-  },	
-  v12: {
+  },
+  v13: {
     name: '张增波',
     position: '鼓鼓钱包CTO'
   },
-	v13: {
+	v14: {
 		name: 'Yury Parsamov',
 		position: 'Gravity Protocol 公司 CEO'
 	},
-	v14: {
+	v15: {
 		name: 'Peter Asalkhanov',
 		position: 'Gravity Protocol 技术主管'
 	},
-  v15: {
+  v16: {
     name: '马杰',
     position: 'DECENT 创始人兼 CEO',
 		position2: 'ALAX联合创始人'
   },
-  v16: {
+  v17: {
     name: 'Fabian Schuh (Xeroc)',
     position: '区块链项目CTO',
   },
-	v17: {			
+	v18: {			
     name: 'Ryan R. Fox',
 				position: '比特股核心团队组织者'
   },
-  v18: {
+  v19: {
     name: '黄敏强',
     position: '公信宝创始人兼CEO'
   },
-  v19: {
+  v20: {
 	  name: '叶芷',
     position: 'CYBEX CTO',
   },
-  v20: {
+  v21: {
     name: 'Jonathan Bahai',
     position: 'Peerplays 创始人',
 		position2: 'eXeBlock 科技公司创始人'
   },  
-  v21: {
+  v22: {
     name: 'Alfredo Garcia',
     position: '比特股核心开发者'
   },
-  v22: {
+  v23: {
     name: 'Christoph Hering',
     position: 'Payger 创始人'
   },  
-  v23: {
+  v24: {
     name: '罗谊',
     position: '区块链技术研究者',
 		position2: '区块链开发团队负责人'
   },
-  v24: {
+  v25: {
     name: 'Alex Shkor',
     position: 'Scorum 项目 CTO',
 		position2: 'DEIP.world 创始人'
   },
-  v25: {
+  v26: {
     name: 'Sigve Kvalsvik',
     position: '比特股前端开发负责人'
   },
-  v26: {
+  v27: {
     name: '廖洋阳',
     position: 'EOS 引力区创始人',
   },
-  v27: {
+  v28: {
     name: '郑玉山',
     position: '比特股理事',
 		position2: '水滴资本理事'		
   },
-  v28: {
+  v29: {
     name: '马宝春',
     position: '技术极客'
   },
-	v29: {
+	v30: {
 		name: '王超',
 		position: '铂链 CTO, 联合创始人',
 	},
-  v30: {
+  v31: {
     name: '赵聆言',
     position: '未来版权项目创始人',
 		position2: '链娱科技CEO'
   },
-  v31: {
+  v32: {
     name: '吴子臻',
     position: 'Chaince 交易平台创始人兼 CEO'
   },
-  v32: {
+  v33: {
     name: '施瑞琦',
     position: 'EOS Cannon共建者',
 		position2: 'BYSTAKE创始人',
 		position3: '”胖哥说币”自媒体主理人'
   },
-  v33: {
+  v34: {
     name: '吴亚皇',
     position: 'MEET.ONE 项目 CTO'
   },
-  v34: {
+  v35: {
     name: '胡华波',
     position: 'Winex.pro 创始人',
 		position2: 'Token++ 钱包联合创始人'
   },
-  v35: {
+  v36: {
     name: '吴序强',
     position: '比特帝国创始人'
   },
-  v36: {
+  v37: {
     name: '姚宗秋',
     position: '比特股节点见证人',
 		position2: '比特股布道者'

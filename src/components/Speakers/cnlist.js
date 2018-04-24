@@ -51,7 +51,7 @@ const list = {
   v12: {
     name: '梓岑',
     position: 'HelloEOS 创始人',
-		position3: '比特股理事',
+		position2: '比特股理事',
 		position3: 'YOYOW 联合创始人'
   },
   v13: {

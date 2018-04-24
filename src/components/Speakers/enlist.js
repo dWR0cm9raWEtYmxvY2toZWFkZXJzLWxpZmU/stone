@@ -49,6 +49,7 @@ const list = {
   },	
   v12: {
     name: 'Zicen',
+		position: 'Founder of HelloEOS',
     position: 'Committee Member of BitShares',
 		position2: 'Co-founder of YOYOW'
   },

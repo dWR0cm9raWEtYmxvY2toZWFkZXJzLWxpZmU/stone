@@ -48,8 +48,9 @@ const list = {
   },		
   v12: {
     name: '梓岑',
-    position: '比特股理事',
-		position2: 'YOYOW联合创始人'
+    position: 'HelloEOS 创始人',
+		position3: '比特股理事',
+		position3: 'YOYOW 联合创始人'
   },
   v13: {
     name: '张增波',

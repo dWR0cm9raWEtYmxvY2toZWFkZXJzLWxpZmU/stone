@@ -3,7 +3,7 @@ import Grid from "material-ui/Grid";
 import React from "react";
 
 // render list
-var list = ["bkb","bbt","45q","jscj","ltx","wlcj","bbqkl","BTCmedia","jj","kfztt","kyzg","wl","sycj","lxcj","hqcj","hwbq","jncj","lsw","tnqkl","tljz","31N","lsqkl","wdqkl","hxcj","lj","bhome","kg","bm","yfc","hx","sdzcj","tlcj","mrbd","bbd","bqbk","lsj","jdcj","bkw","jkb","rolainews","wlw","rgcj","kdbt"]
+var list = ["bkb","bbt","45q","jscj","ltx","wlcj","bbqkl","BTCmedia","jj","kfztt","kyzg","wl","sycj","lxcj","hqcj","hwbq","jncj","lsw","tnqkl","tljz","31N","lsqkl","wdqkl","hxcj","lj","bhome","kg","bm","yfc","hx","sdzcj","tlcj","mrbd","bbd","bqbk","lsj","jdcj","bkw","jkb","rolainews","wlw","rgcj","kdbt","hdb"]
 var grids = list.map((dir)=>{
 	return (
 		<Grid item key={dir}>

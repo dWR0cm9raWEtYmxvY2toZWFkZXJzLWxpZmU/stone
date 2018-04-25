@@ -27,7 +27,7 @@
   "main": "n/a",
   "scripts": {
     "push": "sh migrate.sh",
-    "build": "gatsby build",
+    "build": "gatsby build --prefix-paths ",
     "dev": "gatsby develop",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"src/**/*.js\"",
     "test": "echo \"Error: no test specified\" && exit 1"

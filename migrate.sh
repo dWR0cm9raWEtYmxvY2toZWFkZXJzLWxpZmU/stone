@@ -2,7 +2,8 @@ local=/Users/mercurio/code/work/stone/
 remote=/Users/mercurio/code/work/BlockGeek.io/blockgeek/web/
 
 rm -r ./graphene
-gatsby build --prefix-paths
+# gatsby build --prefix-paths
+yarn build
 mv public graphene
 
 git add .

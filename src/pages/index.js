@@ -413,9 +413,9 @@ class IndexPage extends React.Component {
 						>
 							
 							<Grid item><a href="https://www.deex.exchange" target="__blank"><div className="cctn partner deex" /></a></Grid>
-							<Grid item><a href="https://www.deex.exchange" target="__blank"><div className="cctn partner token" /></a></Grid>
+							<Grid item><a href="www.tokenxx.com" target="__blank"><div className="cctn partner token" /></a></Grid>
 							<Grid item><a href="https://www.magicw.net" target="__blank"><div className="cctn partner b" /></a></Grid>
-							<Grid item><a href="https://www.magicw.net" target="__blank"><div className="cctn partner gravity" /></a></Grid>							
+							<Grid item><a href="http://www.gravityprotocol.org" target="__blank"><div className="cctn partner gravity" /></a></Grid>							
 						</Grid>
 						<h2 style={{marginTop:'2rem'}}>{this.state.lang.partner.title}</h2>
 						<div className="bar" />

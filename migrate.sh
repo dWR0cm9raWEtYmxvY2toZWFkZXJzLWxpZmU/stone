@@ -1,5 +1,5 @@
-local=/Users/mercurio/code/work/stone/
-remote=/Users/mercurio/code/work/BlockGeek.io/blockgeek/web/
+local=/Users/mercury/code/work/stone/
+remote=/Users/mercury/code/work/BlockGeek.io/blockgeek/web/
 
 rm -r ./graphene
 # gatsby build --prefix-paths

@@ -25,6 +25,7 @@ import Speakers from '../components/speakers'
 import enlist from '../components/speakers/enlist'
 import cnlist from '../components/speakers/cnlist'
 import Cp from '../components/Cp'
+import Schedule from "../components/Table"
 // No cache;
 
 const cnbg = {
@@ -218,7 +219,7 @@ class IndexPage extends React.Component {
 				</LazyLoad>
 				<section className="bnwrap banner">
 					<div className="innerbg" style={this.state.bg} />
-					</section>
+				</section>
 				<LazyLoad height={200} >
 					<section className="bg1" id="introductin">
 						<TweenOne
@@ -287,7 +288,6 @@ class IndexPage extends React.Component {
 						</TweenOne>
 					</LazyLoad>
 				</section>
-				
 				<section key="g" className="ctn bg1" id="speakers">
 					<LazyLoad height={1}>
 						<TweenOne 
@@ -300,6 +300,16 @@ class IndexPage extends React.Component {
 						</TweenOne>
 					</LazyLoad>
 				</section>
+        <section key="date" className="ctn bg" id="date"><LazyLoad height={100} offset={100}>
+					<TweenOne
+						style={{ alignItems: 'center',justifyContent: 'center',display:'flex',flexDirection:'column'}}
+						animation={{ x: -100, type: 'from', duration: 720, opacity: 0 }}
+					>
+						<h2>{this.state.lang.schedule.title}</h2>
+						<div className="bar" />
+            <Schedule data={this.state.lang.schedule}/>
+          </TweenOne>
+        </LazyLoad></section>
 				<section id="host" className="ctn bg1">
 					<LazyLoad height={100} offset={100}>
 						<TweenOne

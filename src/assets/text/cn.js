@@ -63,6 +63,51 @@ const host = {
   gdex: `GDEX是比特股理事巨蟹先生成立的上海威切信息科技有限公司做的一款基于Bitshares、去中心化的数字资产交易所。在这里，用户不仅可以交易自己的数字资产，还可以使用Bitshares内盘的功能，如资产发行、抵押、投票等。`,
 }
 
+var schedule = {
+  title: "大会日程",
+  columns: ["时间", "主题", "演讲嘉宾"],
+  times: [
+    "09:00 - 09:30", "09:30 - 09-35", "09:35 - 10:00", "10:00 - 10:20",
+    "10:20 - 10:40", "10:40 - 11:00", "11:00 - 11:20", "11:20 - 11:40",
+    "11:40 - 12:00", "12:00 - 13:40", "13:40 - 14:00", "14:20 - 15:20",
+    "15:20 - 16:20", "16:20 - 16:50", "16:50 - 18:00", "18:30 - 21:30"
+  ],
+  topics: [
+    "签到",
+    "主持人开场+主办方致辞",
+    "BitShares 的未来之路",
+    "Bitshares Blockchain in todays world",
+    "The Future of Cybersecurity and Trading",
+    "硬件钱包keybox技术架构",
+    "Consensus and emission algorithm for a graphene-based protocol",
+    "What does the future hold for Bitshares? OpenLedger gives their vision",
+    "午餐",
+    "Semi-decentralized ecosystem using Bitshares Blockchain is the reality of decentralization",
+    "Low Latency Distributed Exchange",
+    "石墨烯技术圆桌",
+    "特色圆桌：BTS未来发展走向论战",
+    "休息",
+    "YOYOW专场",
+    "晚宴"
+  ],
+  speakers: [
+    "", "",
+    "巨蟹, GDEX创始人，比特股理事",
+    "Annemieke Dirkes, 比特股区块链全球发言人",
+    "Mark Babbitt,  Crypviser GmbH 公司 CCO",
+    "张增波, 鼓鼓钱包CTO",
+    "黄敏强, 公信宝创始人兼CEO",
+    "Yury Parsamov，Gravity Protocol 公司 CEO  Peter Asalkhanov，Gravity Protocol 技术主管",
+    "Ronny Boesing，OpenLedger ApS创始人兼CEO 比特股理事\n Ivan Bandaryk，OpenLedger CTO， 比特股见证人OpenLedger-dc",
+    "Vlad Sapozhnikov, DEEX 交易所联合创始人兼 CEO",
+    "叶芷，CYBEX CTO",
+    "Ryan R. Fox（主持人），Fabian Schuh (Xeroc)，Sigve Kvalsvik，Alfredo Garcia，Peter Asalkhanov，Mark Babbitt，马宝春，叶芷，罗谊，张增波",
+    "郑玉山（主持人），Ronny Boesing， Christoph Hering， Annemieke Dirkes，Fabian Schuh (Xeroc)，巨蟹，白菜，梓岑，姚宗波， 胡华波，吴序强",
+    "","",""
+  ],
+  rows: []
+}
+
 const assist = {
   title: '协办方',
   para: `Blockchain Centre自2014年在墨尔本成立以来，始终致力于区块链知识在全球范围内的教育培养与宣传，现已在澳大利亚、中国、美国、马来西亚、立陶宛先后成立分中心。中心积极与产业界合作，与AWS、微软和IBM等科技巨头建立合作关系。Blockchain Centre中国区总部位于上海，将在全国主要城市建立分中心，致力于建立区块链技术人才的“黄埔军校”，构建以教育为核心的区块链人才生态，助推全球社会变革。`,
@@ -117,6 +162,8 @@ const faq = {
 }
 
 const ticket = 'https://www.bagevent.com/event/1274864'
+
+
 const cn = {
   faq,
   intro,
@@ -124,6 +171,7 @@ const cn = {
   overview,
   star,
   vip,
+  schedule,
   host,
   assist,
   partner,

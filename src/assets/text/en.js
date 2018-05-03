@@ -67,6 +67,52 @@ const host = {
   gdex: `GDEX is a decentralized digital asset exchange based on bitshares, created by Mr. bitcrab. GDEX offers a stack of financial services including exchange and banking on a blockchain.`,
 }
 
+const schedule = {
+  title: "Schedule",
+  columns: ["time", "topic", "speakers"],
+  times:[
+    "09:00 - 09:30", "09:30 - 09-35", "09:35 - 10:00", "10:00 - 10:20",
+    "10:20 - 10:40", "10:40 - 11:00", "11:00 - 11:20", "11:20 - 11:40",
+    "11:40 - 12:00", "12:00 - 13:40", "13:40 - 14:00", "14:20 - 15:20",
+    "15:20 - 16:20", "16:20 - 16:50", "16:50 - 18:00", "18:30 - 21:30"
+  ],
+  topics: [
+    "Registration",
+    "Opening Speech",
+    "The future of BitShares",
+    "Bitshares Blockchain in todays world",
+    "The Future of Cybersecurity and Trading",
+    "Architecture of keybox(A hardware wallet)",
+    "What on earth has GXS done to Graphene",
+    "Consensus and emission algorithm for a graphene-based protocol",
+    "What does the future hold for Bitshares? OpenLedger gives their vision",
+    "Lunch",
+    "Semi-decentralized ecosystem using Bitshares Blockchain is the reality of decentralization",
+    "Low Latency Distributed Exchange",
+    "Graphene Blockchain Panel",
+    "Unique Panel: Debate on the future trend of BitShares ",
+    "Break",
+    "YOYOW Special Session",
+    "Dinner"
+  ],
+  speakers: [
+    "","",
+    "Jerry Liu, Founder of GEDX, Committee Member of BitShares",
+    "Annemieke Dirkes, Official Public Face sole Spokesperson of the BitShares Blockchain",
+    "Mark Babbitt,  CCO of Crypviser GmbH",
+    "Zengbo Zhang, CTO of Magicwallet",
+    "Minqiang Huang, Founder and CEO of GXS",
+    "Yury Parsamov，CEO of Gravity Protocol \n Peter Asalkhanov，Head of Research at Gravity Protocol",
+    "Ronny Boesing，Founder and CEO of OpenLedger ApS Committee Member of BitShares Ivan Bandaryk，OpenLedger CTO， CTO of OpenLedger  BitShares witness OpenLedger-dc",
+    "",
+    "Vlad Sapozhnikov, Co-founder and CEO of deex.exchange",
+    "Alex Ye，CYBEX CTO",
+    "Ryan R. Fox（Host），Fabian Schuh (Xeroc)，Sigve Kvalsvik，Alfredo Garcia，Peter Asalkhanov ，Mark Babbitt，Neo Ma，Alex Ye，Yi Luo，Zengbo Zhang",
+    "Jademont（Host），Ronny Boesing， Christoph Hering， Annemieke Dirkes,  Fabian Schuh (Xeroc)，Jerry Liu，Qiang Liu，Zicen,Zongbo Yao， Huabo Hu，Xuqiang Wu",
+    "","",""
+  ]
+}
+
 const assist = {
   title: 'CO-HOST',
   para: `Blockchain Centre is the world’s first not-for-profit education and knowledge center focusing on blockchain technology. From its establishment in 2014, it has been devoting itself to the education and promotion of blockchain technology on a global scale. It has set up partnerships in Australia, China, the United States, Malaysia and Lithuania. The centre works hand-in-hand with industries. Its incubation plan has incubated and invested in more than 50 blockchain start-ups and joint ventures. Blockchain Centre China is headquartered in Shanghai and will set up branches in major Chinese cities, open to educational institutions, communities, enterprises and the public to promote commercialization and application of blockchain technology.`,
@@ -133,6 +179,7 @@ const en = {
   intro,
   lookback,
   overview,
+  schedule,
   star,
   vip,
   host,

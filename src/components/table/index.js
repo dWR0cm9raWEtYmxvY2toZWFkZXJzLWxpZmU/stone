@@ -25,6 +25,7 @@ class SimpleTable extends React.Component{
     if(date === 5){
       this.setState({
         data: this.props.data,
+        arr: 16,
         color5: `rgba(29,83,147,1)`,
         color6: ``
       })

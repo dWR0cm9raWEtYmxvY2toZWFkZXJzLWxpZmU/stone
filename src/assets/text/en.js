@@ -71,7 +71,7 @@ const schedule = {
   title: "Schedule",
   columns: ["time", "topic", "speakers"],
   times:[
-    "09:00 - 09:30", "09:30 - 09-35", "09:35 - 10:00", "10:00 - 10:20",
+    "09:00 - 09:30", "09:30 - 09:35", "09:35 - 10:00", "10:00 - 10:20",
     "10:20 - 10:40", "10:40 - 11:00", "11:00 - 11:20", "11:20 - 11:40",
     "11:40 - 12:00", "12:00 - 13:40", "13:40 - 14:00", "14:20 - 15:20",
     "15:20 - 16:20", "16:20 - 16:50", "16:50 - 18:00", "18:30 - 21:30"
@@ -110,6 +110,64 @@ const schedule = {
     "Ryan R. Fox（Host），Fabian Schuh (Xeroc)，Sigve Kvalsvik，Alfredo Garcia，Peter Asalkhanov ，Mark Babbitt，Neo Ma，Alex Ye，Yi Luo，Zengbo Zhang",
     "Jademont（Host），Ronny Boesing， Christoph Hering， Annemieke Dirkes,  Fabian Schuh (Xeroc)，Jerry Liu，Qiang Liu，Zicen,Zongbo Yao， Huabo Hu，Xuqiang Wu",
     "","",""
+  ]
+}
+
+const schedule2 = {
+  title: "Schedule",
+  columns: ["time", "topic", "speakers"],
+  times: [
+    "09:20 - 09:40", "09:40 - 10:00", "10:00 - 10:20", "10:20 - 10:40",
+    "10:40 - 11:00", "11:00 - 11:20", "11:20 - 11:40", "11:40 - 12:00",
+    "12:00 - 13:40", "13:40 - 14:00", "14:20 - 14:40", "14:40 - 15:00",
+    "15:00 - 15:20", "15:20 - 15:35", "15:35 - 15:50", "15:50 - 16:05",
+    "16:05 - 15:20", "16:20 - 16:50", "16:50 - 18:00", "18:30 - 21:30"
+  ],
+  topics: [
+    "The future of Digital Assets Distribution Demonstrated on Real World Use Cases",
+    "To be updated",
+    "Multi-lay space coupling platform for valuable information transferring",
+    "Same DPoS, different IoTchain",
+    "Break",
+    "Payger - How we make money social",
+    "Creating new smart contracts in graphene blockchains",
+    "Peerplays provable fairness through SWEEPs",
+    "Lunch",
+    "The BitShares Python Library",
+    "Sustainable Development: Worker Proposals Funded by the Reserve Pool",
+    "Enhancing Graphene infrastructure",
+    "Development and application challenges of blockchain Technology",
+    "OracleChain:the EOSIO BP candidate and contributor of EOS ecosystem",
+    "The understanding of EOS’s performance Architecture",
+    "The Way to UnlimitedIP-A EOS Based Entertainment Eco-system",
+    "Why EOS，Why us",
+    "Thinking in EOSIO",
+    "Our Roadmap to EOS Block Producer",
+    "The Exchange Positioning of Blockchain 3.0",
+    "EOS Panel",
+  ],
+  speakers: [
+    "Matej Michalko，Founder and CEO of DECENT Foundation Co-founder of ALAX",
+    "Branislav Zelenak，Blockchain Team Leader of DasCoin Damir Nedžibović，Senior Blockchain developer of DasCoin",
+    "Yi Luo，Researcher of blockchain technology",
+    "Neo Ma，Technical geek",
+    "",
+    "Christoph Hering, Founder and CEO of Payger",
+    "Alfredo Garcia，BitShares Core Developer",
+    "Jonathan Bahai, Founder of Peerplays.  eXeBlock Technologies Corp (CSE.XBLK)",
+    "",
+    "Fabian Schuh CTO of Blockchain Projects",
+    "Ryan R. Fox, Coordinator of BitShares Core Team",
+    "Alex Shkor，CTO at Scorum Founder of DEIP.world",
+    "Chao Wang，Co-founder and CTO of Bottos",
+    "Harvey Zhao，Founder and CEO of OracleChain",
+    "Ocean Liao，Founder of EOS gravity",
+    "Lingyan Zhao，Founder of UnlimitedIP program CEO of Link Entertainments Technology",
+    "Zicen，Founder of HelloEOS Committee Member of BitShares   Co-founder of YOYOW",
+    "Yahuang Wu，CTO of MEET.ONE",
+    "Ruiqi shi，Co-Founder of EOS Cannon Founder Director of @BYSTAKE “胖哥说币”blogger owner",
+    "Peter Wu，Founder and CEO of Chaince Trading Platform",
+    "Zhiyong Tan(Host), Harvey Zhao, Ocean Liao, Lingyan Zhao, Zicen, Yahuang Wu, Ruiqi Shi, Peter Wu"
   ]
 }
 
@@ -179,7 +237,7 @@ const en = {
   intro,
   lookback,
   overview,
-  schedule,
+  schedule, schedule2,
   star,
   vip,
   host,

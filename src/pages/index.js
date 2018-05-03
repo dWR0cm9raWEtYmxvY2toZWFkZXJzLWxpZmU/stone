@@ -300,14 +300,14 @@ class IndexPage extends React.Component {
 						</TweenOne>
 					</LazyLoad>
 				</section>
-        <section key="date" className="ctn bg" id="date"><LazyLoad height={100} offset={100}>
+        <section key="date" className="ctn bg paraf" id="date"><LazyLoad height={100} offset={100}>
 					<TweenOne
 						style={{ alignItems: 'center',justifyContent: 'center',display:'flex',flexDirection:'column'}}
 						animation={{ x: -100, type: 'from', duration: 720, opacity: 0 }}
 					>
 						<h2>{this.state.lang.schedule.title}</h2>
 						<div className="bar" />
-            <Schedule data={this.state.lang.schedule}/>
+            <Schedule  data={this.state.lang.schedule} data2={this.state.lang.schedule2}/>
           </TweenOne>
         </LazyLoad></section>
 				<section id="host" className="ctn bg1">

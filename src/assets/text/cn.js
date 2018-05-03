@@ -67,7 +67,7 @@ var schedule = {
   title: "大会日程",
   columns: ["时间", "主题", "演讲嘉宾"],
   times: [
-    "09:00 - 09:30", "09:30 - 09-35", "09:35 - 10:00", "10:00 - 10:20",
+    "09:00 - 09:30", "09:30 - 09:35", "09:35 - 10:00", "10:00 - 10:20",
     "10:20 - 10:40", "10:40 - 11:00", "11:00 - 11:20", "11:20 - 11:40",
     "11:40 - 12:00", "12:00 - 13:40", "13:40 - 14:00", "14:20 - 15:20",
     "15:20 - 16:20", "16:20 - 16:50", "16:50 - 18:00", "18:30 - 21:30"
@@ -106,6 +106,64 @@ var schedule = {
     "","",""
   ],
   rows: []
+}
+
+var schedule2 = {
+  title: "大会日程",
+  columns: ["时间", "主题", "演讲嘉宾"],
+  times: [
+    "09:20 - 09:40", "09:40 - 10:00", "10:00 - 10:20", "10:20 - 10:40",
+    "10:40 - 11:00", "11:00 - 11:20", "11:20 - 11:40", "11:40 - 12:00",
+    "12:00 - 13:40", "13:40 - 14:00", "14:20 - 14:40", "14:40 - 15:00",
+    "15:00 - 15:20", "15:20 - 15:35", "15:35 - 15:50", "15:50 - 16:05",
+    "16:05 - 15:20", "16:20 - 16:50", "16:50 - 18:00", "18:30 - 21:30"
+  ],
+  topics: [
+    "The future of Digital Assets Distribution Demonstrated on Real World Use Cases",
+    "待更新",
+    "分层多空间信息耦合平台",
+    "Same DPoS, different IoTchain",
+    "休息",
+    "Payger - How we make money social",
+    "Creating new smart contracts in graphene blockchains",
+    "Peerplays provable fairness through SWEEPs",
+    "午餐",
+    "The BitShares Python Library",
+    "Sustainable Development: Worker Proposals Funded by the Reserve Pool",
+    "Enhancing Graphene infrastructure",
+    "区块链技术发展与应用挑战",
+    "OracleChain 的EOS节点竞选之路",
+    "对EOS性能的理解和分享",
+    "通往未来版权之路—打造基于EOS的文娱生态圈",
+    "Why EOS，Why us",
+    "MEET.ONE对EOS生态的思考与实践",
+    "EOS超级社群节点之路 Our Roadmap to EOS Block Producer",
+    "区块链3.0时代的交易平台定位",
+    "EOS圆桌辩论",
+  ],
+  speakers: [
+    "Matej Michalko，DECENT创始人兼CEO，ALAX联合创始人",
+    "Branislav Zelenak，DasCoin 区块链团队leader Damir Nedžibović，DasCoin 资深区块链开发者",
+    "罗谊，区块链技术研究者",
+    "马宝春，技术极客",
+    "",
+    "Christoph Hering, Payger创始人兼CEO",
+    "Alfredo Garcia，比特股核心开发者",
+    "Jonathan Bahai，Peerplays 创始人 eXeBlock 科技公司创始人",
+    "",
+    "Fabian Schuh (Xeroc) , 区块链项目CTO",
+    "Ryan R. Fox,比特股核心团队组织者",
+    "Alex Shkor，Scorum项目CTO，DEIP.world创始人",
+    "王超，铂链CTO",
+    "赵微（老狼），OracleChain 创始人兼 CEO",
+    "廖洋阳，EOS 引力区创始人",
+    "赵聆言，未来版权项目创始人，链娱科技CEO",
+    "梓岑，HelloEOS",
+    "吴亚皇，MEET.ONE项目CTO",
+    "胖哥，EOS Cannon共建者，BYSTAKE创始人，”胖哥说币”自媒体主理人",
+    "吴子臻，Chaince交易平台创始人兼CEO",
+    "谭智勇（主持人），老狼，廖洋阳 赵聆言 梓岑 吴亚皇 胖哥 吴子臻"
+  ],
 }
 
 const assist = {
@@ -171,7 +229,7 @@ const cn = {
   overview,
   star,
   vip,
-  schedule,
+  schedule, schedule2,
   host,
   assist,
   partner,

@@ -102,7 +102,7 @@ var schedule = {
     "Vlad Sapozhnikov, DEEX 交易所联合创始人兼 CEO",
     "叶芷，CYBEX CTO",
     "Ryan R. Fox（主持人），Fabian Schuh (Xeroc)，Sigve Kvalsvik，Alfredo Garcia，Peter Asalkhanov，Mark Babbitt，马宝春，叶芷，罗谊，张增波",
-    "郑玉山（主持人），Ronny Boesing， Christoph Hering， Annemieke Dirkes，Fabian Schuh (Xeroc)，巨蟹，白菜，梓岑，姚宗波， 胡华波，吴序强",
+    "郑玉山（主持人），Ronny Boesing， Christoph Hering， Annemieke Dirkes，Fabian Schuh (Xeroc)，巨蟹，白菜，梓岑，姚宗秋， 胡华波，吴序强",
     "","",""
   ],
   rows: []

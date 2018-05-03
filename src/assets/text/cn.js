@@ -69,7 +69,7 @@ var schedule = {
   times: [
     "09:00 - 09:30", "09:30 - 09:35", "09:35 - 10:00", "10:00 - 10:20",
     "10:20 - 10:40", "10:40 - 11:00", "11:00 - 11:20", "11:20 - 11:40",
-    "11:40 - 12:00", "12:00 - 13:40", "13:40 - 14:00", "14:20 - 15:20",
+    "11:40 - 12:00", "12:00 - 13:40", "13:40 - 14:00", "14:00 - 14:20", "14:20 - 15:20",
     "15:20 - 16:20", "16:20 - 16:50", "16:50 - 18:00", "18:30 - 21:30"
   ],
   topics: [
@@ -79,11 +79,12 @@ var schedule = {
     "Bitshares Blockchain in todays world",
     "The Future of Cybersecurity and Trading",
     "硬件钱包keybox技术架构",
+    "公信宝到底对Graphene做了什么？",    
     "Consensus and emission algorithm for a graphene-based protocol",
     "What does the future hold for Bitshares? OpenLedger gives their vision",
     "午餐",
-    "Semi-decentralized ecosystem using Bitshares Blockchain is the reality of decentralization",
-    "Low Latency Distributed Exchange",
+    "The BitShares Python Library",
+    "Payger - How we make money social",
     "石墨烯技术圆桌",
     "特色圆桌：BTS未来发展走向论战",
     "休息",
@@ -99,8 +100,9 @@ var schedule = {
     "黄敏强, 公信宝创始人兼CEO",
     "Yury Parsamov，Gravity Protocol 公司 CEO  Peter Asalkhanov，Gravity Protocol 技术主管",
     "Ronny Boesing，OpenLedger ApS创始人兼CEO 比特股理事\n Ivan Bandaryk，OpenLedger CTO， 比特股见证人OpenLedger-dc",
-    "Vlad Sapozhnikov, DEEX 交易所联合创始人兼 CEO",
-    "叶芷，CYBEX CTO",
+    "",
+    "Fabian Schuh (Xeroc) , 区块链项目CTO",
+    "Christoph Hering, Payger创始人兼CEO",
     "Ryan R. Fox（主持人），Fabian Schuh (Xeroc)，Sigve Kvalsvik，Alfredo Garcia，Peter Asalkhanov，Mark Babbitt，马宝春，叶芷，罗谊，张增波",
     "郑玉山（主持人），Ronny Boesing， Christoph Hering， Annemieke Dirkes，Fabian Schuh (Xeroc)，巨蟹，白菜，梓岑，姚宗秋， 胡华波，吴序强",
     "","",""

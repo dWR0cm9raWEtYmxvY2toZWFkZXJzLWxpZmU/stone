@@ -11,9 +11,6 @@ function createData(time, topic, speaker) {
   return { id, time, topic, speaker };
 }
 
-
-
-
 class SimpleTable extends React.Component{
   state = {
     data: this.props.data,
@@ -25,7 +22,7 @@ class SimpleTable extends React.Component{
     if(date === 5){
       this.setState({
         data: this.props.data,
-        arr: 16,
+        arr: 17,
         color5: `rgba(29,83,147,1)`,
         color6: ``
       })

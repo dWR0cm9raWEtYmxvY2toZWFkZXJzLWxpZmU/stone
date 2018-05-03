@@ -73,7 +73,7 @@ const schedule = {
   times:[
     "09:00 - 09:30", "09:30 - 09:35", "09:35 - 10:00", "10:00 - 10:20",
     "10:20 - 10:40", "10:40 - 11:00", "11:00 - 11:20", "11:20 - 11:40",
-    "11:40 - 12:00", "12:00 - 13:40", "13:40 - 14:00", "14:20 - 15:20",
+    "11:40 - 12:00", "12:00 - 13:40", "13:40 - 14:00", "14:00 - 14:20", "14:20 - 15:20",
     "15:20 - 16:20", "16:20 - 16:50", "16:50 - 18:00", "18:30 - 21:30"
   ],
   topics: [
@@ -87,8 +87,8 @@ const schedule = {
     "Consensus and emission algorithm for a graphene-based protocol",
     "What does the future hold for Bitshares? OpenLedger gives their vision",
     "Lunch",
-    "Semi-decentralized ecosystem using Bitshares Blockchain is the reality of decentralization",
-    "Low Latency Distributed Exchange",
+    "The BitShares Python Library",
+    "Payger - How we make money social",
     "Graphene Blockchain Panel",
     "Unique Panel: Debate on the future trend of BitShares ",
     "Break",
@@ -105,8 +105,8 @@ const schedule = {
     "Yury Parsamov，CEO of Gravity Protocol \n Peter Asalkhanov，Head of Research at Gravity Protocol",
     "Ronny Boesing，Founder and CEO of OpenLedger ApS Committee Member of BitShares Ivan Bandaryk，OpenLedger CTO， CTO of OpenLedger  BitShares witness OpenLedger-dc",
     "",
-    "Vlad Sapozhnikov, Co-founder and CEO of deex.exchange",
-    "Alex Ye，CYBEX CTO",
+    "Fabian Schuh, CTO of Blockchain Projects",
+    "Christoph Hering, Founder and CEO of Payger",
     "Ryan R. Fox（Host），Fabian Schuh (Xeroc)，Sigve Kvalsvik，Alfredo Garcia，Peter Asalkhanov ，Mark Babbitt，Neo Ma，Alex Ye，Yi Luo，Zengbo Zhang",
     "Jademont（Host），Ronny Boesing， Christoph Hering， Annemieke Dirkes,  Fabian Schuh (Xeroc)，Jerry Liu，Qiang Liu，Zicen,Zongbo Yao， Huabo Hu，Xuqiang Wu",
     "","",""

@@ -12,7 +12,9 @@ for (var i = 1; i < 38; i++) {
 
 const Cards = ({ list }) => {
   const fotoList = lists.map(seq => {
-    return <MyCard key={seq} seq={seq} thelist={list} />
+    if(seq !== 2){
+      return <MyCard key={seq} seq={seq} thelist={list} />
+    }
   })
   return (
     <Grid

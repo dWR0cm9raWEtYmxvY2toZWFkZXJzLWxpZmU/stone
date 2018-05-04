@@ -14,7 +14,7 @@ function createData(time, topic, speaker) {
 class SimpleTable extends React.Component{
   state = {
     data: this.props.data,
-    arr: 16,
+    arr: 17,
     color5: `rgba(29,83,147,1)`,
     color6: ``,
   }
@@ -29,7 +29,7 @@ class SimpleTable extends React.Component{
     }else{
       this.setState({
         data: this.props.data2,
-        arr: 21,
+        arr: 22,
         color5: ``,
         color6: `rgba(29,83,147,1)`
       })      

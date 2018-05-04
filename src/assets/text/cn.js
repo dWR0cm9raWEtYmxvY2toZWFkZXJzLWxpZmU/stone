@@ -83,8 +83,8 @@ var schedule = {
     "Consensus and emission algorithm for a graphene-based protocol",
     "What does the future hold for Bitshares? OpenLedger gives their vision",
     "午餐",
-    "The BitShares Python Library",
-    "Payger - How we make money social",
+    "Semi-decentralized ecosystem using Bitshares Blockchain is the reality of decentralization",
+    "Low Latency Distributed Exchange",
     "石墨烯技术圆桌",
     "特色圆桌：BTS未来发展走向论战",
     "休息",
@@ -101,13 +101,12 @@ var schedule = {
     "Yury Parsamov，Gravity Protocol 公司 CEO  Peter Asalkhanov，Gravity Protocol 技术主管",
     "Ronny Boesing，OpenLedger ApS创始人兼CEO 比特股理事\n Ivan Bandaryk，OpenLedger CTO， 比特股见证人OpenLedger-dc",
     "",
-    "Fabian Schuh (Xeroc) , 区块链项目CTO",
-    "Christoph Hering, Payger创始人兼CEO",
+    "Vlad Sapozhnikov, DEEX 交易所联合创始人兼 CEO",
+    "叶芷，CYBEX CTO",
     "Ryan R. Fox（主持人），Fabian Schuh (Xeroc)，Sigve Kvalsvik，Alfredo Garcia，Peter Asalkhanov，Mark Babbitt，马宝春，叶芷，罗谊，张增波",
     "郑玉山（主持人），Ronny Boesing， Christoph Hering， Annemieke Dirkes，Fabian Schuh (Xeroc)，巨蟹，白菜，梓岑，姚宗秋， 胡华波，吴序强",
     "","",""
   ],
-  rows: []
 }
 
 var schedule2 = {
@@ -122,7 +121,7 @@ var schedule2 = {
   ],
   topics: [
     "The future of Digital Assets Distribution Demonstrated on Real World Use Cases",
-    "待更新",
+    "Graphene based currency of trust",
     "分层多空间信息耦合平台",
     "Same DPoS, different IoTchain",
     "休息",
@@ -135,6 +134,7 @@ var schedule2 = {
     "Enhancing Graphene infrastructure",
     "区块链技术发展与应用挑战",
     "OracleChain 的EOS节点竞选之路",
+    "火币矿池助力EOS生态",
     "对EOS性能的理解和分享",
     "通往未来版权之路—打造基于EOS的文娱生态圈",
     "Why EOS，Why us",
@@ -158,7 +158,8 @@ var schedule2 = {
     "Alex Shkor，Scorum项目CTO，DEIP.world创始人",
     "王超，铂链CTO",
     "赵微（老狼），OracleChain 创始人兼 CEO",
-    "廖洋阳，EOS 引力区创始人",
+    "曹飞",
+    "陈澄",
     "赵聆言，未来版权项目创始人，链娱科技CEO",
     "梓岑，HelloEOS",
     "吴亚皇，MEET.ONE项目CTO",
